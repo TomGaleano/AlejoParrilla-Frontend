@@ -177,7 +177,7 @@ body {
     .header__nav-close-button {
         display: block;
         position: absolute; /* Position the button absolutely */
-        top: 20px; /* Position it 20px from the top */
+        top: 50px; /* Position it 20px from the top */
         right: 49px; /* Position it 20px from the right */
     }
     

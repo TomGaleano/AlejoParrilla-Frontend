@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import {FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavBar.css";
+import logo from "../assets/LOGOO-300x114.png";
 
-function Navbar () {
+function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleToggle = () => {
@@ -11,7 +12,7 @@ function Navbar () {
     return (
         <header className="header">
             <div className="header__logo">
-                <img src="https://www.freelogodesign.org/file/app/client/thumb/8e4f0b6c-3c4e-4a0e-8a3f-5e0f1c2c1d3b_200x200.png?1609299883257" alt="logo" />
+                <img src={logo} alt="Logo" /> {/* Use the imported image here */}
             </div>
             <nav className={`header__nav ${isOpen ? 'open' : ''}`}>
                 <ul className="header__nav-list">
@@ -26,11 +27,11 @@ function Navbar () {
                     </li>
                 </ul>
                 <button className="header__nav-close-button" onClick={handleToggle}>
-                    <FaTimes/>
+                    <FaTimes />
                 </button>
             </nav>
             <button className="header__toggle-button" onClick={handleToggle}>
-                <FaBars/>
+                <FaBars />
             </button>
         </header>
     )
