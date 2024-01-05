@@ -12,11 +12,8 @@ export const Login = ({
     children = null,
 }: LoginProps) => {
     const [userData, setUserData] = useState({
-        first_name: "",
-        last_name: "",
         email: "",
-        password: "",
-        phone: ""
+        password: ""
     });
 
     const navigate = useNavigate();
