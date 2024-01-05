@@ -31,7 +31,12 @@ export const Register = ({
     const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/register`, userData);
+            const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/register`, userData,
+            {headers: {
+                'Content-Type': 'application/json'
+            },
+            withCredentials: true
+        });
             console.log(response.data);
             navigate("/login");
         } catch (error) {
