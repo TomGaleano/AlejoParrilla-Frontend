@@ -8,12 +8,13 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    height: 14vh;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #333;
+    background-color: #05031A;
     z-index: 1000;
     /* This ensures the navbar stays on top of other elements */
 }
@@ -24,14 +25,11 @@ body {
     }
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #333;
+.header__logo {
+    padding-left: 20px; /* Adjust as needed */
+    max-width: 200px; /* Adjust as needed */
+    max-height: 90%; /* Adjust as needed */
 }
-
 .header__nav {
     display: flex;
     justify-content: center;
@@ -52,15 +50,15 @@ body {
     list-style: none;
 }
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px 50px;
-    background-color: #333;
+    background-color: #05031A;
     z-index: 1000; /* This ensures the navbar stays on top of other elements */
     transition: all 0.3s ease;
 }
@@ -101,7 +99,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #333;
+        background-color: #05031A;
         transform: translateX(100%);
         transition: transform 0.3s ease;
     }
@@ -114,7 +112,7 @@ body {
 .header__nav-link {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 25px;
     transition: color 0.3s ease;
 }
 
@@ -147,7 +145,7 @@ body {
         right: 0;
         height: 100vh;
         width: 100%;
-        background-color: #333;
+        background-color: #05031A;
         display: flex;
         flex-direction: column;
         justify-content: center; /* Align items in the center */

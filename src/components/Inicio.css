@@ -1,0 +1,26 @@
+.container {
+    margin-top: 14vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #05031A;
+    color: #ffffff;
+    font-family: 'David Libre', serif;
+  }
+  
+  .column {
+    flex: 1 0 50%; /* Grow and shrink equally, base width 50% */
+    padding: 10px;
+  }
+  
+  .column img {
+    max-width: 100%;
+    height: auto;
+  }
+  .second-button {
+    background-color: #EA4D27; /* Add this class */
+}
+  @media (max-width: 600px) {
+    .column {
+      flex: 1 0 100%; /* On small screens, make each column take up 100% width */
+    }
+  }
