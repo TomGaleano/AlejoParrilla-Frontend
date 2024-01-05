@@ -44,14 +44,19 @@
     color: #EA4D27;
 }
 @media (max-width: 600px) {
+    .centered-title {
+        font-size: 6vh; /* Adjust as needed */
+      }
     .container{
-        overflow: auto;
+        overflow: hidden;
     }
     .column-main {
-        padding: 70px;
+        padding: 30px;
+        padding-top: 22vh;
     }
     .column {
         width: 100%;
+        padding-top: 12vh;
         padding-right: 0;
     }
     .column:first-child {
@@ -59,5 +64,15 @@
     }
     .column:has(img) {
         display: none;
+    }
+    .new-section h1 {
+        font-size: 4vh;
+        white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    }
+    .button-container button {
+        padding: 8px 16px; /* Adjust as needed */
+        font-size: 16px; /* Adjust as needed */
     }
 }
