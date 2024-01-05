@@ -26,6 +26,7 @@ function Navbar() {
                         <a href="/contact" className="header__nav-link">Sobre nosotros</a>
                     </li>
                 </ul>
+                <button className='button__header'>Agenda tu mesa</button>
                 <button className="header__nav-close-button" onClick={handleToggle}>
                     <FaTimes />
                 </button>

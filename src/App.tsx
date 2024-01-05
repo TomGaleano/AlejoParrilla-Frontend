@@ -3,6 +3,7 @@ import { Home } from './components/home'
 import { Login } from './components/login'
 import { Register } from './components/register'
 import { Inicio } from './components/inicio'
+import { Test } from './components/test'
 //import ReactGA from 'react-ga';
 
 //const trackingId = <Tracking ID HERE>;
