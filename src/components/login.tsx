@@ -28,8 +28,13 @@ export const Login = ({
     const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/login`, userData,{
-                withCredentials: true});
+            const response = await axios.post(`https://alejoparrilla-backend-temp-c472e01a4c9d.herokuapp.com/api/login`,
+            userData,
+            {headers: {
+                'Content-Type': 'application/json'
+            },
+            withCredentials: true
+        });
             console.log(response.data);
             localStorage.setItem("user", JSON.stringify(response?.data?.user));
             navigate("/home");

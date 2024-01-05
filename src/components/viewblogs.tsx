@@ -29,9 +29,12 @@ export const ViewBlogs = ({}: ViewBlogsProps) => {
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/allpost?page=${page}`, {
-                withCredentials: true
-            });
+            const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/allpost?page=${page}`,
+            {headers: {
+                'Content-Type': 'application/json'
+            },
+            withCredentials: true
+        })
             setPosts(response.data.data);
         };
 

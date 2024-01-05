@@ -45,9 +45,12 @@ export const Blog = ({ id, className = "", children = null }: BlogProps) => {
     }, [id]);
 
     const handleDelete = async () => {
-        await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/api/deletepost/${id}`, {
-            withCredentials: true,
-        });
+        await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/api/deletepost/${id}`,
+            {headers: {
+                'Content-Type': 'application/json'
+            },
+            withCredentials: true
+        })
         navigate("/");
     }
 

@@ -30,8 +30,12 @@ export const UserPosts = ({
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/uniquepost`, {
-                withCredentials: true});
+            const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/allpost?page=1`, {
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                withCredentials: true
+            });
             setPosts(response.data.data);
         };
 

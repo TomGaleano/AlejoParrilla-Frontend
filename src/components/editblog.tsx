@@ -25,9 +25,12 @@ export const EditBlog = ({ id, className = "", children = null }: EditBlogProps)
 
     useEffect(() => {
         const getBlog = async () => {
-            const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/detailpost/${id}`, {
-                withCredentials: true,
-            });
+            const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/detailpost/${id}`,
+            {headers: {
+                'Content-Type': 'application/json'
+            },
+            withCredentials: true
+        })
             setBlogData(response.data.data);
         };
         getBlog();
