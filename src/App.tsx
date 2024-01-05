@@ -9,11 +9,13 @@ import { Inicio } from './components/inicio'
 //ReactGA.initialize(trackingId);
 
 
+
 function App() {
   return (
     <Router>
       <Routes>
           <Route path="/" element={<Inicio />} />
+          <Route path="/test" element={<Test/>} />
           <Route path="/home" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
