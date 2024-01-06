@@ -200,7 +200,7 @@ body {
     }
     .button__header {
         position: fixed; /* Fix the position of the button */
-        bottom: 15px; /* Position it at the bottom */
+        bottom: 100px; /* Position it at the bottom */
         padding: 20px 60px;
         left: 52%; /* Center it horizontally */
         transform: translateX(-50%); /* Adjust for the width of the button */
