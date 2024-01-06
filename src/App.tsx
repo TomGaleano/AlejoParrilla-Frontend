@@ -3,7 +3,6 @@ import { Home } from './components/home'
 import { Login } from './components/login'
 import { Register } from './components/register'
 import { Inicio } from './components/inicio'
-import { Test } from './components/test'
 
 //import ReactGA from 'react-ga';
 
@@ -17,7 +16,6 @@ function App() {
     <Router>
       <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/test" element={<Test/>} />
           <Route path="/home" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />

@@ -1,3 +1,4 @@
+import './inicio.css';
 import React from 'react';
 import "./Inicio.css";
 import image from '../assets/image.png'; // Import the image directly
@@ -22,7 +23,7 @@ export const Inicio = (): JSX.Element => {
             <div className="new-section">
                 <div className="container">
                     <div className="column">
-                        <img src={parrilla} alt='Parrilla yummy'/>
+                        <img src={parrilla} alt='Parrilla yummy' />
                     </div>
                     <div className="column">
                         <h1>Nuestra Filosofia</h1>
