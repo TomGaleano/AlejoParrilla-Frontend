@@ -58,17 +58,22 @@
     font-size: 6vh;
 }
 @media (max-width: 600px) {
-    .container {
-        overflow: auto;
+    .centered-title {
+        font-size: 6vh; /* Adjust as needed */
+      }
+    .container{
+        overflow: hidden;
     }
 
 
     .column-main {
-        padding: 70px;
+        padding: 30px;
+        padding-top: 22vh;
     }
 
     .column {
         width: 100%;
+        padding-top: 12vh;
         padding-right: 0;
     }
 
@@ -84,5 +89,12 @@
     }
     .new-section h2 {
         font-size: 6vh;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .button-container button {
+        padding: 8px 16px; /* Adjust as needed */
+        font-size: 16px; /* Adjust as needed */
     }
 }
