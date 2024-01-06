@@ -50,6 +50,13 @@
     color: #EA4D27;
 }
 
+.botton_menu{
+    background-color: #EA4D27;
+    color: #ffffff; /* Esto es para asegurar que el texto del botón sea visible */
+}
+.tit_alt {
+    font-size: 6vh;
+}
 @media (max-width: 600px) {
     .centered-title {
         font-size: 6vh; /* Adjust as needed */
@@ -57,6 +64,7 @@
     .container{
         overflow: hidden;
     }
+
 
     .column-main {
         padding: 30px;
@@ -77,10 +85,13 @@
         display: none;
     }
     .new-section h1 {
-        font-size: 4vh;
+        font-size: 6vh;
+    }
+    .new-section h2 {
+        font-size: 6vh;
         white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .button-container button {
         padding: 8px 16px; /* Adjust as needed */
