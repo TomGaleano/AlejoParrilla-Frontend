@@ -3,6 +3,7 @@ import React from 'react';
 import "./Inicio.css";
 import image from '../assets/image.png'; // Import the image directly
 import parrilla from '../assets/parrila.png'; // Import the image directly
+import bowl from '../assets/plato.png'; // Import the image directly
 
 export const Inicio = (): JSX.Element => {
     return (
@@ -36,6 +37,18 @@ export const Inicio = (): JSX.Element => {
                         <p>
                             Utilizamos los mejores insumos y la mejor atención para hacer que su experiencia en nuestros restaurantes sea única.
                         </p>
+                    </div>
+                </div>
+            </div>
+            <div className="new-section">
+                <div className="container">
+                    <div className="column">
+                        <img src={bowl} alt="Descripción de la imagen" /> {/* Reemplaza 'yourImage' con la ruta de tu imagen */}
+                    </div>
+                    <div className="column">
+                        <h2 className="tit_alt">Nuestro menú</h2>
+                        <p>Nuestro menu tiene diferentes variedades de platos distribuidos entre carnes, pescados, comidas rapidas, bolws y demas.</p>
+                        <button className="botton_menu">Menú en línea</button>
                     </div>
                 </div>
             </div>
