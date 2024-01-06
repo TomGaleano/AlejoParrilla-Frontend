@@ -86,19 +86,31 @@
     }
     .new-section h1 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93d8bd3cd80f9c3285a5cca1909067dc92f7d720
         font-size: 6vh;
     }
     .new-section h2 {
         font-size: 6vh;
+<<<<<<< HEAD
 =======
         font-size: 4vh;
         white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+=======
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+>>>>>>> 93d8bd3cd80f9c3285a5cca1909067dc92f7d720
     }
     .button-container button {
         padding: 8px 16px; /* Adjust as needed */
         font-size: 16px; /* Adjust as needed */
+<<<<<<< HEAD
 >>>>>>> 9eda0728387a684a2cba54ad1485583586b01969
+=======
+>>>>>>> 93d8bd3cd80f9c3285a5cca1909067dc92f7d720
     }
 }
