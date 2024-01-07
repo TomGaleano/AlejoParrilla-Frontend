@@ -1,5 +1,4 @@
 import './inicio.css';
-import React from 'react';
 import "./Inicio.css";
 import image from '../assets/image.png'; // Import the image directly
 import parrilla from '../assets/parrila.png'; // Import the image directly
