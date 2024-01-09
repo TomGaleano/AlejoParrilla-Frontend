@@ -12,7 +12,7 @@ export const Inicio = (): JSX.Element => {
                     <h1 className="centered-title">Bienvenido a AlejoParrilla</h1>
                     <h3>La mejor calidad desde 1999</h3>
                     <div className="button-container">
-                        <button>Menú en línea</button>
+                        <button className="main-button">Menú en línea</button>
                         <button className="second-button">Agenda tu mesa</button>
                     </div>
                 </div>
