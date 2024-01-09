@@ -26,7 +26,7 @@ export const Inicio = (): JSX.Element => {
                         <img src={parrilla} alt='Parrilla yummy' />
                     </div>
                     <div className="column">
-                        <h1>Nuestra Filosofia</h1>
+                        <h2 className='title_alt'>Nuestra Filosofia</h2>
                         <p>
                             Somos restaurantes especializados en Parrilla y platos típicos colombianos desde 1999.
                         </p>

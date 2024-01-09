@@ -1,60 +1,76 @@
 .footer {
-    padding-top: 3vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.footer-content {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1200px; /* Adjust this value as needed */
-}
-
-.column {
-    flex: 1;
     padding: 20px;
-}
-.footer p {
-    font-weight: bold;
-    color: white;
-    font-size: larger;
-}
-.contact-info span {
-    color: white;
+    background-color: rgb(17, 16, 33);
+    color: #fff;
 }
 
-.column:first-child,
-.column:nth-child(2) {
-    flex: 0 0 20%;
-}
-
-.column:last-child {
-    flex: 0 0 40%;
-}
-.footer .hours {
-    color: #EA4D27;
-}
-.social-icons {
-    display: flex;
-    padding-left: 2vh;
-    padding-right: 5vh;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px; /* Add some space between the logo and the icons */
-}
-
-.social-icons > * {
+.footer .column {
     flex: 1;
-    text-align: center; /* Center the icons in their respective spaces */
-    width: 50px; /* Set the width of the icons */
-    height: 50px; /* Set the height of the icons */
+    margin-right: 20px;
+    overflow: auto;
+}
+
+.footer .column:last-child {
+    margin-right: 0;
+}
+
+.footer img {
+    max-width: 100%;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .hours, .footer p {
+    margin: 0;
+    margin-top: 10px;
+}
+.footer-logo {
+    width: 30vh;
 }
 .rappi-logo {
     padding-top: 1vh;
     padding-left: 1vh;
     width: 40px; /* Set the width of the Rappi logo */
     height: 40px; /* Set the height of the Rappi logo */
+}
+@media (max-width: 600px) {
+    .column:has(img) {
+        display: run-in;
+    }
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer .column img {
+        max-width: 100%; /* Ensure images scale down to fit their container */
+    }
+
+    .footer .column {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer .column:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer .contact-info, .footer .hours, .footer p {
+        font-size: 14px;
+    }
 }

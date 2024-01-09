@@ -7,11 +7,11 @@ import rappi from '../assets/rappi.svg';
 const Footer = () => {
     return (
         <div className="footer">
-            <div className="column">
-                <img src={logo} alt="Alejoparrilla's logo" />
+            <div className="column logo-column">
+                <img src={logo} alt="Alejoparrilla's logo" className="footer-logo" />
                 <div className="social-icons">
-                    <FaInstagram color="white" />
-                    <FaFacebook color="white" />
+                    <FaInstagram color="white" className="social-icon-tw" />
+                    <FaFacebook color="white" className="social-icon-fa" />
                     <img src={rappi} alt="Rappi logo" className="rappi-logo" />
                 </div>
             </div>
@@ -27,7 +27,7 @@ const Footer = () => {
                 <p>Trabaja con nosotros</p>
             </div>
             <div className="column">
-                <h1>Tomás deme información en DB</h1>
+                <h1>DB</h1>
             </div>
         </div>
     );

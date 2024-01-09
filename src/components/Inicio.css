@@ -50,22 +50,54 @@
     color: #EA4D27;
 }
 
-.botton_menu{
-    background-color: #EA4D27;
-    color: #ffffff; /* Esto es para asegurar que el texto del botón sea visible */
+.title_alt {
+    color: #EA4D27;
+    font-size: 6vh;
 }
+
+.botton_menu {
+    background-color: #EA4D27;
+    color: #ffffff;
+    /* Esto es para asegurar que el texto del botón sea visible */
+}
+
 .tit_alt {
     font-size: 6vh;
 }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 17vh;
+}
+
+.social-icon-tw {
+    font-size: 28px; /* Adjust this value to change the size of the icons */
+    margin-right: 10px; /* Add some space between the icons */
+}
+.social-icon-fa {
+    font-size: 28px; /* Adjust this value to change the size of the icons */
+    margin-right: 3px; /* Add some space between the icons */
+}
+
+.rappi-logo {
+    height: 22px; /* Make the logo the same height as the icons */
+    padding-bottom: 2px;
+}
+
 @media (max-width: 600px) {
     .centered-title {
-        font-size: 6vh; /* Adjust as needed */
-      }
-    .container{
+        font-size: 6vh;
+        /* Adjust as needed */
+    }
+
+    .container {
         overflow: hidden;
     }
 
-
+    .column.logo-column {
+        display: block;
+    }
     .column-main {
         padding: 30px;
         padding-top: 22vh;
@@ -84,33 +116,29 @@
     .column:has(img) {
         display: none;
     }
+
+    .tit_alt .title_alt {
+        font-size: 4vh;
+    }
     .new-section h1 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 93d8bd3cd80f9c3285a5cca1909067dc92f7d720
         font-size: 6vh;
     }
+
     .new-section h2 {
-        font-size: 6vh;
-<<<<<<< HEAD
-=======
         font-size: 4vh;
-        white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-=======
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
->>>>>>> 93d8bd3cd80f9c3285a5cca1909067dc92f7d720
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
     }
+
     .button-container button {
-        padding: 8px 16px; /* Adjust as needed */
-        font-size: 16px; /* Adjust as needed */
-<<<<<<< HEAD
->>>>>>> 9eda0728387a684a2cba54ad1485583586b01969
-=======
->>>>>>> 93d8bd3cd80f9c3285a5cca1909067dc92f7d720
+        padding: 8px 16px;
+        /* Adjust as needed */
+        font-size: 16px;
+        /* Adjust as needed */
     }
 }
