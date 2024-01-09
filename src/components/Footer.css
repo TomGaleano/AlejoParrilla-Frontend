@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 40px;
     background-color: rgb(17, 16, 33);
     color: #fff;
 }
@@ -43,7 +43,27 @@
 .footer-logo {
     width: 30vh;
 }
+.tit_alt {
+    font-size: 6vh;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon-tw {
+    font-size: 28px; /* Adjust this value to change the size of the icons */
+    margin-right: 10px; /* Add some space between the icons */
+}
+.social-icon-fa {
+    font-size: 28px; /* Adjust this value to change the size of the icons */
+    margin-right: 3px; /* Add some space between the icons */
+}
+
 .rappi-logo {
+    height: 22px; /* Make the logo the same height as the icons */
+    padding-bottom: 2px;
     padding-top: 1vh;
     padding-left: 1vh;
     width: 40px; /* Set the width of the Rappi logo */

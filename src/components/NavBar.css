@@ -139,7 +139,7 @@ body {
     font-size: 24px;
 }
 .button__header {
-    background-color: #EA4D27;
+    background-color: #F39304;
     font-weight: bold;
     color: #ffffff; /* You may want to set a contrasting text color */
     border: none; /* Remove default button border */
@@ -147,10 +147,11 @@ body {
     cursor: pointer; /* Change cursor on hover */
     white-space: nowrap; /* Add this line */
     font-size: 20px; /* Increase the font size */
+    margin-right: 10vh;
 }
 
 .button__header:hover {
-    background-color: #C43F23; /* Darken the button color slightly on hover */
+    background-color: #F39304; /* Darken the button color slightly on hover */
 }
 
 @media (max-width: 768px) {
@@ -190,13 +191,14 @@ body {
     .header__nav-close-button {
         display: block;
         position: absolute; /* Position the button absolutely */
-        top: 50px; /* Position it 20px from the top */
-        right: 49px; /* Position it 20px from the right */
+        top: 60px; /* Position it 20px from the top */
+        right: 150px; /* Position it 20px from the right */
     }
     
     .header__toggle-button {
         display: block;
         align-self: center;
+        margin-right: 10vh;
     }
     .button__header {
         position: fixed; /* Fix the position of the button */

@@ -1,4 +1,3 @@
-import React from 'react';
 import './Footer.css';
 import logo from '../assets/LOGOO-300x114.png';
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";

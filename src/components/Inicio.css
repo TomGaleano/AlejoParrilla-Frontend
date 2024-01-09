@@ -1,144 +1,85 @@
-.container {
-    padding-top: 10vh;
-    padding-left: 3%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: rgb(17, 16, 33);
-    color: #ffffff;
-    font-family: 'David Libre', serif;
-    flex-direction: row;
-    text-align: start;
-}
-
-.column {
-    flex: 1 0 40%;
-    /* Do not grow or shrink, base width 40% */
-    padding-right: 70px;
-    padding-bottom: 70px;
-    padding-left: 70px;
-
+.home_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 .column-main {
-    padding-left: 70px;
-    flex: 1 0 40%;
-    /* Do not grow or shrink, base width 40% */
-
-}
-
-.column:first-child {
-    margin-left: 6%;
-}
-
-.column:last-child {
-    flex: 0 0 54%;
-    /* Do not grow or shrink, base width 54% */
-}
-
-.column img {
-    max-width: 100%;
-    height: auto;
-}
-
-.second-button {
-    background-color: #EA4D27;
-    margin-left: 10px;
-}
-
-.new-section h1 {
-    color: #EA4D27;
-}
-
-.title_alt {
-    color: #EA4D27;
-    font-size: 6vh;
-}
-
-.botton_menu {
-    background-color: #EA4D27;
-    color: #ffffff;
-    /* Esto es para asegurar que el texto del botón sea visible */
-}
-
-.tit_alt {
-    font-size: 6vh;
-}
-.social-icons {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 17vh;
 }
 
-.social-icon-tw {
-    font-size: 28px; /* Adjust this value to change the size of the icons */
-    margin-right: 10px; /* Add some space between the icons */
-}
-.social-icon-fa {
-    font-size: 28px; /* Adjust this value to change the size of the icons */
-    margin-right: 3px; /* Add some space between the icons */
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.rappi-logo {
-    height: 22px; /* Make the logo the same height as the icons */
-    padding-bottom: 2px;
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-@media (max-width: 600px) {
-    .centered-title {
-        font-size: 6vh;
-        /* Adjust as needed */
-    }
+.main-button,
+.second-button,
+.botton_menu {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-    .container {
-        overflow: hidden;
-    }
+.main-button {
+    background-color: #F39304;
+    color: white;
+}
 
-    .column.logo-column {
-        display: block;
-    }
-    .column-main {
-        padding: 30px;
-        padding-top: 22vh;
-    }
+.second-button,
+.botton_menu {
+    background-color: white;
+    color: #F39304;
+    border: 2px solid #F39304;
+}
 
-    .column {
-        width: 100%;
-        padding-top: 12vh;
-        padding-right: 0;
-    }
+.centered-title,
+.title_alt,
+.tit_alt {
+    text-align: center;
+    color: #F39304;
+}
+.home_container h2 {
+    font-size: 6vh;
+}
+.home_container p, h3{
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+}
 
-    .column:first-child {
-        margin-left: 0;
-    }
+.home_container h3{
+    font-size: 4vh;
+}
 
-    .column:has(img) {
+.restaurant_image{
+    padding: 16vh;
+}
+
+.home_container img{
+    padding: 10vh;
+}
+@media (max-width: 768px) {
+    .centered-title{
+        padding-top: 30vh;
+    }
+    .home_container{
+        margin-bottom: 15vh;
+    }
+    .column.has-image {
         display: none;
-    }
-
-    .tit_alt .title_alt {
-        font-size: 4vh;
-    }
-    .new-section h1 {
-        font-size: 6vh;
-    }
-
-    .new-section h2 {
-        font-size: 4vh;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-
-    }
-
-    .button-container button {
-        padding: 8px 16px;
-        /* Adjust as needed */
-        font-size: 16px;
-        /* Adjust as needed */
     }
 }
