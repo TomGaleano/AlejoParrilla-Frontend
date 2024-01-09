@@ -1,9 +1,13 @@
 import "./Inicio.css";
-import restaurant from '../assets/image.png'; 
-import parrilla from '../assets/parrila.png'; 
+import restaurant from '../assets/image.png';
+import parrilla from '../assets/parrila.png';
 import bowl from '../assets/plato.png';
+import MenuGrid from './menu.tsx';
+import React, { useState } from 'react';
+
 
 export const Inicio = (): JSX.Element => {
+    const [category, setCategory] = useState('Carnes');
     return (
         <div>
             <div className="home_container">
@@ -16,7 +20,7 @@ export const Inicio = (): JSX.Element => {
                     </div>
                 </div>
                 <div className="column has-image">
-                    <img src={restaurant} alt="Descriptive text" className="restaurant_image"/>
+                    <img src={restaurant} alt="Descriptive text" className="restaurant_image" />
                 </div>
             </div>
             <div className="home_container">
@@ -51,6 +55,12 @@ export const Inicio = (): JSX.Element => {
                         <button className="botton_menu">Menú en línea</button>
                     </div>
                 </div>
+            </div>
+            <div className="menu">
+                <button onClick={() => setCategory('Carnes')}>Carnes</button>
+                <button onClick={() => setCategory('Bowls')}>Bowls</button>
+                <button onClick={() => setCategory('Ensaladas')}>Ensaladas</button>
+                <MenuGrid category={category} />
             </div>
         </div>
     );
