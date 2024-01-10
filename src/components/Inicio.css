@@ -3,6 +3,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
+    overflow: hidden;
 }
 
 .column-main {
@@ -52,34 +53,92 @@
     text-align: center;
     color: #F39304;
 }
+
 .home_container h2 {
     font-size: 6vh;
 }
-.home_container p, h3{
+
+.home_container p,
+h3 {
     color: white;
     font-size: larger;
     font-weight: 500;
 }
 
-.home_container h3{
+.home_container h3 {
     font-size: 4vh;
 }
 
-.restaurant_image{
+.restaurant_image {
     padding: 16vh;
 }
 
-.home_container img{
+.home_container img {
     padding: 10vh;
 }
+
+.menu {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menu_button {
+    padding: 1vh 3vh;
+    background-color: #F39304;
+    /* Green background */
+    /* Remove border */
+    color: white;
+    /* White text */
+    text-align: center;
+    /* Centered text */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Get it to line up items */
+    font-size: 16px;
+    /* Change text size */
+    cursor: pointer;
+    /* Mouse pointer on hover */
+    transition-duration: 0.4s;
+    /* Add transition (optional) */
+    transition: all 0.3s ease; /* Add transition for smooth size increase */
+    border-radius: 0; /* Remove rounded corners */
+    margin: 0.5em 0; /* Add some vertical space between buttons */
+}
+
+.menu_button:hover {
+    background-color: white;
+    /* White background */
+    color: black;
+    /* Black text */
+    transform: scale(1.06); /* Increase size */
+    font-size: 18px; /* Increase font size */
+}
+
+.menu_button.active {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+}
+
 @media (max-width: 768px) {
-    .centered-title{
+    .centered-title {
         padding-top: 30vh;
     }
-    .home_container{
+
+    .home_container {
         margin-bottom: 15vh;
     }
+
     .column.has-image {
         display: none;
+    }
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu_button {
+        width: 100%;
+        padding: 2vh 3vh;
     }
 }
