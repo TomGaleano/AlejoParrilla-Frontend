@@ -23,7 +23,7 @@ function Navbar() {
                         <a href="/about" className="header__nav-link">Menú</a>
                     </li>
                     <li className="header__nav-item">
-                        <a href="/contact" className="header__nav-link">Sobre nosotros</a>
+                        <a href="/sobre-nosotros" className="header__nav-link">Sobre nosotros</a>
                     </li>
                 </ul>
                 <button className='button__header'>Agenda tu mesa</button>

@@ -9,9 +9,15 @@ const Footer = () => {
             <div className="column logo-column">
                 <img src={logo} alt="Alejoparrilla's logo" className="footer-logo" />
                 <div className="social-icons">
-                    <FaInstagram color="white" className="social-icon-tw" />
-                    <FaFacebook color="white" className="social-icon-fa" />
-                    <img src={rappi} alt="Rappi logo" className="rappi-logo" />
+                    <a href="https://www.instagram.com/alejoparrillabog/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" rel="noopener noreferrer">
+                        <FaInstagram color="white" className="social-icon-tw" />
+                    </a>
+                    <a href="https://www.facebook.com/alejoparrillabog/?locale=es_LA" target="_blank" rel="noopener noreferrer">
+                        <FaFacebook color="white" className="social-icon-fa" />
+                    </a>
+                    <a href="https://www.rappi.com.co/restaurantes/900248801-alejo-parrilla" target="_blank" rel="noopener noreferrer">
+                        <img src={rappi} alt="Rappi logo" className="rappi-logo" />
+                    </a>
                 </div>
             </div>
             <div className="column">
