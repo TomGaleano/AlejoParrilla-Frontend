@@ -92,7 +92,7 @@
     font-family: Georgia, Times, serif;
     font-weight: 600;
     font-size: 1.325rem;
-    postition: relative;
+    position: relative;
     overflow: hidden;
     z-index: 1;
     background-color: var(--dark_purple);
