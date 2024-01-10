@@ -123,11 +123,17 @@ h3 {
 
 @media (max-width: 768px) {
     .centered-title {
-        padding-top: 30vh;
+        padding-top: 17vh;
+        font-size: 7vh;
     }
 
     .home_container {
         margin-bottom: 15vh;
+        padding: 4vh;
+    }
+
+    .home_container p {
+        font-size: large;
     }
 
     .column.has-image {

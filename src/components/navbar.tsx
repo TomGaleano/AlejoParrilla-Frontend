@@ -12,7 +12,7 @@ function Navbar() {
     return (
         <header className="header">
             <div className="header__logo">
-                <img src={logo} alt="Logo" /> {/* Use the imported image here */}
+                <img className="logo" src={logo} alt="Logo" /> {/* Use the imported image here */}
             </div>
             <nav className={`header__nav ${isOpen ? 'open' : ''}`}>
                 <ul className="header__nav-list">
