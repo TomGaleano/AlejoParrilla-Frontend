@@ -76,11 +76,14 @@ h3 {
 .home_container img {
     padding: 10vh;
 }
-
+.tit_alt {
+    margin-bottom: 0.2em; /* Adjust as needed */
+}
 .menu {
-    justify-content: space-around;
-    flex-wrap: wrap;
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu_button {
@@ -96,7 +99,7 @@ h3 {
     /* Remove underline */
     display: inline-block;
     /* Get it to line up items */
-    font-size: 16px;
+    font-size: 24px;
     /* Change text size */
     cursor: pointer;
     /* Mouse pointer on hover */
@@ -113,14 +116,13 @@ h3 {
     color: black;
     /* Black text */
     transform: scale(1.06); /* Increase size */
-    font-size: 18px; /* Increase font size */
+    font-size: 28px; /* Increase font size */
 }
 
 .menu_button.active {
     background-color: white; /* White background */
     color: black; /* Black text */
 }
-
 @media (max-width: 768px) {
     .centered-title {
         padding-top: 17vh;
