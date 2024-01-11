@@ -18,7 +18,7 @@ function App() {
     switch(view) {
       case 'Inicio':
         return <Inicio />;
-      case 'Sobrenosotros':
+      case 'Nosotros':
         return <Sobrenosotros />;
       case 'Menu':
         return <MenuGrid category="Carnes" />;

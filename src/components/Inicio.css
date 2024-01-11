@@ -123,6 +123,21 @@ h3 {
     background-color: white; /* White background */
     color: black; /* Black text */
 }
+
+.wave_spacer {
+    aspect-ratio: 900/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0%;
+}
+.wave_top{
+    background-image: url("../assets/wave-top.svg");
+}
+.wave_bottom{
+    background-image: url("../assets/wave-bottom.svg");
+}
 @media (max-width: 768px) {
     .centered-title {
         padding-top: 17vh;
