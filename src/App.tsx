@@ -22,6 +22,8 @@ function App() {
         return <Sobrenosotros />;
       case 'Menu':
         return <MenuGrid category="Carnes" />;
+      case 'Contacto':
+        return <div>Poner contacto aquí</div>;
       default:
         return <Inicio />;
     }

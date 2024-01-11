@@ -3,6 +3,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavBar.css";
 import logo from "../assets/LOGOO-300x114.png";
 
+const VIEWS = ['Inicio', 'Nosotros', 'Menu', 'Contacto'];
+
 function Navbar({ setView }: { setView: (view: string) => void }) {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -21,15 +23,11 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
             </div>
             <nav className={`header__nav ${isOpen ? 'open' : ''}`}>
                 <ul className="header__nav-list">
-                <li className="header__nav-item">
-                        <a onClick={() => handleLinkClick('Inicio')} className="header__nav-link">Inicio</a>
-                    </li>
-                    <li className="header__nav-item">
-                        <a onClick={() => handleLinkClick('Menu')} className="header__nav-link">Menú</a>
-                    </li>
-                    <li className="header__nav-item">
-                        <a onClick={() => handleLinkClick('Sobrenosotros')} className="header__nav-link">Sobre nosotros</a>
-                    </li>
+                    {VIEWS.map(view => (
+                        <li key={view} className="header__nav-item">
+                            <a onClick={() => handleLinkClick(view)} className="header__nav-link">{view}</a>
+                        </li>
+                    ))}
                 </ul>
                 <button className='button__header'>Agenda tu mesa</button>
                 <button className="header__nav-close-button" onClick={handleToggle}>
