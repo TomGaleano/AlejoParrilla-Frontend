@@ -109,11 +109,11 @@ body {
     font-weight: bold;
     color: #ffffff; /* You may want to set a contrasting text color */
     border: none; /* Remove default button border */
-    padding: 15px 40px; /* Add some padding */
+    padding: 20px 45px; /* Add some padding */
     cursor: pointer; /* Change cursor on hover */
     white-space: nowrap; /* Add this line */
     font-size: 20px; /* Increase the font size */
-    margin-right: 10vh;
+    margin-right: 2vh;
 }
 
 .button__header:hover {
@@ -153,7 +153,7 @@ body {
     .header__nav-list {
         flex-direction: column;
         margin-top: 30px;
-        
+        padding-right: 5vh;/* Esto centra el navbar NO BORRAR */
         justify-content: center;
         width: 100%;
     }
