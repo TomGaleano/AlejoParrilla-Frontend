@@ -8,7 +8,7 @@ import Footer from './components/footer.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Navbar setView={function (view: string): void {
+    <Navbar setView={function (view: string ): void {
       throw new Error('Function not implemented.')
     } } />
     <App />

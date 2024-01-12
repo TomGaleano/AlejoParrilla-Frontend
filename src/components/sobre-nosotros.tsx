@@ -1,5 +1,4 @@
 
-import React from 'react';
 import "./Inicio.css";
 
 export const Sobrenosotros = (): JSX.Element => {
