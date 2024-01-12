@@ -1,0 +1,52 @@
+.vinculate_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.vinculate_title {
+    text-align: center;
+    color: #F39304;
+}
+
+.vinculate_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.vinculate_form input,
+.vinculate_form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #F39304;
+    border-radius: 5px;
+}
+
+.vinculate_button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.vinculate_main-button,
+.vinculate_second-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.vinculate_main-button {
+    background-color: #F39304;
+    color: white;
+}
+
+.vinculate_second-button {
+    background-color: white;
+    color: #F39304;
+    border: 2px solid #F39304;
+}
