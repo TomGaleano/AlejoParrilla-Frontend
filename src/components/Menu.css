@@ -199,6 +199,17 @@
     font-style: italic;
     margin-top: 1rem;
   }
+  .carousel-item {
+    width: 100%;
+  }
+  .carousel .slide {
+    width: 25%; /* Show 4 items at once */
+  }
+  
+  .carousel.carousel-slider .control-arrow {
+    /* Adjust the position of the arrows */
+    top: 50%;
+  }
   
   @keyframes fly-in {
     0% {

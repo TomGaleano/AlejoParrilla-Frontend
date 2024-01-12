@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Menu.css';
+import Carousal from "@itseasy21/react-elastic-carousel";
 
 interface MenuItem {
     id: number;
@@ -24,21 +25,17 @@ function MenuGrid({ category }: MenuGridProps) {
     }, [category]);
 
     return (
-        <div className="cards">
-            {items.map(item => (
-                <div key={item.id} className="cards_item">
-                    <div className="card">
-                        <div className="card_image">
-                            <img src={item.image} alt={item.name} />
-                        </div>
-                        <div className="card_content">
-                            <h2 className="card_title">{item.name} - ${item.price}</h2>
-                            <p className="card_text">{item.description}</p>
-                        </div>
-                    </div>
+        <Carousal isRTL={false} itemsToShow={4} itemsToScroll={4}>
+        {items.map(item => (
+            <div className= "carousel-item" key={item.id}>
+                <img src={item.image} alt={item.name} />
+                <div className="card_content">
+                    <h2 className="card_title">{item.name} - ${item.price}</h2>
+                    <p className="card_text">{item.description}</p>
                 </div>
-            ))}
-        </div>
+            </div>
+        ))}
+    </Carousal>
     );
 }
 
