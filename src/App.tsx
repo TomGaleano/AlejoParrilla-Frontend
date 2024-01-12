@@ -23,7 +23,7 @@ function App() {
         return <Inicio />;
       case 'Nosotros':
         return <Sobrenosotros />;
-      case 'Menu':
+      case 'Menú':
         return <div style={{ paddingTop: '10vh', paddingBottom: '20px' }}><MenuGrid /></div>;
       case 'Contacto':
         return <div>Poner contacto aquí</div>;
