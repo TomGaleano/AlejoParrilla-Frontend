@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Menu.css';
+import "./Inicio.css";
 import Carousal from "@itseasy21/react-elastic-carousel";
 
 interface MenuItem {
@@ -11,11 +12,10 @@ interface MenuItem {
     image: string;
     is_available: boolean;
 }
-interface MenuGridProps {
-    category: string;
-}
-function MenuGrid({ category }: MenuGridProps) {
+
+function MenuGrid() {
     const [items, setItems] = useState<MenuItem[]>([]);
+    const [category, setCategory] = useState('Carnes');
 
     useEffect(() => {
         fetch(`http://localhost:3000/api/filtermenu?category=${category}`)
@@ -25,17 +25,63 @@ function MenuGrid({ category }: MenuGridProps) {
     }, [category]);
 
     return (
-        <Carousal isRTL={false} itemsToShow={4} itemsToScroll={4}>
-        {items.map(item => (
-            <div className= "carousel-item" key={item.id}>
-                <img src={item.image} alt={item.name} />
-                <div className="card_content">
-                    <h2 className="card_title">{item.name} - ${item.price}</h2>
-                    <p className="card_text">{item.description}</p>
+        <div className="home_container">
+            <div className="column" >
+                <h2 className="tit_alt">Nuestro menú</h2>
+                <p>Nuestro menu tiene diferentes variedades de platos distribuidos entre carnes, pescados, comidas rapidas, bolws y demas.</p>
+                <div className="menu">
+                    <div className="category_selector">
+                        <button
+                            className={`menu_button ${category === 'Carnes' ? 'active' : ''}`}
+                            onClick={() => setCategory('Carnes')}
+                        >
+                            Carnes
+                        </button>
+                        <button
+                            className={`menu_button ${category === 'Bowls' ? 'active' : ''}`}
+                            onClick={() => setCategory('Bowls')}
+                        >
+                            Bowls
+                        </button>
+                        <button
+                            className={`menu_button ${category === 'Ensaladas' ? 'active' : ''}`}
+                            onClick={() => setCategory('Ensaladas')}
+                        >
+                            Ensaladas
+                        </button>
+                        <button
+                            className={`menu_button ${category === 'Pescados' ? 'active' : ''}`}
+                            onClick={() => setCategory('Pescados')}
+                        >
+                            Pescados
+                        </button>
+                        <button
+                            className={`menu_button ${category === 'Menu Infantil' ? 'active' : ''}`}
+                            onClick={() => setCategory('Menu Infantil')}
+                        >
+                            Menu Infantil
+                        </button>
+                        <button
+                            className={`menu_button ${category === 'Tipicos' ? 'active' : ''}`}
+                            onClick={() => setCategory('Tipicos')}
+                        >
+                            Típicos
+                        </button>
+                    </div>
+                    <Carousal isRTL={false} itemsToShow={4} itemsToScroll={4}>
+                        {items.map(item => (
+                            <div className="carousel-item" key={item.id}>
+                                <img src={item.image} alt={item.name} />
+                                <div className="card_content">
+                                    <h2 className="card_title">{item.name} - ${item.price}</h2>
+                                    <p className="card_text">{item.description}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </Carousal>
                 </div>
             </div>
-        ))}
-    </Carousal>
+        </div>
     );
 }
 
