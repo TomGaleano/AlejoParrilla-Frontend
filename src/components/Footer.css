@@ -1,12 +1,18 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
-    background-color: rgb(17, 16, 33);
-    color: #fff;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    background-color: var(--color-our-blue-light);
+    color: var(--color-white);
 }
 
 .footer .column {
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center; /* vertically center */
     flex: 1;
     margin-right: 20px;
     overflow: auto;
@@ -18,6 +24,7 @@
 
 .footer img {
     max-width: 100%;
+
 }
 
 .footer .social-icons {
@@ -39,6 +46,7 @@
 .footer .hours, .footer p {
     margin: 0;
     margin-top: 10px;
+    font-size: 19px;
 }
 .footer-logo {
     width: 30vh;

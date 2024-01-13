@@ -1,8 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
-    font-family: 'David Libre', serif;
-}
+    padding: 0;}
 .logo {
     max-width: 200px;
     max-height: 15vh;
@@ -39,9 +37,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 5px 50px;
+    padding: 10px 50px;
     padding-top: 20px;
-    background-color: #111021;
+    background-color: var(--color-our-blue);
     z-index: 1000; /* This ensures the navbar stays on top of other elements */
     transition: all 0.3s ease;
 }
@@ -54,7 +52,7 @@ body {
 }
 
 .header__nav-link {
-    color: #fff;
+    color: var(--color-white);
     text-decoration: none;
     margin: 0 15px;
     transition: color 0.3s ease;
@@ -62,7 +60,7 @@ body {
 }
 
 .header__nav-link:hover {
-    color: #f4a261;
+    color: var(--color-our-orange);
 }
 
 .header__toggle-button {
@@ -105,7 +103,7 @@ body {
     font-size: 24px;
 }
 .button__header {
-    background-color: #F39304;
+    background-color: var(--color-our-orange);
     font-weight: bold;
     color: #ffffff; /* You may want to set a contrasting text color */
     border: none; /* Remove default button border */
@@ -113,11 +111,27 @@ body {
     cursor: pointer; /* Change cursor on hover */
     white-space: nowrap; /* Add this line */
     font-size: 20px; /* Increase the font size */
-    margin-right: 2vh;
+    margin-right: 10vh;
+    border-radius: 50px;
 }
 
 .button__header:hover {
-    background-color: #F39304; /* Darken the button color slightly on hover */
+    background-color: var(--color-our-orange); 
+}
+
+
+
+
+.header__spacer{
+    aspect-ratio: 1080/50;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0%;
+}
+.header__top{
+    background-image: url("../assets/test-wave-navbar.svg");
 }
 @media (max-width: 768px) {
     .header {

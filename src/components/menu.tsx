@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import './Menu.css';
 import "./Inicio.css";
 import Carousal from "@itseasy21/react-elastic-carousel";
 
@@ -16,6 +15,8 @@ interface MenuItem {
 function MenuGrid() {
     const [items, setItems] = useState<MenuItem[]>([]);
     const [category, setCategory] = useState('Carnes');
+    const categories = ['Carnes', 'Bowls', 'Ensaladas', 'Pescados', 'Menu Infantil', 'Típicos'];
+
 
     useEffect(() => {
         fetch(`http://localhost:3000/api/filtermenu?category=${category}`)
@@ -27,46 +28,19 @@ function MenuGrid() {
     return (
         <div className="home_container">
             <div className="column" >
-                <h2 className="tit_alt">Nuestro menú</h2>
-                <p>Nuestro menu tiene diferentes variedades de platos distribuidos entre carnes, pescados, comidas rapidas, bolws y demas.</p>
+                <h2 className="menu_title">Nuestro menú</h2>
+                <p style={{ paddingLeft: '12vh', paddingRight: '12vh' }}>Nuestro menu tiene diferentes variedades de platos distribuidos entre carnes, pescados, comidas rapidas, bolws y demas.</p>
                 <div className="menu">
-                    <div className="category_selector">
-                        <button
-                            className={`menu_button ${category === 'Carnes' ? 'active' : ''}`}
-                            onClick={() => setCategory('Carnes')}
-                        >
-                            Carnes
-                        </button>
-                        <button
-                            className={`menu_button ${category === 'Bowls' ? 'active' : ''}`}
-                            onClick={() => setCategory('Bowls')}
-                        >
-                            Bowls
-                        </button>
-                        <button
-                            className={`menu_button ${category === 'Ensaladas' ? 'active' : ''}`}
-                            onClick={() => setCategory('Ensaladas')}
-                        >
-                            Ensaladas
-                        </button>
-                        <button
-                            className={`menu_button ${category === 'Pescados' ? 'active' : ''}`}
-                            onClick={() => setCategory('Pescados')}
-                        >
-                            Pescados
-                        </button>
-                        <button
-                            className={`menu_button ${category === 'Menu Infantil' ? 'active' : ''}`}
-                            onClick={() => setCategory('Menu Infantil')}
-                        >
-                            Menu Infantil
-                        </button>
-                        <button
-                            className={`menu_button ${category === 'Tipicos' ? 'active' : ''}`}
-                            onClick={() => setCategory('Tipicos')}
-                        >
-                            Típicos
-                        </button>
+                    <div className="menu_selector">
+                        {categories.map((categoryItem) => (
+                            <a
+                                key={categoryItem}
+                                className={`menu_button ${category === categoryItem ? 'active' : ''}`}
+                                onClick={() => setCategory(categoryItem)}
+                            >
+                                {categoryItem}
+                            </a>
+                        ))}
                     </div>
                     <Carousal isRTL={false} itemsToShow={4} itemsToScroll={4}>
                         {items.map(item => (
