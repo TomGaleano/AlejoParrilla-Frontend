@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Inicio } from './components/inicio';
 import { Sobrenosotros } from './components/sobre-nosotros';
+// import {restaurantField} from './components/restaurantField.tsx';
 import Navbar from './components/navbar';
 import MenuGrid from './components/menu';
+
 
 //import ReactGA from 'react-ga';
 
@@ -27,6 +29,8 @@ function App() {
         return <div style={{ paddingTop: '10vh', paddingBottom: '20px' }}><MenuGrid /></div>;
       case 'Contacto':
         return <div>Poner contacto aquí</div>;
+      case 'Restaurantes':
+        return <div>Restaurantes</div>;
       default:
         return <Inicio />;
     }
