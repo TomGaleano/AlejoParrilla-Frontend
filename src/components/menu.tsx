@@ -29,7 +29,7 @@ function MenuGrid() {
         <div className="home_container">
             <div className="column" >
                 <h2 className="menu_title">Nuestro menú</h2>
-                <p style={{ paddingLeft: '12vh', paddingRight: '12vh' }}>Nuestro menu tiene diferentes variedades de platos distribuidos entre carnes, pescados, comidas rapidas, bolws y demas.</p>
+                <p className="menu_paragraph">Nuestro menu tiene diferentes variedades de platos distribuidos entre carnes, pescados, comidas rapidas, bolws y demas.</p>
                 <div className="menu">
                     <div className="menu_selector">
                         {categories.map((categoryItem) => (

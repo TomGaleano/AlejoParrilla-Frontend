@@ -34,7 +34,7 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
                     <FaTimes />
                 </button>
             </nav>
-            <button className="header__toggle-button" onClick={handleToggle}>
+            <button className={`header__nav-open-button ${isOpen ? 'hide' : ''}`} onClick={handleToggle}>
                 <FaBars />
             </button>
         </header>

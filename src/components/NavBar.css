@@ -5,6 +5,7 @@ body {
     max-width: 200px;
     max-height: 15vh;
 }
+
 .header__logo {
     padding-left: 20px; /* Adjust as needed */
     max-width: 200px; /* Adjust as needed */
@@ -51,6 +52,7 @@ body {
     list-style: none;
 }
 
+
 .header__nav-link {
     color: var(--color-white);
     text-decoration: none;
@@ -63,13 +65,6 @@ body {
     color: var(--color-our-orange);
 }
 
-.header__toggle-button {
-    color: #fff;
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: none;
-}
 .header__nav-link {
     text-decoration: none;
     color: #fff;
@@ -77,28 +72,18 @@ body {
     transition: color 0.3s ease;
 }
 .header__nav-item {
-    /* existing styles... */
-    cursor: pointer; /* Change cursor to pointer */
+    cursor: pointer;
 }
 
 .header__nav-link:hover {
     color: #f4a261;
 }
 
-.header__nav-close-button,
-.header__toggle-button {
+.header__nav-open-button, .header__nav-close-button {
     background: none;
     border: none;
     cursor: pointer;
     display: none;
-}
-
-.header__nav-close-button {
-    color: #fff;
-    font-size: 24px;
-}
-
-.header__toggle-button {
     color: #fff;
     font-size: 24px;
 }
@@ -110,17 +95,14 @@ body {
     padding: 20px 45px; /* Add some padding */
     cursor: pointer; /* Change cursor on hover */
     white-space: nowrap; /* Add this line */
-    font-size: 20px; /* Increase the font size */
+    font-size: 20px; 
     margin-right: 10vh;
     border-radius: 50px;
 }
 
 .button__header:hover {
-    background-color: var(--color-our-orange); 
+    background-color: var(--color-our-orange-light);
 }
-
-
-
 
 .header__spacer{
     aspect-ratio: 1080/50;
@@ -154,7 +136,7 @@ body {
         right: 0;
         height: 100vh;
         width: 100%;
-        background-color: #05031A;
+        background-color: var(--color-our-blue);
         display: flex;
         flex-direction: column;
         justify-content: center; /* Align items in the center */
@@ -167,7 +149,7 @@ body {
     .header__nav-list {
         flex-direction: column;
         margin-top: 30px;
-        padding-right: 5vh;/* Esto centra el navbar NO BORRAR */
+        padding-right: 4.5vh;/* Esto centra el navbar NO BORRAR */
         justify-content: center;
         width: 100%;
     }
@@ -181,17 +163,16 @@ body {
         transform: translateX(0);
     }
 
-    .header__nav-close-button {
+    
+    
+    .header__nav-open-button, .header__nav-close-button  {
         display: block;
         position: absolute; /* Position the button absolutely */
         top: 48px; /* Position it 20px from the top */
         right: 35px; /* Position it 20px from the right */
-    }
-    
-    .header__toggle-button {
         display: block;
         align-self: center;
-        margin-right: 10px;
+        margin-right: 4vh;
     }
     .button__header {
         position: fixed; /* Fix the position of the button */
@@ -200,4 +181,8 @@ body {
         left: 52%; /* Center it horizontally */
         transform: translateX(-50%); /* Adjust for the width of the button */
     }
+    .header__nav-open-button.hide {
+        display: none;
+    }
+    
 }

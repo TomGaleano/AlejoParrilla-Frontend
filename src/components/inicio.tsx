@@ -9,7 +9,7 @@ export const Inicio = (): JSX.Element => {
 
     return (
         <div>
-            <div className="home_container">
+            <div className="home_container landing">
                 <div className="column-main">
                     <div>
                         <h1 className="title">Bienvenido a AlejoParrilla</h1>
