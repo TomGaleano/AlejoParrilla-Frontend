@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "name": "Alejo Parrilla C.C. Diver Plaza",
+        "phone": "3504746586",
+        "address" : "Calle 152B # 58C - 50",
+        "description": "Una hermosa -----",
+        "image":"../images/bruschetta.jpeg/",
+        "schedule": {
+            "monday": "8:00 - 22:00",
+            "tuesday": "8:00 - 22:00",
+            "wednesday": "8:00 - 22:00",
+            "thursday": "8:00 - 22:00",
+            "friday": "8:00 - 22:00",
+            "saturday": "8:00 - 22:00",
+            "sunday": "8:00 - 22:00"
+        },
+        "url": "https://maps.app.goo.gl/8J9C7hxTaS3LjpbE7"
+    },
+    {
+        "id": 2,
+        "name": "Alejo Parrilla C.C. Nuestro Bogotá",
+        "phone": "+57 3214607611",
+        "address" : "Cra. 86 #55a-75, Bogotá D.C.",
+        "description": "“¡Bienvenido a Alejo Parrilla! Somos un restaurante especializado en parrilla y platos típicos colombianos desde 1999. Visítanos en nuestra sucursal en el Centro Comercial de Nuestro Bogotá. ",
+        "image":"./images/alejoparrilla.png",
+        "schedule": {
+            "monday": "8:00 - 22:00",
+            "tuesday": "8:00 - 22:00",
+            "wednesday": "8:00 - 22:00",
+            "thursday": "8:00 - 22:00",
+            "friday": "8:00 - 22:00",
+            "saturday": "8:00 - 22:00",
+            "sunday": "8:00 - 22:00"
+        },
+        "url": "https://maps.app.goo.gl/T9eJiWSRJQnjR5jz5"
+
+    },
+    {
+        "id": 3,
+        "name": "Restaurante Alejo Parrilla",
+        "phone": "3504746586",
+        "address" : "Dg. 25g #95a - 85, Bogotá",
+        "description": "Una hermosa -----",
+        "image":"./images/restaurante-alejo-parrilla.png",
+        "schedule": {
+            "monday": "8:00 - 22:00",
+            "tuesday": "8:00 - 22:00",
+            "wednesday": "8:00 - 22:00",
+            "thursday": "8:00 - 22:00",
+            "friday": "8:00 - 22:00",
+            "saturday": "8:00 - 22:00",
+            "sunday": "8:00 - 22:00"
+        },
+        "url": "https://maps.app.goo.gl/QoUBnV93dMq7szJc8"
+    },
+    {
+        "id": 4,
+        "name": "Alejo Parrilla Fontibón",
+        "phone": "3504746586",
+        "address" : "Calle 152B # 58C - 50",
+        "description": "Una hermosa -----",
+        "image":"../images/bruschetta.jpeg/",
+        "schedule": {
+            "monday": "8:00 - 22:00",
+            "tuesday": "8:00 - 22:00",
+            "wednesday": "8:00 - 22:00",
+            "thursday": "8:00 - 22:00",
+            "friday": "8:00 - 22:00",
+            "saturday": "8:00 - 22:00",
+            "sunday": "8:00 - 22:00"
+        },
+        "url": "https://maps.app.goo.gl/ec2QJUCJskixFY578"
+    }
+]

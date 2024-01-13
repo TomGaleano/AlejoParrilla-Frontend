@@ -4,7 +4,7 @@ import App from './App.tsx'
 import './index.css'
 import Navbar from './components/navbar.tsx'
 import Footer from './components/footer.tsx'
-
+import DetallesRestaurante from './components/restaurant.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
