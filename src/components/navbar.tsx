@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavBar.css";
 import logo from "../assets/LOGOO-300x114.png";
 
-const VIEWS = ['Inicio', 'Nosotros', 'Menú', 'Contacto'];
+const VIEWS = ['Inicio', 'Nosotros', 'Menu', 'Vinculate'];
 
 function Navbar({ setView }: { setView: (view: string) => void }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +16,7 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
         setView(view);
         handleToggle();
     };
+    
     return (
         <header className="header">
             <div className="header__logo">
@@ -34,7 +35,7 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
                     <FaTimes />
                 </button>
             </nav>
-            <button className="header__toggle-button" onClick={handleToggle}>
+            <button className={`header__nav-open-button ${isOpen ? 'hide' : ''}`} onClick={handleToggle}>
                 <FaBars />
             </button>
         </header>

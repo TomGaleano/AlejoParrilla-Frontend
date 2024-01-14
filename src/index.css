@@ -1,71 +1,14 @@
 :root {
-  font-family: 'David Libre', serif;
-  line-height: 1.5;
-  font-weight: 500;
-  font-size: 1.2em;
-
-  color-scheme: light dark;
-  color: rgba(182, 0, 0, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-body, html {
-  margin: 0;
-  padding: 0;
-  background-color: #111021;
+  --font-family-inter: 'Inter', sans-serif;
+  --color-white: #ffffff;
+  --color-our-blue: #0A4059;
+  --color-our-blue-light: #204f64;
+  --color-our-blue-gray: #475B70;
+  --color-our-orange: #F39B37;
+  --color-our-orange-light: #ecaa5e;
 }
 
-/* Modify your Inicio component */
-.Inicio {
-  height: calc(100vh - 14vh);
-  /* other styles */
-}
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #ffffff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+body {
+  font-family: var(--font-family-inter);
+  background-color: var(--color-our-blue-gray);
 }

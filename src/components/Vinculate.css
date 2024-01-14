@@ -1,0 +1,210 @@
+.vinculate__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 2%;
+}
+
+.MapComponent {
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+
+@keyframes borderGlow {
+    0% {
+        border-color: #111021;
+    }
+
+    50% {
+        border-color: #F39304;
+    }
+
+    100% {
+        border-color: #111021;
+    }
+}
+
+@keyframes shadowGlow {
+    0% {
+        box-shadow: inset 0 0 10px #111021;
+    }
+
+    50% {
+        box-shadow: inset 0 0 10px #F39304;
+    }
+
+    100% {
+        box-shadow: inset 0 0 10px #111021;
+    }
+}
+
+.MapComponent iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    /* Añade bordes redondeados al mapa */
+}
+
+.vinculate_title {
+    text-align: center;
+    color: #F39304;
+    font-size: 2em;
+    /* Aumenta el tamaño de la fuente */
+    font-weight: bold;
+    /* Hace el texto en negrita */
+    margin-bottom: 20px;
+    /* Añade un margen inferior para separar el título del contenido */
+}
+
+.vinculate_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.vinculate_form input,
+.vinculate_form textarea,
+.vinculate_form select {
+    padding: 10px;
+    border: 1px solid #111021;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+    box-shadow: inset 0 0 10px #111021;
+    background-color: white;
+    /* Añade una sombra interna con el color #111021 */
+    animation: borderGlow 2s infinite, shadowGlow 2s infinite;
+    /* Aplica ambas animaciones */
+}
+
+.vinculate_form input::placeholder,
+.vinculate_form textarea::placeholder,
+.vinculate_form select::placeholder {
+    color: #111021;
+    /* Cambia el color del texto del marcador de posición */
+}
+
+.vinculate_form input:focus,
+.vinculate_form textarea:focus,
+.vinculate_form select:focus {
+    outline: none;
+    /* Cambia el color del borde a #F39304 cuando el elemento está enfocado */
+}
+
+.vinculate_button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.vinculate_main-button,
+.vinculate_second-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.vinculate_main-button {
+    background-color: #F39304;
+    color: #111021;
+    border: 2px solid #F39304;
+}
+
+.vinculate_main-button:hover {
+    transform: scale(1.05);
+    background-color: #fca727;
+    border: 2px solid #fca727;
+}
+
+.vinculate_second-button {
+    background-color: white;
+    color: #111021;
+    border: 2px solid #F39304;
+}
+
+.vinculate_second-button:hover {
+    transform: scale(1.05);
+    border-color: #F39304;
+    background-color: #F39304;
+    color: rgb(255, 255, 255);
+}
+
+.img_container {
+    background-image: url('../assets/vinculate.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 6.5%;
+}
+
+.img_container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.img_container h1 {
+    position: relative;
+    color: white;
+    z-index: 1;
+    text-align: center;
+    /* Centra el texto */
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    .vinculate__container {
+        flex-direction: column;
+    }
+
+    .vinculate_form,
+    .MapComponent {
+        max-width: 100%;
+    }
+
+    .img_container h1 {
+        font-size: 1.4em;
+    }
+
+    .vinculate_button-container {
+        flex-direction: column;
+    }
+
+    .vinculate_main-button,
+    .vinculate_second-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .img_container {
+        height: 30vh;
+        /* Ajusta la altura para pantallas medianas */
+        margin-top: 10%;
+        /* Ajusta el margen superior para pantallas medianas */
+    }
+}
