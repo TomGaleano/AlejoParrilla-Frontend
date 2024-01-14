@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Inicio } from './components/inicio';
 import { Sobrenosotros } from './components/sobre-nosotros';
-// import {restaurantField} from './components/restaurantField.tsx';
 import Navbar from './components/navbar';
 import MenuGrid from './components/menu';
 

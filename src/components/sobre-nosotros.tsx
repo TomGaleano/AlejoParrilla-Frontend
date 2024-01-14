@@ -1,7 +1,6 @@
 
 import "./Inicio.css";
 import lomo from "../assets/lomo.png";
-import DetallesRestaurante from "./restaurant";
 import Carousel from "./carousel";
 
 export const Sobrenosotros = (): JSX.Element => {
