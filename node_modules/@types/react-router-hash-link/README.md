@@ -1,0 +1,36 @@
+# Installation
+> `npm install --save @types/react-router-hash-link`
+
+# Summary
+This package contains type definitions for react-router-hash-link (https://github.com/rafgraph/react-router-hash-link).
+
+# Details
+Files were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react-router-hash-link.
+## [index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react-router-hash-link/index.d.ts)
+````ts
+import * as React from "react";
+import { LinkProps, NavLinkProps } from "react-router-dom";
+
+export interface HashLinkProps extends LinkProps {
+    elementId?: string | undefined;
+    smooth?: boolean | undefined;
+    scroll?: ((element: HTMLElement) => void) | undefined;
+    timeout?: number | undefined;
+}
+
+export interface NavHashLinkProps extends NavLinkProps, Omit<HashLinkProps, "className" | "style"> {}
+
+export const HashLink: React.ForwardRefExoticComponent<HashLinkProps & React.RefAttributes<HTMLAnchorElement>>;
+
+export const NavHashLink: React.ForwardRefExoticComponent<NavHashLinkProps & React.RefAttributes<HTMLAnchorElement>>;
+
+export function genericHashLink<P>(Component: React.FunctionComponent<P>): React.FunctionComponent<P>;
+
+````
+
+### Additional Details
+ * Last updated: Tue, 07 Nov 2023 09:09:39 GMT
+ * Dependencies: [@types/history](https://npmjs.com/package/@types/history), [@types/react](https://npmjs.com/package/@types/react), [@types/react-router-dom](https://npmjs.com/package/@types/react-router-dom)
+
+# Credits
+These definitions were written by [Sam Baeck](https://github.com/zoompie), [Michael Vasyliv](https://github.com/michael-vasyliv), and [Eli Robinson](https://github.com/EliRobinson).

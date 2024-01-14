@@ -2,11 +2,11 @@ import "./Inicio.css";
 import restaurant from '../assets/image.png';
 import parrilla from '../assets/parrila.png';
 import MenuGrid from './menu.tsx';
-import { useState } from 'react';
 
 
 export const Inicio = (): JSX.Element => {
-    const [category, setCategory] = useState('Carnes');
+
+
     return (
         <div>
             <div className="home_container">
@@ -42,57 +42,7 @@ export const Inicio = (): JSX.Element => {
 
                 </div>
             </div>
-
-            <div className="home_container">
-
-                <div className="column">
-                    <h2 className="tit_alt">Nuestro menú</h2>
-                    <p>Nuestro menu tiene diferentes variedades de platos distribuidos entre carnes, pescados, comidas rapidas, bolws y demas.</p>
-                    <div className="menu">
-                        <div className="category_selector">
-                            <button
-                                className={`menu_button ${category === 'Carnes' ? 'active' : ''}`}
-                                onClick={() => setCategory('Carnes')}
-                            >
-                                Carnes
-                            </button>
-                            <button
-                                className={`menu_button ${category === 'Bowls' ? 'active' : ''}`}
-                                onClick={() => setCategory('Bowls')}
-                            >
-                                Bowls
-                            </button>
-                            <button
-                                className={`menu_button ${category === 'Ensaladas' ? 'active' : ''}`}
-                                onClick={() => setCategory('Ensaladas')}
-                            >
-                                Ensaladas
-                            </button>
-                            <button
-                                className={`menu_button ${category === 'Pescados' ? 'active' : ''}`}
-                                onClick={() => setCategory('Pescados')}
-                            >
-                                Pescados
-                            </button>
-                            <button
-                                className={`menu_button ${category === 'Menu Infantil' ? 'active' : ''}`}
-                                onClick={() => setCategory('Menu Infantil')}
-                            >
-                                Menu Infantil
-                            </button>
-                            <button
-                                className={`menu_button ${category === 'Tipicos' ? 'active' : ''}`}
-                                onClick={() => setCategory('Tipicos')}
-                            >
-                                Típicos
-                            </button>
-                        </div>
-                        <MenuGrid category={category} />
-                    </div>
-
-
-                </div>
-            </div>
+            <MenuGrid />
         </div>
     );
 };

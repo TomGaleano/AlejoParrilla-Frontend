@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Inicio } from './components/inicio';
 import { Sobrenosotros } from './components/sobre-nosotros';
 import { Vinculate } from './components/vinculate';
 import MenuGrid from './components/menu';
 import Navbar from './components/navbar';
+import MenuGrid from './components/menu';
 
 //import ReactGA from 'react-ga';
 
@@ -13,7 +14,10 @@ import Navbar from './components/navbar';
 
 
 function App() {
+
   const [view, setView] = useState('Inicio');
+
+
 
   const renderView = () => {
     switch (view) {
@@ -21,10 +25,10 @@ function App() {
         return <Inicio />;
       case 'Nosotros':
         return <Sobrenosotros />;
-      case 'Menu':
-        return <MenuGrid category="Carnes" />;
       case 'Vinculate':
         return <Vinculate />;
+      case 'Menú':
+        return <div style={{ paddingTop: '10vh', paddingBottom: '20px' }}><MenuGrid /></div>;
       default:
         return <Inicio />;
     }
