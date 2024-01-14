@@ -85,6 +85,19 @@
     font-weight: 500;
 }
 
+.tit-sobre-nosotros{
+    text-align: center;
+    padding-top: 9vh;
+}
+.sobre-nosotros p{
+    padding-top: 0.1vh;
+    padding-bottom: 0.1vh;
+    font-size: 3vh;
+    padding-left: 12vh;
+}
+.insights p{
+    font-size: 2.4vh;
+}
 /*Definición de imágenes y sus propiedades*/
 
 .restaurant_image {
@@ -154,7 +167,7 @@
 
 /*Definición de la sección blanca en sobre nosotros y sus propiedades*/
 .wave_spacer {
-    aspect-ratio: 900/100;
+    aspect-ratio: 900/200;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -174,7 +187,7 @@
 /*Definición de mobile*/
 @media (max-width: 768px) {
     .landing {
-        margin-top: 15vh;
+        margin-top: 40%;
     }
 
     .home_container {
@@ -186,9 +199,14 @@
         padding-left: 0vh;
     }
 
-    .title {
+    .title, .title_alt, .menu_title {
         padding-top: 8vh;
-        font-size: 7vh;
+        font-size: 6vh;
+        }
+    .tit-sobre-nosotros{
+        padding-left: 4vh;
+        text-align: left;
+        font-size: 6vh;
     }
     
     .subtitle {
@@ -196,9 +214,11 @@
     }
 
     .home_container p {
-        font-size: 3vh;
+        font-size: 2.7vh;
     }
-
+    .p-sobre-nosotros {
+        font-size: 2vh;
+    }
     .main-button, .second-button {
         font-size: 2vh; /* Adjust as needed */
     }
@@ -242,5 +262,19 @@
     .menu_paragraph {
         padding-left: 1vh;
         padding-right: 1vh;
+    }
+    .sobre-nosotros{
+        padding-left: 0vh;
+        margin-bottom: 0vh;
+    }
+    .sobre-nosotros h2{
+        font-size: 4.6vh;    
+    }
+    .sobre-nosotros p{
+        padding-left: 0vh;
+        font-size: 2.5vh;
+    }
+    .insights p{
+        font-size: 1.8vh;
     }
 }
