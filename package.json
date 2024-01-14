@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.19.2",
     "@itseasy21/react-elastic-carousel": "^0.12.3",
     "@material/web": "^1.1.1",
     "@svgr/webpack": "^8.1.0",
