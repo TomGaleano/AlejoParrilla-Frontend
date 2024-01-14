@@ -1,93 +1,87 @@
 .card {
-    max-width: 325px;
-    border-radius: 0.5rem;
-    background-color: #131322;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    border: 1px solid transparent;
-    padding: 0.9rem;
-    min-width:200px;
-  }
-  
-  .card a {
-    text-decoration: none
-  }
-  
-  .content {
-    padding: 0.1rem;
-  }
-  
-  .image {
-    object-fit: cover;
-    width: 100%;
-    height: 150px;
-  }
-  
-  .title {
-    color: #F18F20;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    font-weight: 600;
-  }
-  
-  .desc {
-    margin-top: 0.5rem;
-    color: #ffffff;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    text-align: justify;
-  }
-  
-  .action {
-    --color: #F18F20;
-    font-family: inherit;
-    display: flex;
-    width: 8em;
-    height: 2.6em;
-    line-height: 2.5em;
-    margin: 20px;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid var(--color);
-    transition: color .5s;
-    z-index: 1;
-    font-size: 17px;
-    border-radius: 6px;
-    font-weight: 500;
-    color: var(--color);
-    justify-content:center;
-    align-items:center;
+  border-radius: 0.5rem;
+  background-color: #131322;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  height: fit-content;
+  width: min-content;
+  margin: 0 1rem;
 }
-   
-   .action:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: var(--color);
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-   }
-   
-   .action:hover {
-    color: #fff;
-   }
-   
-   .action:before {
-    top: 100%;
-    left: 100%;
-    transition: all .7s;
-   }
-   
-   .action:hover:before {
-    top: -30px;
-    left: -30px;
-   }
-   
-   .action:active:before {
-    background: #F18F20;
-    transition: background 0s;
-   }
 
-   .description{
-    color: #ffffff;
-   }
+.card a {
+  text-decoration: none
+}
+
+.content {
+  padding: 0.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.title {
+  color: #F18F20;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: justify;
+}
+
+.action {
+  --color: #F18F20;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+ }
+ 
+ .action:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+ }
+ 
+ .action:hover {
+  color: #fff;
+ }
+ 
+ .action:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+ }
+ 
+ .action:hover:before {
+  top: -30px;
+  left: -30px;
+ }
+ 
+ .action:active:before {
+  background: #F18F20;
+  transition: background 0s;
+ }

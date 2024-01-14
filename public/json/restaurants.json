@@ -5,7 +5,7 @@
         "phone": "3504746586",
         "address" : "Calle 152B # 58C - 50",
         "description": "Una hermosa -----",
-        "image":"../images/bruschetta.jpeg/",
+        "image":"./images/alejo-parrilla-1.jpg",
         "schedule": {
             "monday": "8:00 - 22:00",
             "tuesday": "8:00 - 22:00",
@@ -23,7 +23,7 @@
         "phone": "+57 3214607611",
         "address" : "Cra. 86 #55a-75, Bogotá D.C.",
         "description": "“¡Bienvenido a Alejo Parrilla! Somos un restaurante especializado en parrilla y platos típicos colombianos desde 1999. Visítanos en nuestra sucursal en el Centro Comercial de Nuestro Bogotá. ",
-        "image":"./images/alejoparrilla.png",
+        "image":"./images/alejo-parrilla-2.jpg",
         "schedule": {
             "monday": "8:00 - 22:00",
             "tuesday": "8:00 - 22:00",
@@ -42,7 +42,7 @@
         "phone": "3504746586",
         "address" : "Dg. 25g #95a - 85, Bogotá",
         "description": "Una hermosa -----",
-        "image":"./images/restaurante-alejo-parrilla.png",
+        "image":"./images/alejo-parrilla-3.jpg",
         "schedule": {
             "monday": "8:00 - 22:00",
             "tuesday": "8:00 - 22:00",
@@ -60,7 +60,7 @@
         "phone": "3504746586",
         "address" : "Calle 152B # 58C - 50",
         "description": "Una hermosa -----",
-        "image":"../images/bruschetta.jpeg/",
+        "image":"./images/alejo-parrilla-4.jpg",
         "schedule": {
             "monday": "8:00 - 22:00",
             "tuesday": "8:00 - 22:00",
