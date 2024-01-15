@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Alejo Parrilla C.C. Diver Plaza",
+        "name": "Diver Plaza",
         "phone": "3504746586",
         "address" : "Calle 152B # 58C - 50",
         "description": "Una hermosa -----",
@@ -19,8 +19,8 @@
     },
     {
         "id": 2,
-        "name": "Alejo Parrilla C.C. Nuestro Bogotá",
-        "phone": "+57 3214607611",
+        "name": "Nuestro Bogotá",
+        "phone": "3214607611",
         "address" : "Cra. 86 #55a-75, Bogotá D.C.",
         "description": "“¡Bienvenido a Alejo Parrilla! Somos un restaurante especializado en parrilla y platos típicos colombianos desde 1999. Visítanos en nuestra sucursal en el Centro Comercial de Nuestro Bogotá. ",
         "image":"./images/alejo-parrilla-2.jpg",
@@ -38,7 +38,7 @@
     },
     {
         "id": 3,
-        "name": "Restaurante Alejo Parrilla",
+        "name": "Buró 25",
         "phone": "3504746586",
         "address" : "Dg. 25g #95a - 85, Bogotá",
         "description": "Una hermosa -----",
@@ -56,7 +56,7 @@
     },
     {
         "id": 4,
-        "name": "Alejo Parrilla Fontibón",
+        "name": "Fontibón",
         "phone": "3504746586",
         "address" : "Calle 152B # 58C - 50",
         "description": "Una hermosa -----",

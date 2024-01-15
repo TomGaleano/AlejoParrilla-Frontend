@@ -2,7 +2,7 @@ import './carousel.css'
 import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import DetallesRestaurante from './restaurant.tsx';
+import DetallesRestaurante from './info-restaurantes.tsx';
 
 function Carousel (){
         const settings = {
@@ -57,7 +57,6 @@ function Carousel (){
             ]}
     return(
             <div className="carousel">
-                <h2>Nuestros Restaurantes</h2>
                 <Slider {...settings}>
                     <DetallesRestaurante id={1}/>
                     <DetallesRestaurante id={2}/>

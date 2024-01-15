@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Inicio } from './components/inicio';
 import { Sobrenosotros } from './components/sobre-nosotros';
 import { Vinculate } from './components/vinculate';
-import MenuGrid from './components/menu';
 import Navbar from './components/navbar';
 import MenuGrid from './components/menu';
 
@@ -26,14 +25,10 @@ function App() {
         return <Inicio />;
       case 'Nosotros':
         return <Sobrenosotros />;
-      case 'Vinculate':
+      case 'Vincúlate':
         return <Vinculate />;
       case 'Menú':
         return <div style={{ paddingTop: '10vh', paddingBottom: '20px' }}><MenuGrid /></div>;
-      case 'Contacto':
-        return <div>Poner contacto aquí</div>;
-      case 'Restaurantes':
-        return <div>Restaurantes</div>;
       default:
         return <Inicio />;
     }

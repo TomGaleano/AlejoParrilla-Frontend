@@ -183,6 +183,77 @@
     background-image: url("../assets/wave-bottom.svg");
 }
 
+/*Definición de la sección de restaurantes en sobre nosotros y sus propiedades*/
+
+.restaurant_card {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Adjust as needed */
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background: var(--color-our-blue);
+    margin: 30px;
+    transition: box-shadow 0.3s ease;
+}
+.restaurant_card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+.restaurant_image {
+    padding: 0vh;
+    width: 300px;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.restaurant_title{
+    font-size: 3.4vh;
+    font-weight: 900;
+    font-weight: 400;
+    color: var(--color-white);
+    margin: 0.8vh;
+    text-align: left;
+}
+.restaurant_card p{
+    font-size: 1.7vh;
+    font-weight: 400;
+    color: var(--color-white);
+    margin: 0.8vh;
+    text-align: left;
+}
+.restaurant_button_container {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.25s ease;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1vh;
+}
+
+.restaurant_card:hover .restaurant_button_container {
+    visibility: visible;
+    opacity: 1;
+}
+.restaurant_button {
+    background-color: var(--color-our-orange);
+    color: white; /* text color */
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    transition: box-shadow 0.3s ease;
+}
+.restaurant_button:hover {
+    background-color: var(--color-our-orange-light);
+}
+.restaurant_button_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
 
 /*Definición de mobile*/
 @media (max-width: 768px) {
@@ -276,5 +347,9 @@
     }
     .insights p{
         font-size: 1.8vh;
+    }
+    .restaurant_button_container {
+        visibility: visible;
+        opacity: 1;
     }
 }

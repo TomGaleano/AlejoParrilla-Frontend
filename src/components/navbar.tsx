@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavBar.css";
 import logo from "../assets/LOGOO-300x114.png";
 
-const VIEWS = ['Inicio', 'Nosotros', 'Menu', 'Vinculate'];
+const VIEWS = ['Inicio', 'Nosotros', 'Menú', 'Vincúlate'];
 
 function Navbar({ setView }: { setView: (view: string) => void }) {
     const [isOpen, setIsOpen] = useState(false);
