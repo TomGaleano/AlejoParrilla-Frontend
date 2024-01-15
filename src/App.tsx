@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Inicio } from './components/inicio';
 import { Sobrenosotros } from './components/sobre-nosotros';
+import { Vinculate } from './components/vinculate';
+import MenuGrid from './components/menu';
 import Navbar from './components/navbar';
 import MenuGrid from './components/menu';
 
@@ -19,11 +21,13 @@ function App() {
 
 
   const renderView = () => {
-    switch(view) {
+    switch (view) {
       case 'Inicio':
         return <Inicio />;
       case 'Nosotros':
         return <Sobrenosotros />;
+      case 'Vinculate':
+        return <Vinculate />;
       case 'Menú':
         return <div style={{ paddingTop: '10vh', paddingBottom: '20px' }}><MenuGrid /></div>;
       case 'Contacto':
