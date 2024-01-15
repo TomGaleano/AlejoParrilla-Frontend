@@ -1,6 +1,7 @@
 
 import "./Inicio.css";
 import lomo from "../assets/lomo.png";
+import Carousel from "./carousel";
 
 export const Sobrenosotros = (): JSX.Element => {
   return (
@@ -19,6 +20,7 @@ export const Sobrenosotros = (): JSX.Element => {
             <div>
               <div className='home_container sobre-nosotros' style={{ display: 'flex', paddingTop: '1vh', marginTop: '0vh' }}>
                 {/* Espacio debajo del texto para poner cifras del restaurante */}
+
                 <div className="insights" style={{ textAlign: 'center' }}>
                   <h2 className='title' style={{ paddingTop: '0vh' }}>4+</h2>
                   <p style={{ paddingLeft: '0vh' }}>Restaurantes</p>
@@ -53,7 +55,7 @@ export const Sobrenosotros = (): JSX.Element => {
         </div>
         <div className='wave_spacer wave_bottom'></div>
       </div>
-
+      <Carousel/>
     </div>
   );
 };
