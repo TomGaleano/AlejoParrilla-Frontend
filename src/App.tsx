@@ -6,6 +6,7 @@ import MenuGrid from './components/menu';
 import Navbar from './components/navbar';
 import MenuGrid from './components/menu';
 
+
 //import ReactGA from 'react-ga';
 
 //const trackingId = <Tracking ID HERE>;
@@ -29,6 +30,10 @@ function App() {
         return <Vinculate />;
       case 'Menú':
         return <div style={{ paddingTop: '10vh', paddingBottom: '20px' }}><MenuGrid /></div>;
+      case 'Contacto':
+        return <div>Poner contacto aquí</div>;
+      case 'Restaurantes':
+        return <div>Restaurantes</div>;
       default:
         return <Inicio />;
     }

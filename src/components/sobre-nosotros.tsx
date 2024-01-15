@@ -1,6 +1,7 @@
 
 import "./Inicio.css";
 import lomo from "../assets/lomo.png";
+import Carousel from "./carousel";
 
 export const Sobrenosotros = (): JSX.Element => {
   return (
@@ -21,6 +22,7 @@ export const Sobrenosotros = (): JSX.Element => {
                 <div className='column'>
                   <h2 className='tit_alt'>4+</h2>
                   <p>Restaurantes</p>
+                  
                 </div>
                 <div className='column'>
                   <h2 className='tit_alt'>35+</h2>
@@ -48,7 +50,7 @@ export const Sobrenosotros = (): JSX.Element => {
         <p style={{ color: 'black', paddingLeft: '20%', paddingRight: '20%', paddingBottom: '10vh' }}>Utilizamos los mejores insumos y la mejor atención para hacer que su experienciaen nuestros restaurantes sea única. </p>
         <div className='wave_spacer wave_bottom'></div>
       </div>
-
+      <Carousel/>
     </div>
   );
 };
