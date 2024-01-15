@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './loader.css'
-import './restaurant.css'
 interface Schedule {
     [day: string]: string;
 }
