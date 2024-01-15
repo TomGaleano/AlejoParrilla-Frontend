@@ -173,14 +173,17 @@
     background-position: center;
     background-size: cover;
     padding: 0%;
+    background-color: transparent;
 }
 
 .wave_top {
     background-image: url("../assets/wave-top.svg");
+    border-bottom: 2px solid white;
 }
 
 .wave_bottom {
     background-image: url("../assets/wave-bottom.svg");
+    border-top: 2px solid white;
 }
 
 /*Definición de la sección de restaurantes en sobre nosotros y sus propiedades*/
