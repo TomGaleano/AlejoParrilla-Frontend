@@ -22,8 +22,8 @@ const Map: React.FC<MapProps> = ({ locations }) => {
     };
 
     return (
-        <LoadScript googleMapsApiKey="TULLAVEDEGOOGLECLOUD">
-            <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={10} options={options}>
+        <LoadScript googleMapsApiKey="AIzaSyCzuFvJ5puhXUY7QnkqzYixNKDG-AM2FM4">
+            <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={14} options={options}>
                 {locations.map((location, index) => (
                     <Marker key={index} position={location.position} />
                 ))}

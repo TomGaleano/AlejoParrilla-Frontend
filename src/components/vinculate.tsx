@@ -1,6 +1,5 @@
-import React from 'react';
 import "./Vinculate.css";
-import MapComponent from "./MapComponentAPI"; // Importa el componente MapComponent
+import Map from "./MapComponentAPI"; // Importa el componente MapComponent
 
 export const Vinculate = (): JSX.Element => {
 
@@ -18,7 +17,9 @@ export const Vinculate = (): JSX.Element => {
             </div>
             <h2 className='vinculate_title'>Formulario de Vinculación</h2>
             <div className='vinculate__container'>
-                <MapComponent locations={locations} /> {/* Usa el componente MapComponent */}
+                <iframe width="600" height="450" loading="lazy"
+                    src="https://www.google.com/maps/embed/v1/search?q=alejopparrilla&key=AIzaSyCzuFvJ5puhXUY7QnkqzYixNKDG-AM2FM4"></iframe>
+                {/* <Map locations={locations} /> Usa el componente MapComponent */}
                 <form className='vinculate_form' action="http://localhost:5173/nico.calderon.correa@gmail.com" method="POST">
                     <input type="text" id="name" name="name" placeholder="Nombre" required />
                     <input type="email" id="email" name="email" placeholder="Correo" required />
