@@ -54,7 +54,7 @@ const DetallesRestaurante: React.FC<Props> = ({ id }) => {
 
     return (
         <div className="restaurant_card">
-            <img className="restaurant_image" src={restaurante.image} alt={restaurante.name} />
+            <img className="restaurant_section_image" src={restaurante.image} alt={restaurante.name} />
             <h2 className="restaurant_title">{restaurante.name}</h2>
             <p>{restaurante.address}</p>
             <div className="restaurant_button_container">

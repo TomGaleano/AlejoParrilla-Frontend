@@ -55,7 +55,7 @@ export const Sobrenosotros = (): JSX.Element => {
         </div>
         <div className='wave_spacer wave_bottom'></div>
       </div>
-      <div className="home_container">
+      <div className="home_container" style={{paddingTop:'0vh', marginTop:'0vh', marginBottom:'15vh'}}>
         <div className="column" >
           <h2 className="menu_title" style={{marginBottom:'4vh'}}>Nuestros restaurantes</h2>
           <Carousel />
