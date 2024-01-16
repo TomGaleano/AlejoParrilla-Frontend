@@ -14,14 +14,11 @@ export const Vinculate = (): JSX.Element => {
     //];
 
     return (
-        <div className='element_container' style={{marginTop:'30vh'}}>
-            <div className='img_container'>
-                <h1>Trabaja con Nostros!</h1>
-            </div>
-            <h2 className='vinculate_title'>Formulario de Vinculación</h2>
-            <div className='home_container'>
+        <div >
+            <div className='form_container'>
                 <iframe width="600" height="450" loading="lazy"
-                    src="https://www.google.com/maps/embed/v1/search?q=alejopparrilla&key=AIzaSyCzuFvJ5puhXUY7QnkqzYixNKDG-AM2FM4"></iframe>
+                    src="https://www.google.com/maps/embed/v1/search?q=alejopparrilla&key=AIzaSyCzuFvJ5puhXUY7QnkqzYixNKDG-AM2FM4">
+                </iframe>
                 <form className='vinculate_form' action="http://localhost:5173/nico.calderon.correa@gmail.com" method="POST">
                     <div className="input-field">
                         <input type="text" id="name" name="name" placeholder="Nombre" required />

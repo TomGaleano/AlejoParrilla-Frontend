@@ -273,6 +273,17 @@
 }
 
 /*Definición de la sección de vinculate y sus propiedades*/
+.form_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30vh;
+}
+.form_container iframe, .form_container form {
+    flex: 1;
+    margin: 10px;
+    width: 100%;
+    height: 650px;
+}
 .vinculate_form {
     display: flex;
     flex-direction: column;
