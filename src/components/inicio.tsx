@@ -17,8 +17,8 @@ export const Inicio = (): JSX.Element => {
                     </div>
 
                     <div className="button-container">
-                        <button className="main-button">Menú en línea</button>
-                        <button className="second-button">Agenda tu mesa</button>
+                        <button className="main-button">Menú</button>
+                        <button className="second-button">Pide ya</button>
                     </div>
                 </div>
                 <div className="column has-image">

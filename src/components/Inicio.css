@@ -56,7 +56,7 @@
 /*Definición de títulos y sus propiedades*/
 
 .title {
-    font-size: 9vh;
+    font-size: 5vw;
     font-weight: 900;
     color: var(--color-our-orange);
     margin: 0.5rem;
@@ -276,8 +276,9 @@
 .form_container {
     display: flex;
     justify-content: space-between;
-    padding: 30vh;
+    padding: 20%;
 }
+
 .form_container iframe, .form_container form {
     flex: 1;
     margin: 10px;
@@ -353,7 +354,12 @@
 
 
 /*Definición de mobile*/
-@media (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+    .form_container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
     .landing {
         margin-top: 40%;
     }
@@ -371,13 +377,14 @@
     .title_alt,
     .menu_title {
         padding-top: 8vh;
-        font-size: 6vh;
+        font-size: 11vw;
+        margin: 0rem;
     }
 
     .tit-sobre-nosotros {
         padding-left: 4vh;
         text-align: left;
-        font-size: 6vh;
+        font-size: 11vw;
     }
 
     .subtitle {
@@ -394,7 +401,8 @@
 
     .main-button,
     .second-button {
-        font-size: 2vh;
+        padding: 10px 30px;
+        font-size: 6.5vw;
         /* Adjust as needed */
     }
 

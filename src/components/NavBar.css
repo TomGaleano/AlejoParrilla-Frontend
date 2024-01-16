@@ -96,7 +96,7 @@ body {
     cursor: pointer; /* Change cursor on hover */
     white-space: nowrap; /* Add this line */
     font-size: 20px; 
-    margin-right: 10vh;
+    margin-right: 0vh;
     border-radius: 50px;
 }
 
@@ -115,7 +115,7 @@ body {
 .header__top{
     background-image: url("../assets/test-wave-navbar.svg");
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .header {
         padding-top: 20px;
         padding-left: 20px;
