@@ -14,7 +14,7 @@ export const Vinculate = (): JSX.Element => {
     //];
 
     return (
-        <div >
+        <div>
             <div className='form_container'>
                 <iframe width="600" height="450" loading="lazy"
                     src="https://www.google.com/maps/embed/v1/search?q=alejopparrilla&key=AIzaSyCzuFvJ5puhXUY7QnkqzYixNKDG-AM2FM4">
