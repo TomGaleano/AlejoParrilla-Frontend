@@ -34,13 +34,13 @@ export const Inicio = (): JSX.Element => {
                     <h2 className='title_alt'>Nuestra Filosofia</h2>
                     <div className="line">
                         <p>
-                            Somos restaurantes especializados en Parrilla y platos típicos colombianos desde 1999.
+                            La filosofía de AlejoParilla es ofrecer comida deliciosa, servicio amable y ambiente agradable.
                         </p>
                         <p>
-                            Nuestro personal cuenta con una amplia experiencia y un gusto exquisito en la preparación de nuestro menú.
+                            En AlejoParilla creemos que la comida es más que una necesidad, es una forma de compartir momentos especiales.
                         </p>
                         <p>
-                            Utilizamos los mejores insumos y la mejor atención para hacer que su experiencia en nuestros restaurantes sea única.
+                            Nuestro objetivo es que nuestros clientes se sientan como en casa cuando visitan nuestros restaurantes.
                         </p></div>
 
                 </div>

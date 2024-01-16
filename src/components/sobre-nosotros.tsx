@@ -14,8 +14,9 @@ export const Sobrenosotros = (): JSX.Element => {
           {/* Inicia la primera columna de la sección */}
 
           <div className="sobre-nosotros">
-            <p >Somos restaurantes especializados en Parrilla y platos típicos colombianos desde 1999. </p>
-            <p >Nuestro personal cuenta con una amplia experiencia y un gusto exquisito en la preparación de nuestro menú. </p>
+            <p >
+            Ofrecemos una amplia variedad de platos para todos los gustos, elaborados con ingredientes frescos y de calidad. Nuestro personal está altamente capacitado para brindar un servicio de calidad y atención personalizada. Nuestros restaurantes tienen una decoración moderna y acogedora, que crea un ambiente agradable para disfrutar de una buena comida.
+            </p>
             <p style={{ marginBottom: '0vh' }}>Utilizamos los mejores insumos y la mejor atención para hacer que su experienciaen nuestros restaurantes sea única.</p>
             <div>
               <div className='home_container sobre-nosotros' style={{ display: 'flex', paddingTop: '1vh', marginTop: '0vh' }}>

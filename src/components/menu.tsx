@@ -29,7 +29,9 @@ function MenuGrid() {
         <div className="home_container">
             <div className="column" >
                 <h2 className="menu_title">Nuestro menú</h2>
-                <p className="menu_paragraph">Nuestro menu tiene diferentes variedades de platos distribuidos entre carnes, pescados, comidas rapidas, bolws y demas.</p>
+                <p className="menu_paragraph">
+                    Todos nuestros platos están elaborados con ingredientes frescos y de calidad, y preparados con el amor y la dedicación que merecen nuestros clientes.
+                </p>
                 <div className="menu">
                     <div className="menu_selector">
                         {categories.map((categoryItem) => (
