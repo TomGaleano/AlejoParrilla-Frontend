@@ -170,23 +170,23 @@
 
 /*Definición de la sección blanca en sobre nosotros y sus propiedades*/
 .wave_spacer {
-    aspect-ratio: 900/200;
+    aspect-ratio: 901/200;
     width: 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: top;
+    background-size: 100% 100%; /* Change this line */
     padding: 0%;
     background-color: transparent;
+    outline: none; /* Add this line */
+    border: none; /* Add this line */
 }
 
 .wave_top {
     background-image: url("../assets/wave-top.svg");
-    border-bottom: 2px solid white;
 }
 
 .wave_bottom {
     background-image: url("../assets/wave-bottom.svg");
-    border-top: 2px solid white;
 }
 
 /*Definición de la sección de restaurantes en sobre nosotros y sus propiedades*/
@@ -472,5 +472,8 @@
     .restaurant_button_container {
         visibility: visible;
         opacity: 1;
+    }
+    .restaurant_card p {
+        font-size: 2vh;
     }
 }

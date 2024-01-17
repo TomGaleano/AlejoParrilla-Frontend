@@ -9,59 +9,58 @@ function Carousel (){
             dots: true,
             infinite: true,
             speed: 500,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            initialSlide: 0,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            initialSlide: 1,
             centerMode: true,
-            centerPadding:"0px",
+            centerPadding: "0px",
             responsive: [
-            {
-                breakpoint: 1199,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true,
-                    centerMode: true,
-                    centerPadding:"0px"
-                }
-            },
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2,
-                    centerMode: true,
-                    centerPadding:"0px"
-                }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerMode: true,
-                    centerPadding:"0px"
-                }
-            },{
-                breakpoint: 280,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true,
-                centerMode: true,
-                centerPadding: "0px",
-            }}
+                {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2,
+                      infinite: true,
+                      dots: true,
+                      centerMode: true,
+                      centerPadding: "0px",
+                    }
+                  },
+                  {
+                    breakpoint: 600,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      initialSlide: 0,
+                      centerMode: false,
+                      centerPadding: "0px",
+                    }
+                  },
+                  {
+                    breakpoint: 480,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      centerMode: true,
+                      centerPadding: "0px",
+                    }
+                  }
             ]}
     return(
             <div className="carousel">
-                <Slider {...settings}>
+                <Slider {...settings} className='carousel-slider'>
+                  <div className="carousel-box">
                     <DetallesRestaurante id={1}/>
+                  </div>
+                  <div className="carousel-box">
                     <DetallesRestaurante id={2}/>
+                  </div>
+                  <div className="carousel-box">
                     <DetallesRestaurante id={3}/>
+                  </div>
+                  <div className="carousel-box" style={{'margin': '0 10px;'}}>
                     <DetallesRestaurante id={4}/>
+                  </div>
                 </Slider>
             </div>
     );

@@ -16,7 +16,7 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
         setView(view);
         handleToggle();
     };
-    
+
     return (
         <header className="header">
             <div className="header__logo">
@@ -30,7 +30,9 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
                         </li>
                     ))}
                 </ul>
-                <button className='button__header'>Agenda tu mesa</button>
+                <a href="https://www.rappi.com.co/restaurantes/900248801-alejo-parrilla">
+                    <button className='button__header'>¡Pide ya!</button>
+                </a>
                 <button className="header__nav-close-button" onClick={handleToggle}>
                     <FaTimes />
                 </button>
@@ -38,7 +40,7 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
             <button className={`header__nav-open-button ${isOpen ? 'hide' : ''}`} onClick={handleToggle}>
                 <FaBars />
             </button>
-        </header>
+        </header >
     )
 }
 

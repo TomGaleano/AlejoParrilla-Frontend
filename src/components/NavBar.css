@@ -82,6 +82,7 @@ body {
 .header__nav-open-button, .header__nav-close-button {
     background: none;
     border: none;
+    margin-right: 2vw;
     cursor: pointer;
     display: none;
     color: #fff;
@@ -92,11 +93,11 @@ body {
     font-weight: bold;
     color: #ffffff; /* You may want to set a contrasting text color */
     border: none; /* Remove default button border */
-    padding: 20px 45px; /* Add some padding */
+    padding: 17px 35px; /* Add some padding */
     cursor: pointer; /* Change cursor on hover */
     white-space: nowrap; /* Add this line */
     font-size: 20px; 
-    margin-right: 0vh;
+    margin-right: 6vw;
     border-radius: 50px;
 }
 
@@ -149,7 +150,7 @@ body {
     .header__nav-list {
         flex-direction: column;
         margin-top: 30px;
-        
+        margin-right: 25px; /*NO BORRAR ESTA MIERDA*/
         justify-content: center;
         width: 100%;
     }
@@ -172,7 +173,7 @@ body {
         right: 20px; /* Position it 20px from the right */
         display: block;
         align-self: center;
-        margin-right: 4vh;
+        margin-right: 10vw;
     }
     .button__header {
         position: fixed; /* Fix the position of the button */

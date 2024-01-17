@@ -1,16 +1,16 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 .corousel{
-    padding: 5rem;
+    overflow: hidden;
     background-color: black;
     color: #ffffff;
     height: 100vh;
     width: 100vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
 }
 .box{
+    margin: 0 auto;
     background-color: lightgreen;
     height: 300px;
 
@@ -19,7 +19,7 @@
     text-align: center;
 }
 .slick-slide div{
-    margin: 0 1rem;
+    margin: 0rem 0rem !important;
 }
 
 body{
@@ -28,9 +28,16 @@ body{
 
 .slick-dots li.slick-active button:before{
     color: #19f5aa !important;
+    margin: 1rem !important;
 }
 .slick-dots li button::before{
     color: #ffffff !important;
-    font-size: 1rem !important;
+    font-size: 1rem ;
     top: 2rem !important;
+}
+.carousel-slider{
+        margin: 0 auto
+}
+.carousel-box{
+    padding-bottom: 60px;
 }

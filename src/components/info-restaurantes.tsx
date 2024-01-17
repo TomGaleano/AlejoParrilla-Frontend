@@ -56,17 +56,17 @@ const DetallesRestaurante: React.FC<Props> = ({ id }) => {
         <div className="restaurant_card">
             <img className="restaurant_section_image" src={restaurante.image} alt={restaurante.name} />
             <h2 className="restaurant_title">{restaurante.name}</h2>
-            <p>{restaurante.address}</p>
-            <div className="restaurant_button_container">
-                <a href={`tel:+57${restaurante.phone}`}>
-                    <button className="restaurant_button">
+            <p className="restaurant_address">{restaurante.address}</p>
+            <div className="restaurant_button_container"style={{'padding':'10px', 'display':'flex', 'flexWrap':'wrap', 'justifyContent':'space-between'}}>
+                <a href={`tel:+57${restaurante.phone}`} style={{'minWidth':'20px'}}>
+                    <button className="restaurant_button" >
                         <span className="restaurant_button_content">
                             <FontAwesomeIcon icon={faPhone} />
                             <span>Llámanos</span>
                         </span>
                     </button>
                 </a>
-                <a href={restaurante.url} target="_blank" rel="noopener noreferrer">
+                <a href={restaurante.url} target="_blank" rel="noopener noreferrer" style={{'minWidth':'20px'}}>
                     <button className="restaurant_button">
                         <span className="restaurant_button_content">
                             <FontAwesomeIcon icon={faMapMarkerAlt} />
