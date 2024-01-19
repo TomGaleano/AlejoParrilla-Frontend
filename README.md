@@ -13,7 +13,7 @@ This project is like a piñata full of awesome features:
 Ready to dive in? Here's the quick rundown:
 
 1. Clone this repo: `git clone https://github.com/TomGaleano/AlejoParrilla-Frontend`
-2. Install dependencies: `npm install`
+2. Install dependencies: `npm install i`
 3. Launch the React app: `npm run dev`
 
 Now sit back, relax, and let the magic unfold before your eyes. ✨
@@ -35,7 +35,7 @@ Este proyecto es como una piñata llena de características increíbles:
 ¿Listo para sumergirte? Aquí está el resumen rápido:
 
 1. Clona este repositorio: `git clone https://github.com/TomGaleano/AlejoParrilla-Frontend`
-2. Instala las dependencias: `npm install`
+2. Instala las dependencias: `npm install i`
 3. Lanza la aplicación React: `npm run dev`
 
 Ahora siéntate, relájate y deja que la magia se despliegue ante tus ojos. ✨
