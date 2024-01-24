@@ -53,29 +53,24 @@ const DetallesRestaurante: React.FC<Props> = ({ id }) => {
     }
 
     return (
-        <div className="restaurant_card">
-            <img className="restaurant_section_image" src={restaurante.image} alt={restaurante.name} />
-            <h2 className="restaurant_title">{restaurante.name}</h2>
-            <p className="restaurant_address">{restaurante.address}</p>
-            <div className="restaurant_button_container"style={{'padding':'10px', 'display':'flex', 'flexWrap':'wrap', 'justifyContent':'space-between'}}>
-                <a href={`tel:+57${restaurante.phone}`} style={{'minWidth':'20px'}}>
-                    <button className="restaurant_button" >
-                        <span className="restaurant_button_content">
-                            <FontAwesomeIcon icon={faPhone} />
-                            <span>Llámanos</span>
-                        </span>
-                    </button>
-                </a>
-                <a href={restaurante.url} target="_blank" rel="noopener noreferrer" style={{'minWidth':'20px'}}>
-                    <button className="restaurant_button">
-                        <span className="restaurant_button_content">
-                            <FontAwesomeIcon icon={faMapMarkerAlt} />
-                            <span>Visítanos</span>
-                        </span>
-                    </button>
-                </a>
-            </div>
+        <div className='restaurant_container'>
+        <div className='restaurant_container-div1'>
+          <img className='restaurant_container-div1-image' src={restaurante.image} alt="imagen del restaurante" />
         </div>
+        <div className='restaurant_container-div2'>
+          <h2 className='restaurant_container-div2-item'>{restaurante.name }</h2>
+          <p className='restaurant_container-div2-item'>Dirección: <br/>{restaurante.address}</p>
+          <p className='restaurant_container-div2-item'>Teléfono: <br/><a href={`tel:+57${restaurante.phone}`}> {restaurante.phone}</a></p>
+          <button className='restaurant_container-div2-button restaurant_container-div2-item' onClick={() => window.open(restaurante.url, '_blank')}>
+            <span className="circle1"></span>
+            <span className="circle2"></span>
+            <span className="circle3"></span>
+            <span className="circle4"></span>
+            <span className="circle5"></span>
+            <span className='restaurant_container-div2-button-text'>Ubicación</span>
+          </button>
+        </div>
+      </div>
     );
 };
 
