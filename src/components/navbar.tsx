@@ -3,13 +3,36 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavBar.css";
 import logo from "../assets/LOGOO-300x114.png";
 
-const VIEWS = ['Inicio', 'Nosotros', 'Menú', 'Vincúlate'];
+const VIEWS = ['Inicio', 'Nosotros', 'Menú', 'Contacto'];
+
+const restaurantes = [
+    { id: 1, label: "Diver Plaza" },
+    { id: 2, label: "Nuestro Bogotá" },
+    { id: 3, label: "Buró 25" },
+    { id: 4, label: "Fontibón" },
+];
+
+const initialSelectedItem = restaurantes.find(restaurant => restaurant.label === "Nuestro Bogotá");
 
 function Navbar({ setView }: { setView: (view: string) => void }) {
+
+    //Estas constantes manejan el estado del menú de hamburguesa en mobile
     const [isOpen, setIsOpen] = useState(false);
 
     const handleToggle = () => {
         setIsOpen(!isOpen);
+    };
+
+    //Estas constantes manejan el estado del desplegable de restaurantes
+    const [isSelectRestaurantOpen, setIsSelectRestaurantOpen] = useState(false);
+    const [items] = useState(restaurantes);
+    const [selectedItem, setSelectedItem] = useState(initialSelectedItem);
+
+    const toggleDropdown = () => setIsSelectRestaurantOpen(!isSelectRestaurantOpen);
+
+    const handleItemClick = (item: { id: number; label: string } | undefined) => {
+        setSelectedItem(item);
+        handleToggle();
     };
 
     const handleLinkClick = (view: string) => {
@@ -30,9 +53,24 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
                         </li>
                     ))}
                 </ul>
-                <a href="https://www.rappi.com.co/restaurantes/900248801-alejo-parrilla">
-                    <button className='button__header'>¡Pide ya!</button>
-                </a>
+                <div className='dropdown'>
+                    <div className='dropdown-header' onClick={toggleDropdown}>
+                        Estás pidiendo en {selectedItem ? items.find(item => item.id === selectedItem?.id)?.label : "Select your destination"}
+                        <i className={`fa fa-chevron-right icon ${isOpen && "open"}`}></i>
+                    </div>
+                    <div className={`dropdown-body ${isOpen && 'open'}`}>
+                        {items.map(item => (
+                            <div
+                                className="dropdown-item"
+                                onClick={() => handleItemClick(item)}
+                                id={item.id.toString()}
+                            >
+                                <span className={`dropdown-item-dot ${item.id === selectedItem?.id && 'selected'}`}>• </span>
+                                {item.label}
+                            </div>
+                        ))}
+                    </div>
+                </div>
                 <button className="header__nav-close-button" onClick={handleToggle}>
                     <FaTimes />
                 </button>

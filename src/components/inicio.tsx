@@ -45,6 +45,7 @@ export const Inicio = (): JSX.Element => {
 
                 </div>
             </div>
+            <div className='wave_spacer white-brown'></div>
             <MenuGrid />
         </div>
     );

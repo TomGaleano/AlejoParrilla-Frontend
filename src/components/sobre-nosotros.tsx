@@ -45,7 +45,6 @@ export const Sobrenosotros = (): JSX.Element => {
       </div>
       {/* Segunda sección */}
       <div style={{  width: '100vw' }}>
-        <div className='wave_spacer wave_top'></div>
         <div className="home_container" style={{ backgroundColor: 'white', marginTop: '0vh', marginBottom: '0vh'}}>
           <h1 className='title tit-sobre-nosotros'>Nuestra Filosofía</h1>
           <div className="sobre-nosotros"style={{}}>
@@ -54,7 +53,6 @@ export const Sobrenosotros = (): JSX.Element => {
             <p style={{ color: 'black', paddingBottom: '10vh' }}>Utilizamos los mejores insumos y la mejor atención para hacer que su experienciaen nuestros restaurantes sea única. </p>
           </div>
         </div>
-        <div className='wave_spacer wave_bottom'></div>
       </div>
       <div className="home_container" style={{paddingTop:'0vh', marginTop:'0vh', marginBottom:'15vh'}}>
         <div className="column" >
@@ -62,7 +60,7 @@ export const Sobrenosotros = (): JSX.Element => {
           <Carousel />
         </div>
       </div>
-
+      <div className='wave_spacer white-blue'></div>
     </div>
   );
 };

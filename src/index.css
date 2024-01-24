@@ -1,14 +1,17 @@
 :root {
   --font-family-inter: 'Inter', sans-serif;
+  --color-black: #1d1c1c;
   --color-white: #ffffff;
   --color-our-blue: #0A4059;
   --color-our-blue-light: #204f64;
   --color-our-blue-gray: #6E8CA3;
   --color-our-orange: #f1a650;
   --color-our-orange-light: #ecaa5e;
+  --color-our-brown: #271810;
+  --color-our-brown-light: #382419;
 }
 
 body {
   font-family: var(--font-family-inter);
-  background-color: var(--color-our-blue-gray);
+  background-color: var(--color-white);
 }
