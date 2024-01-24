@@ -118,10 +118,13 @@ body {
 }
 /* Menú de selector de restaurante */
 .dropdown {
-    width: 40vh;
+    width: 13vw;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0,0,0,.1);
-    background-color: white;
+    background-color: var(--color-our-orange);
+    margin-right: 5vw;
+    color: var(--color-white);
+    font-size: 3vh;
   }
   
   .dropdown-header {
@@ -152,7 +155,7 @@ body {
   
   .dropdown-item-dot {
     opacity: 0;
-    color: #91A5BE;
+    color: var(--color-our-blue);
     transition: all .2s ease-in-out;
   }
   

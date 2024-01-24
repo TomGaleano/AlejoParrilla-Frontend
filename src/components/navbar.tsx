@@ -6,13 +6,14 @@ import logo from "../assets/LOGOO-300x114.png";
 const VIEWS = ['Inicio', 'Nosotros', 'Menú', 'Contacto'];
 
 const restaurantes = [
+    { id: 0, label: "Selecciona tu sede"},
     { id: 1, label: "Diver Plaza" },
     { id: 2, label: "Nuestro Bogotá" },
     { id: 3, label: "Buró 25" },
     { id: 4, label: "Fontibón" },
 ];
 
-const initialSelectedItem = restaurantes.find(restaurant => restaurant.label === "Nuestro Bogotá");
+const initialSelectedItem = restaurantes.find(restaurant => restaurant.label === "Selecciona tu sede");
 
 function Navbar({ setView }: { setView: (view: string) => void }) {
 
@@ -27,12 +28,13 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
     const [isSelectRestaurantOpen, setIsSelectRestaurantOpen] = useState(false);
     const [items] = useState(restaurantes);
     const [selectedItem, setSelectedItem] = useState(initialSelectedItem);
+    const handleMenuToggle = () => setIsOpen(!isOpen);
 
     const toggleDropdown = () => setIsSelectRestaurantOpen(!isSelectRestaurantOpen);
 
     const handleItemClick = (item: { id: number; label: string } | undefined) => {
         setSelectedItem(item);
-        handleToggle();
+        toggleDropdown();
     };
 
     const handleLinkClick = (view: string) => {
@@ -54,8 +56,8 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
                     ))}
                 </ul>
                 <div className='dropdown'>
-                    <div className='dropdown-header' onClick={toggleDropdown}>
-                        Estás pidiendo en {selectedItem ? items.find(item => item.id === selectedItem?.id)?.label : "Select your destination"}
+                    <div className='dropdown-header' onClick={handleMenuToggle}>
+                        {selectedItem ? items.find(item => item.id === selectedItem?.id)?.label : "Select your destination"}
                         <i className={`fa fa-chevron-right icon ${isOpen && "open"}`}></i>
                     </div>
                     <div className={`dropdown-body ${isOpen && 'open'}`}>
