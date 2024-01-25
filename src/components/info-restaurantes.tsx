@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './loader.css'
 import './Inicio.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 
 interface Schedule {
