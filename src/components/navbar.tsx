@@ -6,7 +6,6 @@ import logo from "../assets/LOGOO-300x114.png";
 const VIEWS = ['Inicio', 'Nosotros', 'Menú', 'Contacto'];
 
 const restaurantes = [
-    { id: 0, label: "Selecciona tu sede"},
     { id: 1, label: "Diver Plaza" },
     { id: 2, label: "Nuestro Bogotá" },
     { id: 3, label: "Buró 25" },
@@ -35,6 +34,7 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
     const handleItemClick = (item: { id: number; label: string } | undefined) => {
         setSelectedItem(item);
         toggleDropdown();
+        handleMenuToggle();
     };
 
     const handleLinkClick = (view: string) => {
@@ -45,7 +45,7 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
     return (
         <header className="header">
             <div className="header__logo">
-                <img className="logo" src={logo} alt="Logo" /> {/* Use the imported image here */}
+                <img className="logo" src={logo} alt="Logo" /> 
             </div>
             <nav className={`header__nav ${isOpen ? 'open' : ''}`}>
                 <ul className="header__nav-list">
@@ -56,11 +56,11 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
                     ))}
                 </ul>
                 <div className='dropdown'>
-                    <div className='dropdown-header' onClick={handleMenuToggle}>
-                        {selectedItem ? items.find(item => item.id === selectedItem?.id)?.label : "Select your destination"}
-                        <i className={`fa fa-chevron-right icon ${isOpen && "open"}`}></i>
+                    <div className='dropdown-header' onClick={toggleDropdown}>
+                        {selectedItem ? items.find(item => item.id === selectedItem?.id)?.label : " Selecciona"}
+                        <i className={`fa fa-chevron-right icon ${isSelectRestaurantOpen && "open"}`}></i>
                     </div>
-                    <div className={`dropdown-body ${isOpen && 'open'}`}>
+                    <div className={`dropdown-body ${isSelectRestaurantOpen && 'open'}`}>
                         {items.map(item => (
                             <div
                                 className="dropdown-item"
