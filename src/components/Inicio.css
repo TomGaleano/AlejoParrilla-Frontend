@@ -191,14 +191,14 @@
 
 /*Definición de la sección de restaurantes en sobre nosotros y sus propiedades*/
 .restaurant_container{
-    background-color: #11111F;
+    background-color: var(--color-our-blue);
     min-width: 100px;
     max-width: 400px;
     flex-grow: 1;
     display: flex;
     border-radius: 20px;
     overflow: hidden;
-    color: #fff;
+    color: var(--color-white);
   }
   .restaurant_container-div1{
     width: 50%;
@@ -255,7 +255,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: white;
-    background-color: #171717;
+    background-color: var(--color-our-orange);
     padding: 1em 2em;
     border: none;
     border-radius: .6rem;
@@ -271,7 +271,7 @@
     transform: translate(-50%, -50%);
     height: 30px;
     width: 30px;
-    background-color: #F39304;
+    background-color: var(--color-our-orange-light);
     border-radius: 50%;
     transition: .6s ease;
   }
