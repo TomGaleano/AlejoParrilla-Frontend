@@ -54,8 +54,8 @@ export const Sobrenosotros = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <div className="home_container" style={{paddingTop:'0vh', marginTop:'0vh', marginBottom:'15vh'}}>
-        <div className="column" >
+      <div className="home_container" style={{paddingTop:'0vh', marginTop:'0vh', marginBottom:'15vh', paddingLeft:'0px', paddingRight: '0px'}}>
+        <div className="column" style={{padding: 0}}>
           <h2 className="menu_title" style={{marginBottom:'4vh'}}>Nuestros restaurantes</h2>
           <Carousel />
         </div>

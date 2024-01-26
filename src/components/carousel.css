@@ -1,11 +1,9 @@
-.corousel{
+.carousel{
     overflow: hidden;
-    background-color: black;
     color: #ffffff;
-    height: 100vh;
-    width: 100vw;
+    width: 90vw;
     padding: 0;
-    margin: 0;
+    margin: auto;
     box-sizing: border-box;
     
 }
@@ -18,26 +16,32 @@
 .box h3{
     text-align: center;
 }
-.slick-slide div{
-    margin: 0rem 0rem !important;
-}
-
-body{
-    background-color: black;
-}
 
 .slick-dots li.slick-active button:before{
     color: #19f5aa !important;
-    margin: 1rem !important;
 }
 .slick-dots li button::before{
-    color: #ffffff !important;
+    color: #000000 !important;
     font-size: 1rem ;
     top: 2rem !important;
 }
 .carousel-slider{
-        margin: 0 auto
+        margin: auto
 }
 .carousel-box{
-    padding-bottom: 60px;
+    margin: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    object-fit: contain !important;
+}
+.slick-slide > div {
+    overflow: hidden;
+    display: grid !important;
+    place-items: center !important;
+    width: 80%;
+    margin: auto;
+    height: 500px;
+    padding: 0px;
+    background: red;
 }

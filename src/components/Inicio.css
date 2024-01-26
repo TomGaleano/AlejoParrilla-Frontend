@@ -286,7 +286,7 @@
 .restaurant_container{
     background-color: var(--color-our-blue);
     min-width: 100px;
-    max-width: 400px;
+    max-width: 100%;
     flex-grow: 1;
     display: flex;
     border-radius: 20px;
@@ -325,13 +325,13 @@
   .restaurant_container-div2 p a{
     color:#ffffff;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 1024px) {
     .restaurant_container {
       flex-wrap: wrap;
       display: inline-flex;
-      min-width: 0;
-      max-width: none;
-      margin: 10px;
+      min-width: 200px;
+      max-width: 300px;
+      margin: auto;
     }
     .restaurant_container-div1,
     .restaurant_container-div2 {
@@ -348,7 +348,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: white;
-    background-color: var(--color-our-orange);
+    background-color: var(--color-our-brown);
     padding: 1em 2em;
     border: none;
     border-radius: .6rem;
@@ -364,7 +364,7 @@
     transform: translate(-50%, -50%);
     height: 30px;
     width: 30px;
-    background-color: var(--color-our-orange-light);
+    background-color: var(--color-our-orange);
     border-radius: 50%;
     transition: .6s ease;
   }
