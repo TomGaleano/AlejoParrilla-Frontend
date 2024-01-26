@@ -46,7 +46,7 @@ export const Sobrenosotros = (): JSX.Element => {
       {/* Segunda sección */}
       <div style={{  width: '100vw' }}>
         <div className="home_container" style={{ backgroundColor: 'white', marginTop: '0vh', marginBottom: '0vh'}}>
-          <h1 className='title tit-sobre-nosotros'>Nuestra Filosofía</h1>
+          <h2 className='title tit-sobre-nosotros'>Nuestra Filosofía</h2>
           <div className="sobre-nosotros"style={{}}>
             <p style={{ color: 'black' }}>Somos restaurantes especializados en Parrilla y platos típicos colombianos desde 1999. </p>
             <p style={{ color: 'black' }}>Nuestro personal cuenta con una amplia experiencia y un gusto exquisito en la preparación de nuestro menú.  </p>
