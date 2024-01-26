@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavBar.css";
 import logo from "../assets/LOGOO-300x114.png";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const VIEWS = ['Inicio', 'Nosotros', 'Menú', 'Contacto'];
 
@@ -45,7 +46,7 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
     return (
         <header className="header">
             <div className="header__logo">
-                <img className="logo" src={logo} alt="Logo" /> 
+                <img className="logo" src={logo} alt="Logo" />
             </div>
             <nav className={`header__nav ${isOpen ? 'open' : ''}`}>
                 <ul className="header__nav-list">
@@ -57,6 +58,7 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
                 </ul>
                 <div className='dropdown'>
                     <div className='dropdown-header' onClick={toggleDropdown}>
+                    <i className="fas fa-map-marker-alt" aria-hidden="true"></i>
                         {selectedItem ? items.find(item => item.id === selectedItem?.id)?.label : " Selecciona"}
                         <i className={`fa fa-chevron-right icon ${isSelectRestaurantOpen && "open"}`}></i>
                     </div>

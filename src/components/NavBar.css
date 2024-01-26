@@ -123,15 +123,15 @@ body {
 /* Menú de selector de restaurante */
 .dropdown {
     position: absolute;
-    right: 3%;
+    right: 0%;
     top: 0%;
     width: 16vw;
-    border-radius: 10px;
+    border-radius: 25px;
     box-shadow: 0 10px 25px rgba(0,0,0,.1);
     background-color: var(--color-our-orange);
     margin-right: 5vw;
     color: var(--color-white);
-    font-size: 25px;
+    font-size: 1.3vw;
   }
   
   .dropdown-header {
@@ -172,7 +172,7 @@ body {
   
   .icon {
     font-size: 13px;
-    color: #91A5BE;
+    color: var(--color-white);
     transform: rotate(0deg);
     transition: all .2s ease-in-out;
   }
