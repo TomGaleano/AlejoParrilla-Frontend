@@ -44,7 +44,33 @@ export const Sobrenosotros = (): JSX.Element => {
           </div>
         </div>
       </div>
-      {/* Segunda sección */}
+      {/* Segunda Sección */}
+
+
+
+      <div className='home_container'>
+        <h2 className="title" >Misión</h2>
+        <div className="">
+          <div className=""></div>
+          <div className=""></div>
+        </div>
+        <div className="">
+          <div className=""></div>
+          <div className=""></div>
+        </div>
+        <div className="">
+          <div className=""></div>
+          <div className=""></div>
+        </div>
+        <div className="">
+          <div className=""></div>
+          <div className=""></div>
+        </div>
+      </div>
+
+
+
+      {/* Tercera Sección */}
       <div style={{  width: '100vw' }}>
         <div className="home_container" style={{ backgroundColor: 'white', marginTop: '0vh', marginBottom: '0vh'}}>
           <h2 className='title tit-sobre-nosotros'>Nuestra Filosofía</h2>
@@ -59,10 +85,10 @@ export const Sobrenosotros = (): JSX.Element => {
         <div className="column" style={{padding: 0}}>
           <h2 className="menu_title" style={{marginBottom:'4vh'}}>Nuestros restaurantes</h2>
           <Carousel />
-          <FloatingButton/>
         </div>
       </div>
       <div className='wave_spacer white-blue'></div>
+      <FloatingButton/>
     </div>
   );
 };
