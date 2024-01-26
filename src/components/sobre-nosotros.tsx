@@ -2,6 +2,7 @@
 import "./Inicio.css";
 import lomo from "../assets/lomo.png";
 import Carousel from "./carousel";
+import FloatingButton from "./FloatingButton.tsx";
 
 export const Sobrenosotros = (): JSX.Element => {
   return (
@@ -58,6 +59,7 @@ export const Sobrenosotros = (): JSX.Element => {
         <div className="column" style={{padding: 0}}>
           <h2 className="menu_title" style={{marginBottom:'4vh'}}>Nuestros restaurantes</h2>
           <Carousel />
+          <FloatingButton/>
         </div>
       </div>
       <div className='wave_spacer white-blue'></div>
