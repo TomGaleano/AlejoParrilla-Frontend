@@ -72,7 +72,7 @@ body {
 .header__nav-link {
     text-decoration: none;
     color: #fff;
-    font-size: 1.3vw;
+    font-size: 1.4vw;
     transition: color 0.3s ease;
 }
 .header__nav-item {
@@ -131,7 +131,6 @@ body {
     border-top: 1px solid #E5E8EC;
     display: none;
   }
-  
   .dropdown-body.open {
     display: block;
   }
@@ -237,7 +236,7 @@ body {
         width: 60%;
         top:80%;
         left: 19%;
-        font-size: larger;
+        font-size: 30px;
         margin: 0vh;
         padding: 5px;
     }
@@ -250,5 +249,7 @@ body {
     .dropdown.with-body .dropdown-header {
         display: none;
       }
-    
+      .header__nav-link {
+        font-size: 35px;
+    }
 }
