@@ -6,17 +6,21 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const VIEWS = ['Inicio', 'Nosotros', 'Menú', 'Contacto'];
 
-const restaurantes = [
-    { id: 1, label: "Diver Plaza" },
-    { id: 2, label: "Nuestro Bogotá" },
-    { id: 3, label: "Buró 25" },
-    { id: 4, label: "Fontibón" },
-];
 
-const initialSelectedItem = restaurantes.find(restaurant => restaurant.label === "Selecciona tu sede");
 
-function Navbar({ setView }: { setView: (view: string) => void }) {
+function Navbar({ 
+    setView, 
+    selectedItem, 
+    setSelectedItem, 
+    restaurantes 
+  }: { 
+    setView: (view: string) => void, 
+    selectedItem: { id: number; label: string } | undefined, 
+    setSelectedItem: (item: { id: number; label: string } | undefined) => void,
+    restaurantes: { id: number; label: string }[]
+  }) {
 
+    
     //Estas constantes manejan el estado del menú de hamburguesa en mobile
     const [isOpen, setIsOpen] = useState(false);
 
@@ -27,15 +31,12 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
     //Estas constantes manejan el estado del desplegable de restaurantes
     const [isSelectRestaurantOpen, setIsSelectRestaurantOpen] = useState(false);
     const [items] = useState(restaurantes);
-    const [selectedItem, setSelectedItem] = useState(initialSelectedItem);
-    const handleMenuToggle = () => setIsOpen(!isOpen);
 
     const toggleDropdown = () => setIsSelectRestaurantOpen(!isSelectRestaurantOpen);
 
     const handleItemClick = (item: { id: number; label: string } | undefined) => {
         setSelectedItem(item);
         toggleDropdown();
-        handleMenuToggle();
     };
 
     const handleLinkClick = (view: string) => {
@@ -56,7 +57,7 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
                         </li>
                     ))}
                 </ul>
-                <div className='dropdown'>
+                <div className={`dropdown ${isSelectRestaurantOpen ? 'with-body' : ''}`}>
                     <div className='dropdown-header' onClick={toggleDropdown}>
                     <i className="fas fa-map-marker-alt" aria-hidden="true"></i>
                         {selectedItem ? items.find(item => item.id === selectedItem?.id)?.label : " Selecciona"}
@@ -73,6 +74,7 @@ function Navbar({ setView }: { setView: (view: string) => void }) {
                                 {item.label}
                             </div>
                         ))}
+                        
                     </div>
                 </div>
                 <button className="header__nav-close-button" onClick={handleToggle}>

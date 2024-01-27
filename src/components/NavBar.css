@@ -72,7 +72,7 @@ body {
 .header__nav-link {
     text-decoration: none;
     color: #fff;
-    font-size: 25px;
+    font-size: 1.3vw;
     transition: color 0.3s ease;
 }
 .header__nav-item {
@@ -92,22 +92,8 @@ body {
     color: #fff;
     font-size: 24px;
 }
-.button__header {
-    background-color: var(--color-our-orange);
-    font-weight: bold;
-    color: #ffffff; /* You may want to set a contrasting text color */
-    border: none; /* Remove default button border */
-    padding: 17px 35px; /* Add some padding */
-    cursor: pointer; /* Change cursor on hover */
-    white-space: nowrap; /* Add this line */
-    font-size: 20px; 
-    margin-right: 6vw;
-    border-radius: 50px;
-}
 
-.button__header:hover {
-    background-color: var(--color-our-orange-light);
-}
+
 
 .header__spacer{
     aspect-ratio: 1080/50;
@@ -117,9 +103,7 @@ body {
     background-size: cover;
     padding: 0%;
 }
-.header__top{
-    background-image: url("../assets/test-wave-navbar.svg");
-}
+
 /* Menú de selector de restaurante */
 .dropdown {
     position: absolute;
@@ -250,9 +234,21 @@ body {
         display: none;
     }
     .dropdown{
-        width: fit-content;
-        right: 31%;
-        top:75%;
+        width: 60%;
+        top:80%;
+        left: 19%;
+        font-size: larger;
+        margin: 0vh;
+        padding: 5px;
     }
+    .dropdown-body{
+        border: 0px;
+    }
+    .dropdown.with-body {
+        top:65%
+    }
+    .dropdown.with-body .dropdown-header {
+        display: none;
+      }
     
 }

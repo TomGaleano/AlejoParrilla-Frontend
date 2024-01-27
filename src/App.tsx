@@ -5,8 +5,6 @@ import { Sobrenosotros } from './components/sobre-nosotros';
 import { Vinculate } from './components/vinculate';
 import Navbar from './components/navbar';
 import MenuGrid from './components/menu';
-
-
 //import ReactGA from 'react-ga';
 
 //const trackingId = <Tracking ID HERE>;
@@ -19,11 +17,23 @@ const faviconUrls = [
   '/favicon4.ico',
 ];
 
+const restaurantes = [
+  { id: 1, label: "Diver Plaza" },
+  { id: 2, label: "Nuestro Bogotá" },
+  { id: 3, label: "Buró 25" },
+  { id: 4, label: "Fontibón" },
+];
+
+const initialSelectedItem = restaurantes.find(restaurant => restaurant.label === "Selecciona tu sede");
+
+
 function App() {
 
   const [view, setView] = useState('Inicio');
   const iconIndex = Math.floor(Math.random() * faviconUrls.length) + 1;
 
+  //Aquí se definen las constantes para restaurante.
+  const [selectedItem, setSelectedItem] = useState(initialSelectedItem);
 
   const renderView = () => {
     switch (view) {
@@ -46,7 +56,12 @@ function App() {
         <link rel="icon" href={faviconUrls[iconIndex - 1]} />
       </Helmet>
       <div>
-        <Navbar setView={setView} />
+        <Navbar
+          setView={setView}
+          selectedItem={selectedItem}
+          setSelectedItem={setSelectedItem}
+          restaurantes={restaurantes}
+        />
         {renderView()}
       </div>
     </>
