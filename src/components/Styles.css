@@ -138,11 +138,13 @@
     justify-content: center;
     align-items: center;
 }
+
 .menu_column {
     background-color: var(--color-our-brown-light);
     border-radius: 50px;
     padding: 4vh;
 }
+
 .menu_column p {
     color: var(--color-white);
 }
@@ -199,17 +201,19 @@
     padding-right: 12vh;
 }
 
-.slider{
+.slider {
     width: 40vw;
 }
+
 .menu_item {
     margin: 2vh;
     border: 3px solid var(--color-our-orange-light);
     border-radius: 25px;
-    height: 12vh;
-    width: 70vh;
+    height: 15vh;
+    width: 30vw;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    /* Optional: Align items vertically in the center */
     background-color: var(--color-our-blue-light);
 }
 
@@ -226,9 +230,11 @@
 .menu_item_info {
     padding-left: 2vh;
     padding-right: 2vh;
+    width: 20vw;
 }
 
-.menu_item h2, .menu_item p {
+.menu_item h2,
+.menu_item p {
     color: var(--color-white);
     font-size: larger;
 }
@@ -283,7 +289,7 @@
 }
 
 /*Definición de la sección de restaurantes en sobre nosotros y sus propiedades*/
-.restaurant_container{
+.restaurant_container {
     background-color: var(--color-our-blue);
     min-width: 100px;
     max-width: 400px;
@@ -292,59 +298,67 @@
     border-radius: 20px;
     overflow: hidden;
     color: var(--color-white);
-  }
-  .restaurant_container-div1{
+}
+
+.restaurant_container-div1 {
     width: 50%;
     padding: 10px;
     min-width: 160px;
-  }
-  .restaurant_container-div2{
+}
+
+.restaurant_container-div2 {
     width: 50%;
     min-width: 160px;
     padding: 10px;
     min-width: none;
-  }
-  .restaurant_container-div1-image{
+}
+
+.restaurant_container-div1-image {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
-  
-  }
-  .restaurant_container-div2 h2{
+
+}
+
+.restaurant_container-div2 h2 {
     color: #fff;
     font-size: 18px;
     margin: 0;
-  }
-  .restaurant_container-div2 p{
+}
+
+.restaurant_container-div2 p {
     margin: 5px 0;
     font-size: 15px !important;
-    color:#ffffff;
-  }
-  .restaurant_container-div2 p a{
-    color:#ffffff;
-  }
-  @media (max-width: 500px) {
+    color: #ffffff;
+}
+
+.restaurant_container-div2 p a {
+    color: #ffffff;
+}
+
+@media (max-width: 500px) {
     .restaurant_container {
-      flex-wrap: wrap;
-      display: inline-flex;
-      min-width: 0;
-      max-width: none;
-      margin: 10px;
+        flex-wrap: wrap;
+        display: inline-flex;
+        min-width: 0;
+        max-width: none;
+        margin: 10px;
     }
+
     .restaurant_container-div1,
     .restaurant_container-div2 {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-  .restaurant_container-div2-button {
+}
+
+.restaurant_container-div2-button {
     font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  
-  .restaurant_container-div2-button {
+}
+
+
+.restaurant_container-div2-button {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: white;
@@ -355,9 +369,9 @@
     position: relative;
     cursor: pointer;
     overflow: hidden;
-  }
-  
-  .restaurant_container-div2-button span:not(:nth-child(6)) {
+}
+
+.restaurant_container-div2-button span:not(:nth-child(6)) {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -367,37 +381,37 @@
     background-color: var(--color-our-orange-light);
     border-radius: 50%;
     transition: .6s ease;
-  }
-  
-  .restaurant_container-div2-button span:nth-child(6) {
+}
+
+.restaurant_container-div2-button span:nth-child(6) {
     position: relative;
-  }
-  
-  .restaurant_container-div2-button span:nth-child(1) {
+}
+
+.restaurant_container-div2-button span:nth-child(1) {
     transform: translate(-3.3em, -4em);
-  }
-  
-  .restaurant_container-div2-button span:nth-child(2) {
+}
+
+.restaurant_container-div2-button span:nth-child(2) {
     transform: translate(-6em, 1.3em);
-  }
-  
-  .restaurant_container-div2-button span:nth-child(3) {
+}
+
+.restaurant_container-div2-button span:nth-child(3) {
     transform: translate(-.2em, 1.8em);
-  }
-  
-  .restaurant_container-div2-button span:nth-child(4) {
+}
+
+.restaurant_container-div2-button span:nth-child(4) {
     transform: translate(3.5em, 1.4em);
-  }
-  
-  .restaurant_container-div2-button span:nth-child(5) {
+}
+
+.restaurant_container-div2-button span:nth-child(5) {
     transform: translate(3.5em, -3.8em);
-  }
-  
-  .restaurant_container-div2-button:hover span:not(:nth-child(6)) {
+}
+
+.restaurant_container-div2-button:hover span:not(:nth-child(6)) {
     transform: translate(-50%, -50%) scale(4);
     transition: 1.5s ease;
-  }
-    
+}
+
 
 /*Definición de la sección de vinculate y sus propiedades*/
 .form_container {
@@ -537,7 +551,8 @@
     .restaurant_card p {
         font-size: 2vh;
     }
-    .menu_container{
+
+    .menu_container {
         padding-bottom: 0vh;
         margin-bottom: 0vh;
     }

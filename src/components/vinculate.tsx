@@ -1,5 +1,5 @@
 
-import "./Inicio.css";
+import "./Styles.css";
 import { Widget } from '@typeform/embed-react';
 
 export const Vinculate = (): JSX.Element => {

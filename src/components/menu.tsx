@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import "./Inicio.css";
+import "./Styles.css";
 import Slider from 'react-slick';
 
 interface MenuItem {
@@ -12,14 +12,14 @@ interface MenuItem {
     is_available: boolean;
 }
 const settings = {
-    className: "center",
-      centerMode: true,
-      infinite: true,
-      centerPadding: "0px",
-      slidesToShow: 1,
-      speed: 500,
-      rows: 2,
-      slidesPerRow: 1
+    className: "slider_menu",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "0px",
+    slidesToShow: 1,
+    speed: 500,
+    rows: 2,
+    slidesPerRow: 1
 };
 
 function MenuGrid() {
@@ -37,7 +37,7 @@ function MenuGrid() {
     }, [category]);
 
     return (
-        <div style={{backgroundColor:'#6E8CA3'}}>
+        <div style={{ backgroundColor: '#6E8CA3' }}>
             <div className="home_container menu_container">
                 <div className="column menu_column" >
                     <h2 className="menu_title">Nuestro menú</h2>
@@ -58,11 +58,13 @@ function MenuGrid() {
                         </div>
                         <Slider {...settings} className="slider">
                             {items.map(item => (
-                                <div className="menu_item" key={item.id} >
-                                    <img src={`src/menu/hamburgesa-doble-carne.jpg`} alt={item.name} />
-                                    <div className="menu_item_info">
-                                        <h2>{item.name} - ${item.price}</h2>
-                                        <p>{item.description}</p>
+                                <div key={item.id}>
+                                    <div className="menu_item" key={item.id} >
+                                        <img src={`src/menu/hamburgesa-doble-carne.jpg`} alt={item.name} />
+                                        <div className="menu_item_info">
+                                            <h2>{item.name} - ${item.price}</h2>
+                                            <p>{item.description}</p>
+                                        </div>
                                     </div>
                                 </div>
                             ))}

@@ -68,7 +68,7 @@ function Navbar({
                             <div
                                 className="dropdown-item"
                                 onClick={() => handleItemClick(item)}
-                                id={item.id.toString()}
+                                key={item.id.toString()}
                             >
                                 <span className={`dropdown-item-dot ${item.id === selectedItem?.id && 'selected'}`}>• </span>
                                 {item.label}

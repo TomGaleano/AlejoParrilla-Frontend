@@ -1,5 +1,5 @@
 
-import "./Inicio.css";
+import "./Styles.css";
 import lomo from "../assets/lomo.png";
 import Carousel from "./carousel";
 

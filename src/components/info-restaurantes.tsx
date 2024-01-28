@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './loader.css'
-import './Inicio.css'
+import './Styles.css'
 
 
 interface Schedule {

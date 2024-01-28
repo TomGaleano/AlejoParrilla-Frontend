@@ -1,4 +1,4 @@
-import "./Inicio.css";
+import "./Styles.css";
 import restaurant from '../assets/Nosotros-Fachada-AlejoParrilla.png';
 import parrilla from '../assets/parrila.png';
 import MenuGrid from './menu.tsx';
