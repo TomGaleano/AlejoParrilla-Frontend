@@ -1,4 +1,3 @@
-
 import "./Inicio.css";
 import lomo from "../assets/lomo.png";
 import Carousel from "./carousel";
