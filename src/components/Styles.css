@@ -9,7 +9,6 @@
     padding-top: 15vh;
     padding-bottom: 0vh;
     overflow: hidden;
-    background-image: url("../assets/background-yellow.png");
     background-position: center center;
     background-size: contain;
 }
@@ -423,7 +422,7 @@
 
 
 /*Definición de mobile*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     .form_container {
         margin: 0vh;
         margin-top: 10vh;
