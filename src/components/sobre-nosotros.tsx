@@ -48,23 +48,25 @@ export const Sobrenosotros = (): JSX.Element => {
 
 
 
-      <div className='home_container'>
-        <h2 className="title" >Misión</h2>
-        <div className="">
-          <div className=""></div>
-          <div className=""></div>
-        </div>
-        <div className="">
-          <div className=""></div>
-          <div className=""></div>
-        </div>
-        <div className="">
-          <div className=""></div>
-          <div className=""></div>
-        </div>
-        <div className="">
-          <div className=""></div>
-          <div className=""></div>
+      <div className='home_container' style={{display:'flex', flexDirection:'column', backgroundImage:'../assets/fondo-azul-de-insignias.png'}}>
+         
+            <h2 className="title">Nuestra Misión</h2>
+
+
+          
+        <div style={{display: 'flex', justifyContent: 'space-evenly', flexWrap:'wrap'}}>
+          
+          <div className="general-box" >
+            <img src="./images/argolla.jpg" width={20} height={20} alt="" />
+            <div className="text-box">En Alejo Parrilla, nuestra misión es cautivar a nuestros clientes con auténticos sabores colombianos fusionados con la pasión y la maestría de la parrilla.
+            </div>
+          </div>
+          <div className="general-box">
+            <div className="text-box">Guiados por valores fundamentales de empatía hacia nuestros clientes y personal, así como una dedicación por la calidad de nuestros productos, nos esforzamos por brindar experiencias culinarias excepcionales.</div>
+          </div>
+          <div className="general-box">
+            <div className="text-box">Alejo Parrilla es más que un restaurante; es un lugar familiar donde cada comida se convierte en una celebración especial, ofreciendo no solo platos típicos colombianos, sino tambien un servicio cállido y acogedor.</div>
+          </div>
         </div>
       </div>
 

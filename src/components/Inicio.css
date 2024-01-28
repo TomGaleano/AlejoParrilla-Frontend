@@ -283,6 +283,28 @@
 }
 
 /*Definición de la sección de restaurantes en sobre nosotros y sus propiedades*/
+
+
+.general-box{
+    display: flex;
+    flex-direction: column;
+    background: var(--color-our-blue-gray);
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 230px;
+    width: 25%;
+    text-align: justify;
+    margin: 15px;
+}
+
+
+
+
+
+
+
+
+
 .restaurant_container{
     background-color: var(--color-our-blue-gray);
     min-width: 100px;
