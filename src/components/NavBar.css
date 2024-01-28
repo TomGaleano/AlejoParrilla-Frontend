@@ -195,8 +195,9 @@ body {
     }
 
     .header__nav-list {
+        position: absolute;
+        top:25%;
         flex-direction: column;
-        margin-top: 30px;
         margin-right: 25px; /*NO BORRAR ESTA MIERDA*/
         justify-content: center;
         width: 100%;
@@ -234,7 +235,7 @@ body {
     }
     .dropdown{
         width: 60%;
-        top:80%;
+        top:75%;
         left: 19%;
         font-size: 30px;
         margin: 0vh;
@@ -244,7 +245,7 @@ body {
         border: 0px;
     }
     .dropdown.with-body {
-        top:65%
+        top:57%
     }
     .dropdown.with-body .dropdown-header {
         display: none;
