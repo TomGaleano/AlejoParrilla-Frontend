@@ -5,6 +5,8 @@ import Slider from "react-slick";
 import DetallesRestaurante from './info-restaurantes.tsx';
 
 function Carousel (){
+  // const [selectedItem, setSelectedItem] = useState(null);
+  // console.log(selectedItem);
         const settings = {
             dots: true,
             infinite: true,
@@ -12,8 +14,7 @@ function Carousel (){
             slidesToShow: 2,
             slidesToScroll: 2,
             initialSlide: 1,
-            centerMode: true,
-            centerPadding: "0px",
+            centerMode: false,
             responsive: [
                 {
                     breakpoint: 1024,
@@ -22,12 +23,12 @@ function Carousel (){
                       slidesToScroll: 2,
                       infinite: true,
                       dots: true,
-                      centerMode: true,
+                      centerMode: false,
                       centerPadding: "0px",
                     }
                   },
                   {
-                    breakpoint: 600,
+                    breakpoint: 790,
                     settings: {
                       slidesToShow: 1,
                       slidesToScroll: 1,

@@ -28,7 +28,7 @@ function MenuGrid() {
     const categories = ['Hamburguesas', 'Bowls', 'Rápidas', 'Entradas', 'Sopas', 'Menú Infantil', 'Típicos', 'Bebidas'];
 
 
-
+// presenta un error en la consola, pero funciona bien
     useEffect(() => {
         fetch(`http://localhost:3000/api/filtermenu?category=${category}`)
             .then(response => response.json())

@@ -2,6 +2,7 @@
 import "./Styles.css";
 import lomo from "../assets/lomo.png";
 import Carousel from "./carousel";
+import FloatingButton from "./FloatingButton.tsx";
 
 export const Sobrenosotros = (): JSX.Element => {
   return (
@@ -43,10 +44,38 @@ export const Sobrenosotros = (): JSX.Element => {
           </div>
         </div>
       </div>
-      {/* Segunda sección */}
+      {/* Segunda Sección */}
+
+
+
+      <div className='home_container' style={{display:'flex', flexDirection:'column', backgroundImage:'../assets/fondo-azul-de-insignias.png'}}>
+         
+            <h2 className="title">Nuestra Misión</h2>
+
+
+          
+        <div style={{display: 'flex', justifyContent: 'space-evenly', flexWrap:'wrap'}}>
+          
+          <div className="general-box" >
+            <img src="./images/argolla.jpg" width={20} height={20} alt="" />
+            <div className="text-box">En Alejo Parrilla, nuestra misión es cautivar a nuestros clientes con auténticos sabores colombianos fusionados con la pasión y la maestría de la parrilla.
+            </div>
+          </div>
+          <div className="general-box">
+            <div className="text-box">Guiados por valores fundamentales de empatía hacia nuestros clientes y personal, así como una dedicación por la calidad de nuestros productos, nos esforzamos por brindar experiencias culinarias excepcionales.</div>
+          </div>
+          <div className="general-box">
+            <div className="text-box">Alejo Parrilla es más que un restaurante; es un lugar familiar donde cada comida se convierte en una celebración especial, ofreciendo no solo platos típicos colombianos, sino tambien un servicio cállido y acogedor.</div>
+          </div>
+        </div>
+      </div>
+
+
+
+      {/* Tercera Sección */}
       <div style={{  width: '100vw' }}>
         <div className="home_container" style={{ backgroundColor: 'white', marginTop: '0vh', marginBottom: '0vh'}}>
-          <h1 className='title tit-sobre-nosotros'>Nuestra Filosofía</h1>
+          <h2 className='title tit-sobre-nosotros'>Nuestra Filosofía</h2>
           <div className="sobre-nosotros"style={{}}>
             <p style={{ color: 'black' }}>Somos restaurantes especializados en Parrilla y platos típicos colombianos desde 1999. </p>
             <p style={{ color: 'black' }}>Nuestro personal cuenta con una amplia experiencia y un gusto exquisito en la preparación de nuestro menú.  </p>
@@ -54,13 +83,14 @@ export const Sobrenosotros = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <div className="home_container" style={{paddingTop:'0vh', marginTop:'0vh', marginBottom:'15vh'}}>
-        <div className="column" >
+      <div className="home_container" style={{paddingTop:'0vh', marginTop:'0vh', marginBottom:'15vh', paddingLeft:'0px', paddingRight: '0px'}}>
+        <div className="column" style={{padding: 0}}>
           <h2 className="menu_title" style={{marginBottom:'4vh'}}>Nuestros restaurantes</h2>
           <Carousel />
         </div>
       </div>
       <div className='wave_spacer white-blue'></div>
+      <FloatingButton/>
     </div>
   );
 };
