@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavBar.css";
 import logo from "../assets/LOGOO-300x114.png";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import FloatingButton from './FloatingButton';
 
 const VIEWS = ['Inicio', 'Nosotros', 'Menú', 'Contacto'];
 
@@ -84,6 +85,7 @@ function Navbar({
             <button className={`header__nav-open-button ${isOpen ? 'hide' : ''}`} onClick={handleToggle}>
                 <FaBars />
             </button>
+            {!isOpen && <FloatingButton />}
         </header >
     )
 }

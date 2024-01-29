@@ -2,7 +2,6 @@
 import "./Styles.css";
 import lomo from "../assets/lomo.png";
 import Carousel from "./carousel";
-import FloatingButton from "./FloatingButton.tsx";
 
 export const Sobrenosotros = (): JSX.Element => {
   return (
@@ -90,7 +89,6 @@ export const Sobrenosotros = (): JSX.Element => {
         </div>
       </div>
       <div className='wave_spacer white-blue'></div>
-      <FloatingButton/>
     </div>
   );
 };
