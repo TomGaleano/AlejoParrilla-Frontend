@@ -1,5 +1,5 @@
 import './loadingPage.css';
-const loadingPage = () => {
+const LoadingPage = () => {
   return (
     <div className="loader">
         <div className="loader_item"></div>
@@ -18,4 +18,4 @@ const loadingPage = () => {
   );
 };
 
-export default loadingPage;
+export default LoadingPage;

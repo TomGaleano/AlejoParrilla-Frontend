@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Helmet from 'react-helmet';
 import { Inicio } from './components/inicio';
 import { Sobrenosotros } from './components/sobre-nosotros';
 import { Vinculate } from './components/vinculate';
 import Navbar from './components/navbar';
 import MenuGrid from './components/menu';
+import LoadingPage from './components/loadingPage';
 //import ReactGA from 'react-ga';
 
 //const trackingId = <Tracking ID HERE>;
@@ -31,7 +32,17 @@ function App() {
 
   const [view, setView] = useState('Inicio');
   const iconIndex = Math.floor(Math.random() * faviconUrls.length) + 1;
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    const handleLoad = () => {
+      setLoading(false); // Cuando se carga completamente el sitio, oculta la pantalla de carga
+    };
+    window.addEventListener('load', handleLoad);
+    return () => {
+      window.removeEventListener('load', handleLoad); // Limpia el evento al desmontar el componente
+    };
+  }, []);
   //Aquí se definen las constantes para restaurante.
   const [selectedItem, setSelectedItem] = useState(initialSelectedItem);
 
@@ -52,7 +63,11 @@ function App() {
 
   return (
     <>
-      <Helmet>
+      {loading ? ( // Muestra la pantalla de carga si loading es true
+        <LoadingPage />
+      ) : (
+        <>
+        <Helmet>
         <link rel="icon" href={faviconUrls[iconIndex - 1]} />
       </Helmet>
       <div>
@@ -64,7 +79,14 @@ function App() {
         />
         {renderView()}
       </div>
+        </>
+      )}
     </>
+
+
+
+
+
 
   );
 }
