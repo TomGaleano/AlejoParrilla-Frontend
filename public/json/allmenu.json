@@ -1,0 +1,542 @@
+[
+    {
+        "id": 23,
+        "name": "Doble Carne",
+        "description": "Hamburguesa doble carne de res de 140gr cada una, con tocineta, queso amarillo, lechuga, tomate y cebolla grille.",
+        "category": "Hamburguesas",
+        "price": 19900,
+        "image": "menu/hamburguesa-doble-carne.jpg",
+        "is_available": false
+    },
+    {
+        "id": 24,
+        "name": "Mexicana",
+        "description": "Hamburguesa de res con salsa de guacamole, frijol refrito, tostacos, queso, tocineta, cebolla morada, lechuga y tomate.",
+        "category": "Hamburguesas",
+        "price": 19500,
+        "image": "menu/hamburguesa-mexicana.jpg",
+        "is_available": false
+    },
+    {
+        "id": 25,
+        "name": "Costeña",
+        "description": "Hamburguesa de res de 140 gr con suero costeño, plátano maduro, cebolla morada, queso, lechuga y tomate.",
+        "category": "Hamburguesas",
+        "price": 18900,
+        "image": "menu/hamburguesa-costena.jpg",
+        "is_available": false
+    },
+    {
+        "id": 26,
+        "name": "Hawaiana",
+        "description": "Hamburguesa carne de 140gr de res con piña asada, jamón, queso, lechuga, cebolla y tomate.",
+        "category": "Hamburguesas",
+        "price": 18900,
+        "image": "menu/hamburguesa-hawaiana.jpg",
+        "is_available": false
+    },
+    {
+        "id": 27,
+        "name": "Artesanal",
+        "description": "Hamburguesa 250 gr de carne con centro de queso, cebolla grille, lechuga, tomate, champiñones, queso y pepinillos.",
+        "category": "Hamburguesas",
+        "price": 20900,
+        "image": "menu/hamburguesa-artesanal.jpg",
+        "is_available": false
+    },
+    {
+        "id": 28,
+        "name": "Mixta",
+        "description": "Hamburguesa res y pechuga asada 140 gr c/u con lechuga, tocineta, tomate, cebolla grille y queso",
+        "category": "Hamburguesas",
+        "price": 19900,
+        "image": "menu/hamburguesa-mixta.jpg",
+        "is_available": false
+    },
+    {
+        "id": 29,
+        "name": "Res",
+        "description": "Hamburguesa de 140 gr con tocineta, queso, lechuga, tomate y cebolla grille.",
+        "category": "Hamburguesas",
+        "price": 14900,
+        "image": "menu/hamburguesa-res.jpg",
+        "is_available": false
+    },
+    {
+        "id": 30,
+        "name": "Criolla",
+        "description": "Hamburguesa de 140gr de res con huevo frito, queso, salsa criolla y lechuga.",
+        "category": "Hamburguesas",
+        "price": 15900,
+        "image": "menu/hamburguesa-criolla.jpg",
+        "is_available": false
+    },
+    {
+        "id": 31,
+        "name": "Pechuga",
+        "description": "Hamburguesa con pechuga asada, lechuga, tomate y cebolla grille.",
+        "category": "Hamburguesas",
+        "price": 15500,
+        "image": "menu/hamburguesa-pechuga.jpg",
+        "is_available": false
+    },
+    {
+        "id": 32,
+        "name": "Combo Pareja",
+        "description": "Dos hamburguesas de res 140gr c/u con tocineta, acompañada de papas fritas y dos gaseosas.",
+        "category": "Hamburguesas",
+        "price": 31900,
+        "image": "menu/hamburguesas-combo-pareja.jpg",
+        "is_available": false
+    },
+    {
+        "id": 33,
+        "name": "Carnes",
+        "description": "Julianas de res y pollo con ensalada verde, arroz y tajadas de plátano verde.",
+        "category": "Bowls",
+        "price": 22900,
+        "image": "menu/bowl-carnes.jpg",
+        "is_available": false
+    },
+    {
+        "id": 34,
+        "name": "Frijoles",
+        "description": "Frijoles con chicharrones, arroz, carne molida, plátano maduro y aguacate.",
+        "category": "Bowls",
+        "price": 22900,
+        "image": "menu/bowl-frijoles.jpg",
+        "is_available": false
+    },
+    {
+        "id": 35,
+        "name": "Choripapa",
+        "description": "Chorizo coctel con papas francesas.",
+        "category": "Rápidas",
+        "price": 8900,
+        "image": "menu/choripapa.jpg",
+        "is_available": false
+    },
+    {
+        "id": 36,
+        "name": "Salchipapa",
+        "description": "Salchicha americana con papas a la francesa.",
+        "category": "Rápidas",
+        "price": 8900,
+        "image": "menu/salchipapa.jpg",
+        "is_available": false
+    },
+    {
+        "id": 37,
+        "name": "Salchipapa Agrandada",
+        "description": "Salchicha americana con papas a la francesa.",
+        "category": "Rápidas",
+        "price": 15500,
+        "image": "menu/salchipapa-agrandada.jpg",
+        "is_available": false
+    },
+    {
+        "id": 38,
+        "name": "Patacón Mixto",
+        "description": "Patacón dulce cubierto de carne desmechada, pollo con champiñones, queso, guacamole y maiz tierno.",
+        "category": "Rápidas",
+        "price": 20900,
+        "image": "menu/patacon-mixto.jpg",
+        "is_available": false
+    },
+    {
+        "id": 39,
+        "name": "Lasagna Mixta",
+        "description": "Lasaña de res y pollo con salsa de champiñones y pan tajado.",
+        "category": "Rápidas",
+        "price": 20900,
+        "image": "menu/lasaña-mixta.jpg",
+        "is_available": false
+    },
+    {
+        "id": 40,
+        "name": "Chunchullo",
+        "description": "Chunchullo acompañado de arepa paisa.",
+        "category": "Entradas",
+        "price": 14900,
+        "image": "menu/chunchullo.jpg",
+        "is_available": false
+    },
+    {
+        "id": 41,
+        "name": "Morcilla con Criollas",
+        "description": "Morcilla acompañada de papa criolla.",
+        "category": "Entradas",
+        "price": 8400,
+        "image": "menu/morcilla.jpg",
+        "is_available": false
+    },
+    {
+        "id": 42,
+        "name": "Patacón con Camarones",
+        "description": "Delicioso patacón con camarones en la parte superior.",
+        "category": "Entradas",
+        "price": 16400,
+        "image": "menu/patacon-con-camarones.jpg",
+        "is_available": false
+    },
+    {
+        "id": 43,
+        "name": "Picada para 2",
+        "description": "Picada con costilla de cerdo, pechuga, carne de res, arepa con queso, chorizo, papa criolla, chicharrón, morcilla y plátanos.",
+        "category": "Típicos",
+        "price": 64900,
+        "image": "menu/picada-para-2.jpg",
+        "is_available": false
+    },
+    {
+        "id": 44,
+        "name": "Sudado de Costilla",
+        "description": "Costilla de res sudada con papa, yuca, mazorca, arroz y aguacate.",
+        "category": "Típicos",
+        "price": 40900,
+        "image": "menu/sudado-de-costilla.jpg",
+        "is_available": false
+    },
+    {
+        "id": 45,
+        "name": "Sobrebarriga en Salsa",
+        "description": "Sobrebarriga con yuca y papa en salsa, arroz y aguacate.",
+        "category": "Típicos",
+        "price": 37900,
+        "image": "menu/sobrebarriga-en-salsa.jpg",
+        "is_available": false
+    },
+    {
+        "id": 46,
+        "name": "Sobrebarriga a la Parrilla",
+        "description": "Sobrebarriga a la parrilla con papas y ensalada.",
+        "category": "Típicos",
+        "price": 34900,
+        "image": "menu/sobrebarriga-a-la-parrilla.jpg",
+        "is_available": false
+    },
+    {
+        "id": 47,
+        "name": "Guiso de Cola",
+        "description": "Guiso de cola con yuca, papa en salsa, mazorca, arroz y aguacate.",
+        "category": "Típicos",
+        "price": 42500,
+        "image": "menu/guiso-de-cola.jpg",
+        "is_available": false
+    },
+    {
+        "id": 48,
+        "name": "Chuleta Valluna",
+        "description": "Chuleta valluna, con papa francesa, aguacate y arroz.",
+        "category": "Típicos",
+        "price": 36900,
+        "image": "menu/chuleta-valluna.jpg",
+        "is_available": false
+    },
+    {
+        "id": 49,
+        "name": "Lengua en Salsa",
+        "description": "Lengua en salsa criolla acompañada de arroz, papa y yuca en salsa y ensalada.",
+        "category": "Típicos",
+        "price": 40900,
+        "image": "menu/lengua-en-salsa.jpg",
+        "is_available": false
+    },
+    {
+        "id": 50,
+        "name": "Bandeja Paisa",
+        "description": "Bandeja paisa con carne molida, arroz, frijoles, chicharrón, morcilla, arepa, plátano maduro, aguacate y huevo frito.",
+        "category": "Típicos",
+        "price": 36900,
+        "image": "menu/bandeja-paisa.jpg",
+        "is_available": false
+    },
+    {
+        "id": 51,
+        "name": "Arroz con Pollo",
+        "description": "Arroz con pollo, papa francesa y ensalada con aguacate.",
+        "category": "Típicos",
+        "price": 30900,
+        "image": "menu/arroz-con-pollo.jpg",
+        "is_available": false
+    },
+    {
+        "id": 52,
+        "name": "Mondongo",
+        "description": "Mondongo con arroz, aguacate y arepa.",
+        "category": "Sopas",
+        "price": 28500,
+        "image": "menu/mondongo.jpg",
+        "is_available": false
+    },
+    {
+        "id": 53,
+        "name": "Ajiaco",
+        "description": "Ajiaco con pollo, arroz, aguacate y arepa.",
+        "category": "Sopas",
+        "price": 28500,
+        "image": "menu/ajiaco.jpg",
+        "is_available": false
+    },
+    {
+        "id": 54,
+        "name": "Frijoles Antioqueños",
+        "description": "Frijoles antioqueños con chicharrón, hogao, arroz, aguacate y arepa.",
+        "category": "Sopas",
+        "price": 30500,
+        "image": "menu/frijoles-antioquenos.jpg",
+        "is_available": false
+    },
+    {
+        "id": 55,
+        "name": "Combo Nuggets",
+        "description": "Seis nuggets con papas smiles, huevo kinder y jugo hit.",
+        "category": "Menú Infantil",
+        "price": 19900,
+        "image": "menu/combo-nuggets.jpg",
+        "is_available": false
+    },
+    {
+        "id": 56,
+        "name": "Combo Carnes Mixtas",
+        "description": "Carnes mixtas con papa smile, huevo kinder y jugo hit.",
+        "category": "Menú Infantil",
+        "price": 19900,
+        "image": "menu/combo-carnes-mixtas.jpg",
+        "is_available": false
+    },
+    {
+        "id": 57,
+        "name": "Combo Mini Burguer",
+        "description": "Mini burguer con papas smiles, huevo kinder y jugo hit.",
+        "category": "Menú Infantil",
+        "price": 19900,
+        "image": "menu/combo-mini-burguer.jpg",
+        "is_available": false
+    },
+    {
+        "id": 58,
+        "name": "Patacón con Hogao",
+        "description": "delicioso patacón con hogao.",
+        "category": "Entradas",
+        "price": 7900,
+        "image": "menu/patacon-con-hogao.jpg",
+        "is_available": false
+    },
+    {
+        "id": 59,
+        "name": "Chorizo con Arepa",
+        "description": "Delicioso chorizo con arepa.",
+        "category": "Entradas",
+        "price": 8700,
+        "image": "menu/chorizo-con-arepa.jpg",
+        "is_available": false
+    },
+    {
+        "id": 60,
+        "name": "Chicharrón",
+        "description": "Delicioso Chicharron",
+        "category": "Entradas",
+        "price": 12900,
+        "image": "menu/chicharron.jpg",
+        "is_available": false
+    },
+    {
+        "id": 61,
+        "name": "Papa Criolla",
+        "description": "Porción de papa criolla.",
+        "category": "Entradas",
+        "price": 5400,
+        "image": "menu/papa-criolla.jpg",
+        "is_available": false
+    },
+    {
+        "id": 62,
+        "name": "Papa Francesa",
+        "description": "Proción de papa a la francesa.",
+        "category": "Entradas",
+        "price": 5400,
+        "image": "menu/papa-francesa.jpg",
+        "is_available": false
+    },
+    {
+        "id": 63,
+        "name": "Arroz",
+        "description": "Porción de arroz.",
+        "category": "Entradas",
+        "price": 3900,
+        "image": "menu/arroz.jpg",
+        "is_available": false
+    },
+    {
+        "id": 64,
+        "name": "Ensalada Verde",
+        "description": "Porción de ensalada verde.",
+        "category": "Entradas",
+        "price": 5300,
+        "image": "menu/ensalada-verde.jpg",
+        "is_available": false
+    },
+    {
+        "id": 65,
+        "name": "Jugo de Mora en Agua",
+        "description": "Jugo de mora hecho en agua",
+        "category": "Bebidas",
+        "price": 6400,
+        "image": "menu/jugo-de-mora.jpg",
+        "is_available": false
+    },
+    {
+        "id": 66,
+        "name": "Jugo de Mora en Leche",
+        "description": "Jugo de mora en leche",
+        "category": "Bebidas",
+        "price": 7400,
+        "image": "menu/jugo-de-mora_OeWOwWH.jpg",
+        "is_available": false
+    },
+    {
+        "id": 67,
+        "name": "Jugo de Mango en Leche",
+        "description": "Jugo de mango en leche.",
+        "category": "Bebidas",
+        "price": 7400,
+        "image": "menu/jugo-de-mango.jpg",
+        "is_available": false
+    },
+    {
+        "id": 68,
+        "name": "Jugo de Mango en Agua",
+        "description": "Jugo de mango en agua.",
+        "category": "Bebidas",
+        "price": 6400,
+        "image": "menu/jugo-de-mango_uZx9SzC.jpg",
+        "is_available": false
+    },
+    {
+        "id": 69,
+        "name": "Jugo de Lulo en Agua",
+        "description": "Jugo de lulo en agua.",
+        "category": "Bebidas",
+        "price": 6400,
+        "image": "menu/jugo-de-lulo.jpg",
+        "is_available": false
+    },
+    {
+        "id": 70,
+        "name": "Jugo de Lulo en Leche",
+        "description": "Jugo de lulo en leche.",
+        "category": "Bebidas",
+        "price": 7400,
+        "image": "menu/jugo-de-lulo_zZTfpF7.jpg",
+        "is_available": false
+    },
+    {
+        "id": 71,
+        "name": "Jugo de Fresa en Agua",
+        "description": "Jugo de fresa en agua.",
+        "category": "Bebidas",
+        "price": 6400,
+        "image": "menu/jugo-de-fresa.jpg",
+        "is_available": false
+    },
+    {
+        "id": 72,
+        "name": "Jugo de Fresa en Leche",
+        "description": "Jugo de fresa en leche.",
+        "category": "Bebidas",
+        "price": 7400,
+        "image": "menu/jugo-de-fresa_0N4IaZV.jpg",
+        "is_available": false
+    },
+    {
+        "id": 73,
+        "name": "Jugo de Maracuyá en Agua",
+        "description": "Jugo de maracuyá en agua.",
+        "category": "Bebidas",
+        "price": 6400,
+        "image": "menu/jugo-de-maracuya.jpg",
+        "is_available": false
+    },
+    {
+        "id": 74,
+        "name": "Jugo de Guanabana en Agua",
+        "description": "Jugo de guanabana en agua.",
+        "category": "Bebidas",
+        "price": 6400,
+        "image": "menu/jugo-de-guanabana.jpg",
+        "is_available": false
+    },
+    {
+        "id": 75,
+        "name": "Jugo de Guanabana en Leche",
+        "description": "Jugo de guanabana en leche.",
+        "category": "Bebidas",
+        "price": 7400,
+        "image": "menu/jugo-de-guanabana_aBJuEuH.jpg",
+        "is_available": false
+    },
+    {
+        "id": 76,
+        "name": "Jugo de Mandarina",
+        "description": "temporal 16oz",
+        "category": "Bebidas",
+        "price": 8400,
+        "image": "menu/jugo-de-fresa_LnKWnZj.jpg",
+        "is_available": false
+    },
+    {
+        "id": 77,
+        "name": "Cola y Pola",
+        "description": "Cola y pola en lata de 330ml",
+        "category": "Bebidas",
+        "price": 4700,
+        "image": "menu/cola-y-pola.jpg",
+        "is_available": false
+    },
+    {
+        "id": 78,
+        "name": "Cerveza Club Colombia",
+        "description": "Cerveza Club Colombia en lata de 330ml.",
+        "category": "Bebidas",
+        "price": 5900,
+        "image": "menu/club-colombia.jpg",
+        "is_available": false
+    },
+    {
+        "id": 79,
+        "name": "Cerveza Corona",
+        "description": "Cerveza Corona.",
+        "category": "Bebidas",
+        "price": 8900,
+        "image": "menu/corona.jpg",
+        "is_available": false
+    },
+    {
+        "id": 80,
+        "name": "Hit Cajita",
+        "description": "Jugo Hit en cajita.",
+        "category": "Bebidas",
+        "price": 2700,
+        "image": "menu/jugo-hit.jpg",
+        "is_available": false
+    },
+    {
+        "id": 81,
+        "name": "Tea en Botella",
+        "description": "Tea en botella.",
+        "category": "Bebidas",
+        "price": 3500,
+        "image": "menu/tea-en-botella.jpg",
+        "is_available": false
+    },
+    {
+        "id": 82,
+        "name": "Agua en Botella",
+        "description": "Agua en botella de 500ml.",
+        "category": "Bebidas",
+        "price": 3500,
+        "image": "menu/agua-en-botella.jpg",
+        "is_available": false
+    }
+]
