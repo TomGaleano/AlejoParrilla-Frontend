@@ -30,7 +30,8 @@ function MenuGrid() {
 
 // presenta un error en la consola, pero funciona bien
     useEffect(() => {
-        fetch(`http://localhost:3000/api/filtermenu?category=${category}`)
+        fetch(`
+        https://alejoparrilla-backend-temp-c472e01a4c9d.herokuapp.com/api/filtermenu?category=${category}`)
             .then(response => response.json())
             .then(data => setItems(data.data))
             .catch(error => console.error('Error:', error));
