@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import "./Styles.css";
 import Slider from 'react-slick';
+import allMenu from '../../src/json/allmenu.json'; // Import the JSON file
+
 
 interface MenuItem {
     id: number;
@@ -28,13 +30,11 @@ function MenuGrid() {
     const categories = ['Hamburguesas', 'Bowls', 'Rápidas', 'Entradas', 'Sopas', 'Menú Infantil', 'Típicos', 'Bebidas'];
 
 
-// presenta un error en la consola, pero funciona bien
+    // presenta un error en la consola, pero funciona bien
     useEffect(() => {
-        fetch(`
-        https://alejoparrilla-backend-temp-c472e01a4c9d.herokuapp.com/api/filtermenu?category=${category}`)
-            .then(response => response.json())
-            .then(data => setItems(data.data))
-            .catch(error => console.error('Error:', error));
+        // Filter the items from the JSON file by category
+        const filteredItems = allMenu.filter(item => item.category === category);
+        setItems(filteredItems);
     }, [category]);
 
     return (
