@@ -13,7 +13,7 @@ const FloatingButton: React.FC = () => {
         className="custom-class-name"
         avatar="./images/alejo-parrilla-1.jpg"
         statusMessage="Siempre a tu disposición"
-        darkMode={true}
+        darkMode={false}
         notification={true}
         chatboxHeight={420}
         allowClickAway={true}

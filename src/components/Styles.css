@@ -313,7 +313,7 @@
 .restaurant_container{
     background-color: var(--color-our-blue-gray);
     min-width: 100px;
-    max-width: 100%;
+    max-width: 80%;
     flex-grow: 1;
     display: flex;
     border-radius: 20px;
@@ -322,21 +322,20 @@
 }
 
 .restaurant_container-div1 {
-    width: 50%;
+    width: 35%;
     padding: 10px;
     min-width: 160px;
 }
 
 .restaurant_container-div2 {
-    width: 50%;
+    width: 65%;
     min-width: 160px;
     padding: 10px;
     min-width: none;
 }
 
 .restaurant_container-div1-image {
-    max-height: 20vh;
-    width: auto;
+    width: 100%;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -345,13 +344,13 @@
 
 .restaurant_container-div2 h2 {
     color: #fff;
-    font-size: 18px;
+    font-size: 2.3vh;
     margin: 0;
 }
 
 .restaurant_container-div2 p {
     margin: 5px 0;
-    font-size: 15px !important;
+    font-size: 2vh !important;
     color:#ffffff;
   }
   .restaurant_container-div2 p a{
