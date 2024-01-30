@@ -6,7 +6,7 @@
     display: grid;
     border: 4.5px solid #0000;
     border-radius: 50%;
-    border-color: #dbdcef #0000;
+    border-color: var(--color-our-orange) #0000;
     animation: spinner-e04l1k 1s infinite linear;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .spinner::before {
-    border-color: #474bff #0000;
+    border-color: var(--color-our-blue) #0000;
     animation: inherit;
     animation-duration: 0.5s;
     animation-direction: reverse;
