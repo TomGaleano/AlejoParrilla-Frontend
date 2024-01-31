@@ -10,7 +10,7 @@ export const Sobrenosotros = (): JSX.Element => {
         {/* Primera sección */}
         <h1 className='title tit-sobre-nosotros'>Sobre Nosotros</h1>
 
-        <div className='home_container' style={{ paddingTop: '1.3vh' }}>
+        <div className='home_container' style={{ paddingTop: '1.3vh'}}>
           {/* Inicia la primera columna de la sección */}
 
           <div className="sobre-nosotros">
