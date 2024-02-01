@@ -4,6 +4,7 @@
   --color-white: #ffffff;
   --color-our-blue: #0A4059;
   --color-our-blue-light: #204f64;
+  --color-our-blue-dark: #101a24;
   --color-our-blue-gray: #6E8CA3;
   --color-our-orange: #f1a650;
   --color-our-orange-light: #ecaa5e;
@@ -14,6 +15,5 @@
 body {
   font-family: var(--font-family-inter);
   background-color: var(--color-white);
-  background-image: url("./assets/background-yellow.png");
 
 }

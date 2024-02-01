@@ -1,29 +1,41 @@
 /*Definición del contenedor principal*/
 
-.home_container {
+.container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    padding-left: 15vh;
-    padding-right: 15vh;
-    padding-top: 15vh;
-    padding-bottom: 0vh;
+    padding: 0vh 24vh;
     overflow: hidden;
+    height: 100vh;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
+}
+.container p {
+    color: var(--color-black);
+    font-size: 3vh;
+    font-weight: 500;
 }
 
+.landing{
+    background-color: var(--color-our-blue-light);
+    background-image: url("../assets/landing-background.png");
+}
+
+.third {
+    background-color: var(--color-our-blue-light);
+    background-image: url("../assets/third-background.png");
+}
+.third-paragraph{
+    color: white;
+}
 /*Definición de columnas y sus propiedades*/
 
 .column-main {
-    padding-left: 6vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--color-white);
     border: 12vh;
     border-radius: 100px;
-
 }
 
 .column {
@@ -42,8 +54,8 @@
 }
 
 .main-button,
-.second-button {
-    background-color: var(--color-our-blue);
+.second-button,
+.third-button {
     border-radius: 50px;
     padding: 15px 40px;
     font-size: 2.5vh;
@@ -52,11 +64,22 @@
     cursor: pointer;
 }
 
-.main-button:hover,
-.second-button:hover {
-    background-color: var(--color-our-blue-light);
+.main-button {
+    background-color: var(--color-our-blue-dark);
 }
-
+.second-button {
+    background-color: var(--color-our-orange);
+}
+.container p {
+    color: var(--color-black);
+    font-size: 3vh;
+    font-weight: 500;
+}
+.third-button {
+    background-color: var(--color-white);
+    color: var(--color-our-orange);
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -65,7 +88,7 @@
 .title {
     font-size: 5vw;
     font-weight: 900;
-    color: var(--color-our-orange);
+    color: var(--color-white);
     margin: 0.5rem;
     text-align: left;
 }
@@ -75,32 +98,29 @@
     font-weight: 900;
     color: var(--color-our-orange);
     text-align: left;
+    margin: 0vh;
 }
 
 .subtitle {
     font-size: 5vh;
-    font-weight: 500;
-    color: var(--color-black);
-    margin: 0.5rem;
-    text-align: left;
+    font-weight: 600;
+    color: var(--color-our-orange);
+    text-align: center;
 }
 
-.home_container p {
-    color: var(--color-black);
-    font-size: 3vh;
-    font-weight: 500;
-}
 
 .tit-sobre-nosotros {
     text-align: center;
     padding-top: 9vh;
+    color: var(--color-our-orange);
 }
 
 .sobre-nosotros p {
     padding-top: 0.1vh;
     padding-bottom: 0.1vh;
-    font-size: 3vh;
+    font-size: 2.8vh;
     padding-left: 12vh;
+    color: var(--color-white);
 }
 
 .insights p {
@@ -302,14 +322,6 @@
     margin: 15px;
 }
 
-
-
-
-
-
-
-
-
 .restaurant_container{
     background-color: var(--color-our-blue-gray);
     min-width: 100px;
@@ -454,7 +466,7 @@
         margin-top: 40%;
     }
 
-    .home_container {
+    .container {
         margin-bottom: 15vh;
         padding: 5vh;
     }
@@ -481,7 +493,7 @@
         font-size: 4vh;
     }
 
-    .home_container p {
+    .container p {
         font-size: 2.7vh;
     }
 
