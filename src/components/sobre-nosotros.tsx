@@ -1,6 +1,5 @@
 
 import "./Styles.css";
-import lomo from "../assets/lomo.png";
 import Carousel from "./carousel";
 
 export const Sobrenosotros = (): JSX.Element => {
