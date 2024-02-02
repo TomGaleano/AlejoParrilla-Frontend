@@ -6,46 +6,39 @@ import Carousel from "./carousel";
 export const Sobrenosotros = (): JSX.Element => {
   return (
     <div style={{ overflow: 'hidden' }}>
-      <div style={{ paddingTop: '5vh' }} className="landing">
+      <div style={{ paddingTop: '5vh', minHeight:'100vh' }} className="landing">
         {/* Primera sección */}
-        <h1 className='title tit-sobre-nosotros'>Sobre Nosotros</h1>
-
-        <div className='container' style={{ paddingTop: '1.3vh'}}>
-          {/* Inicia la primera columna de la sección */}
-
-          <div className="sobre-nosotros">
-            <p>
-            Somos restaurantes especializados en Parrilla y platos típicos colombianos desde 1999. 
-            </p>
-            <p>
-            Nuestro personal cuenta con una amplia experiencia y un gusto exquisito en la preparación de nuestro menú. 
-            </p>
-            <p style={{ marginBottom: '0vh' }}>Utilizamos los mejores insumos y la mejor atención para hacer que su experienciaen nuestros restaurantes sea única.
-            </p>
-            <div>
-              <div className='container sobre-nosotros' style={{ display: 'flex',padding:'0vh', paddingTop: '1vh', paddingLeft: '8vw', marginTop: '0vh' }}>
-                {/* Espacio debajo del texto para poner cifras del restaurante */}
-
-                <div className="insights" style={{ textAlign: 'center' }}>
-                  <h2 className='subtitle' >4+</h2>
-                  <p style={{ paddingLeft: '0vh' }}>Restaurantes</p>
-                </div>
-                <div className="insights" style={{ textAlign: 'center' }}>
-                  <h2 className='subtitle' >35+</h2>
-                  <p style={{ paddingLeft: '0vh' }}>Platos</p>
-                </div>
-                <div className="insights" style={{ textAlign: 'center' }}>
-                  <h2 className='subtitle' >54+</h2>
-                  <p style={{ paddingLeft: '0vh' }}>Empleados</p>
-                </div>
+        <h1 className='title tit-sobre-nosotros' style={{margin:'.2rem'}}>Sobre Nosotros</h1>
+        <div className="" style={{display:'flex', flexWrap:'wrap'}}>
+          <div style={{width:'50%',minWidth:'400px'}}>
+            <div style={{fontSize:'1rem', padding:'3rem', textAlign:'justify'}}>
+              <p>Bienvenidos a nuestros restaurantes, donde podrás disfrutar de la mejor Parrilla y los más deliciosos platos típicos colombianos. Desde 1999, nos dedicamos a ofrecer una gastronomía de calidad, con recetas tradicionales y sabores auténticos.</p>
+              <p>Nuestro personal tiene una amplia experiencia y un gusto exquisito en la preparación de nuestro menú, que incluye carnes, sopas, ensaladas, postres y bebidas típicas. Además, contamos con un ambiente acogedor, una decoración agradable y un servicio atento y profesional.</p>
+              <p>Utilizamos los mejores insumos, frescos y naturales, y la mejor atención para hacer que tu experiencia en nuestros restaurantes sea única e inolvidable. Te invitamos a visitarnos y a comprobar por qué somos los mejores en Parrilla y platos típicos colombianos. ¡Te esperamos!</p>
+              <div style={{display:'flex', alignItems:'center', justifyContent:'space-evenly',}}>
+              <div className="" style={{}}>
+                <h2 className="subtitle">4+</h2>
+                <p>Restaurantes</p>
+              </div>
+              <div className="" style={{}}>
+                <h2 className="subtitle">35+</h2>
+                <p>Platos</p>
+              </div>
+              <div className="" style={{}}>
+                <h2 className="subtitle">54+</h2>
+                <p>Empleados</p>
               </div>
             </div>
-          </div>
-          {/* Inicia la segunda columna de la sección */}
-          <div className='column has-image' style={{ paddingLeft: '12vh', paddingRight: '12vh' }}>
-            <img src={lomo} alt='Lomo napolitano de Alejoparrilla' className="restaurant_image"/>
+            </div>
+            
+
+
+
+            <div></div>
           </div>
         </div>
+
+        
       </div>
       {/* Segunda Sección */}
 
