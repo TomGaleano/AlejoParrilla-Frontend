@@ -463,11 +463,10 @@
     }
 
     .landing {
-        margin-top: 40%;
+        margin-top: 0%;
     }
 
     .container {
-        margin-bottom: 15vh;
         padding: 5vh;
     }
 
@@ -504,7 +503,7 @@
     .main-button,
     .second-button {
         padding: 10px 30px;
-        font-size: 6.5vw;
+        font-size: 4vw;
         /* Adjust as needed */
     }
 
