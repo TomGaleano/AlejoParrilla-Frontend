@@ -43,6 +43,7 @@ function Navbar({
     const handleLinkClick = (view: string) => {
         setView(view);
         handleToggle();
+        window.scrollTo(0, 0);
     };
 
     return (
