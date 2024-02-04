@@ -1,4 +1,5 @@
 
+import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 import "./Styles.css";
 import Carousel from "./carousel";
 
@@ -7,13 +8,13 @@ export const Sobrenosotros = (): JSX.Element => {
     <div style={{ overflow: 'hidden' }}>
       <div style={{ paddingTop: '5vh', minHeight:'100vh' }} className="landing">
         {/* Primera sección */}
-        <h1 className='title tit-sobre-nosotros' style={{margin:'.2rem'}}>Sobre Nosotros</h1>
-        <div className="" style={{display:'flex', flexWrap:'wrap'}}>
+        <h1 className='title tit-sobre-nosotros' style={{margin:'.2rem',fontSize:'6vh'}}>Sobre Nosotros</h1>
+        <div className="" style={{display:'flex', flexWrap:'wrap-reverse', justifyContent:'space-evenly', alignItems:'top'}}>
           <div style={{width:'50%',minWidth:'400px', color:'#ffffff'}}>
             <div style={{fontSize:'1rem', padding:'3rem',paddingTop:'0px', textAlign:'justify'}}>
               <h1 className="subtitle">Nuestra Filosofía</h1>
-              <p>Bienvenidos a nuestros restaurantes, donde podrás disfrutar de la mejor Parrilla y los más deliciosos platos típicos colombianos. Desde 1999, nos dedicamos a ofrecer una gastronomía de calidad, con recetas tradicionales y sabores auténticos.</p>
-              <p>Nuestro personal tiene una amplia experiencia y un gusto exquisito en la preparación de nuestro menú, que incluye carnes, sopas, ensaladas, postres y bebidas típicas. Además, contamos con un ambiente acogedor, una decoración agradable y un servicio atento y profesional.</p>
+              <p>¡Bienvenidos a nuestros restaurantes! Disfruta de la mejor parrilla y platos típicos colombianos desde 1999. Ofrecemos gastronomía de calidad, con recetas tradicionales y sabores auténticos.</p>
+              <p>Nuestro personal con amplia experiencia prepara un menú completo: carnes, sopas, ensaladas, postres y bebidas típicas. Ambiente acogedor, decoración agradable y servicio profesional.</p>
               <p>Utilizamos los mejores insumos, frescos y naturales, y la mejor atención para hacer que tu experiencia en nuestros restaurantes sea única e inolvidable. Te invitamos a visitarnos y a comprobar por qué somos los mejores en Parrilla y platos típicos colombianos. ¡Te esperamos!</p>
               <div style={{display:'flex', alignItems:'center', justifyContent:'space-evenly',}}>
               <div className="" style={{}}>
@@ -35,6 +36,14 @@ export const Sobrenosotros = (): JSX.Element => {
 
 
             <div></div>
+          </div>
+
+
+
+
+
+          <div style={{width:'50%'}}>
+            <h3>Acá va una imagen</h3>
           </div>
         </div>
 
