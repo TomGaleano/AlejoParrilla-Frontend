@@ -32,7 +32,7 @@ const Footer = () => {
                 <p>Trabaja con nosotros</p>
             </div>
             <div className="column">
-                <iframe width="300" height="270" loading="lazy"
+                <iframe width="380" height="220" loading="lazy"
                     src="https://www.google.com/maps/embed/v1/search?q=alejopparrilla&key=AIzaSyCzuFvJ5puhXUY7QnkqzYixNKDG-AM2FM4">
                 </iframe>
             </div>

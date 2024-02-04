@@ -445,8 +445,9 @@
 
 /*Definición de la sección de vinculate y sus propiedades*/
 .form_container {
-    border: 15vh solid var(--color-our-blue-gray);
-    background-color: var(--color-our-blue-gray);
+    border: 15vh solid var(--color-our-blue-light);
+    border-bottom: 0vh;
+    background-color: var(--color-our-blue-light);
 }
 
 
@@ -455,6 +456,7 @@
 /*Definición de mobile*/
 @media screen and (max-width: 1024px) {
     .form_container {
+        border: 0vh;
         margin: 0vh;
         margin-top: 10vh;
         flex-direction: column;
