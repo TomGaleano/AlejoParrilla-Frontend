@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import "./Styles.css";
 import Slider from 'react-slick';
 import allMenu from '../../src/json/allmenu.json'; // Import the JSON file
+import NewMenu from './newMenu';
 
 
 interface MenuItem {
@@ -74,6 +75,7 @@ function MenuGrid() {
                 </div>
             </div>
             <div className='wave_spacer brown-blue'></div>
+            <NewMenu />
         </div>
     );
 }
