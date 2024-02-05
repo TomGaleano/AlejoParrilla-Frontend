@@ -1,5 +1,3 @@
-
-import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 import "./Styles.css";
 import Carousel from "./carousel";
 
@@ -8,24 +6,24 @@ export const Sobrenosotros = (): JSX.Element => {
     <div style={{ overflow: 'hidden' }}>
       <div style={{ paddingTop: '5vh', minHeight:'100vh' }} className="landing">
         {/* Primera sección */}
-        <h1 className='title tit-sobre-nosotros' style={{margin:'.2rem',fontSize:'6vh'}}>Sobre Nosotros</h1>
-        <div className="" style={{display:'flex', flexWrap:'wrap-reverse', justifyContent:'space-evenly', alignItems:'top'}}>
-          <div className="sobre-nosotros-container-item" style={{width:'50%',minWidth:'400px', color:'#ffffff'}}>
-            <div style={{fontSize:'1rem', padding:'3rem',paddingTop:'0px', textAlign:'justify'}}>
+        <h1 className='title tit-sobre-nosotros' style={{margin:'.2rem',fontSize:'5vh'}}>Sobre Nosotros</h1>
+        <div className="sobre-nosotros-container" style={{display:'flex', flexWrap:'wrap-reverse', justifyContent:'space-evenly', alignItems:'stretch'}}>
+          <div className="sobre-nosotros-container-item" style={{width:'50%',minWidth:'250px', color:'#ffffff'}}>
+            <div className="" style={{fontSize:'1rem', padding:'3rem',paddingTop:'0px', textAlign:'justify'}}>
               <h1 className="subtitle">Nuestra Filosofía</h1>
               <p>¡Bienvenidos a nuestros restaurantes! Disfruta de la mejor parrilla y platos típicos colombianos desde 1999. Ofrecemos gastronomía de calidad, con recetas tradicionales y sabores auténticos.</p>
               <p>Nuestro personal con amplia experiencia prepara un menú completo: carnes, sopas, ensaladas, postres y bebidas típicas. Ambiente acogedor, decoración agradable y servicio profesional.</p>
               <p>Utilizamos los mejores insumos, frescos y naturales, y la mejor atención para hacer que tu experiencia en nuestros restaurantes sea única e inolvidable. Te invitamos a visitarnos y a comprobar por qué somos los mejores en Parrilla y platos típicos colombianos. ¡Te esperamos!</p>
               <div style={{display:'flex', alignItems:'center', justifyContent:'space-evenly',}}>
-              <div className="" style={{}}>
+              <div className="info-card" style={{}}>
                 <h2 className="subtitle">4+</h2>
                 <p>Restaurantes</p>
               </div>
-              <div className="" style={{}}>
+              <div className="info-card" style={{}}>
                 <h2 className="subtitle">35+</h2>
                 <p>Platos</p>
               </div>
-              <div className="" style={{}}>
+              <div className="info-card" style={{}}>
                 <h2 className="subtitle">54+</h2>
                 <p>Empleados</p>
               </div>
@@ -85,9 +83,10 @@ export const Sobrenosotros = (): JSX.Element => {
         <div className="container" style={{ backgroundColor: 'white', marginTop: '0vh', marginBottom: '0vh'}}>
           <h2 className='title tit-sobre-nosotros'>Nuestra Filosofía</h2>
           <div className="sobre-nosotros"style={{}}>
-            <p style={{ color: 'black' }}>Somos restaurantes especializados en Parrilla y platos típicos colombianos desde 1999. </p>
-            <p style={{ color: 'black' }}>Nuestro personal cuenta con una amplia experiencia y un gusto exquisito en la preparación de nuestro menú.  </p>
-            <p style={{ color: 'black', paddingBottom: '10vh' }}>Utilizamos los mejores insumos y la mejor atención para hacer que su experienciaen nuestros restaurantes sea única. </p>
+
+
+
+
           </div>
         </div>
       </div>

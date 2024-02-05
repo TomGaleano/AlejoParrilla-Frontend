@@ -617,4 +617,27 @@
     background: #555; /* Cambia el color del pulgar al pasar el mouse sobre él */
 
   }
+
+/* Estilos de  */
+
+@media screen and (max-width: 800px) {
+    .sobre-nosotros-container-item{
+        width: 100%;
+        padding: 0;
+        min-width: none;
+    }
+    .sobre-nosotros-container-item:nth-child(2){
+        display: none !important;
+    }
+    .sobre-nosotros-container-item div{
+        width: 100%;
+        padding: 0px !important;
+        
+    }
+
+}
+
+.info-card{
+    background: red !im;
+}
   
