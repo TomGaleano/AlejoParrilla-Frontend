@@ -89,6 +89,7 @@
     background-color: var(--color-our-beige);
 }
 
+
 .bento_title {
     position: absolute;
     bottom: 3%;
@@ -102,10 +103,17 @@
     position: absolute;
     bottom: 3%;
     right: 3%;
-    font-size: 2.3vw;
+    font-size: 2.1vw;
     font-weight: bold;
     color: var(--color-our-orange);
     margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
 }
 
 .show {
@@ -114,6 +122,9 @@
 
 .hide {
     display: none;
+}
+.bento_square:hover .bento_title, .bento_square:hover .bento_arrow {
+    font-size: 2.3vw;
 }
 
 @media (max-width: 1024px) {
