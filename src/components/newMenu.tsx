@@ -2,6 +2,7 @@ import "./beta.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
+import SeeMenu from "./seeMenu";
 
 function NewMenu() {
     const [currentPage, setCurrentPage] = useState('primera_pagina');
@@ -81,6 +82,7 @@ function NewMenu() {
                     </div>
                 </div>
             </div>
+            <SeeMenu />
         </div>
     );
 
