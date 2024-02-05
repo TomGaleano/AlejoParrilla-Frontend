@@ -10,7 +10,7 @@ export const Sobrenosotros = (): JSX.Element => {
         {/* Primera sección */}
         <h1 className='title tit-sobre-nosotros' style={{margin:'.2rem',fontSize:'6vh'}}>Sobre Nosotros</h1>
         <div className="" style={{display:'flex', flexWrap:'wrap-reverse', justifyContent:'space-evenly', alignItems:'top'}}>
-          <div style={{width:'50%',minWidth:'400px', color:'#ffffff'}}>
+          <div className="sobre-nosotros-container-item" style={{width:'50%',minWidth:'400px', color:'#ffffff'}}>
             <div style={{fontSize:'1rem', padding:'3rem',paddingTop:'0px', textAlign:'justify'}}>
               <h1 className="subtitle">Nuestra Filosofía</h1>
               <p>¡Bienvenidos a nuestros restaurantes! Disfruta de la mejor parrilla y platos típicos colombianos desde 1999. Ofrecemos gastronomía de calidad, con recetas tradicionales y sabores auténticos.</p>
@@ -31,19 +31,11 @@ export const Sobrenosotros = (): JSX.Element => {
               </div>
             </div>
             </div>
-            
-
-
-
-            <div></div>
           </div>
 
 
-
-
-
-          <div style={{width:'50%'}}>
-            <h3>Acá va una imagen</h3>
+          <div className="sobre-nosotros-container-item" style={{boxSizing: 'border-box', width:'50%', padding:'2rem'}}>
+            <img style={{width:'100%', height:'auto', margin:'auto', borderRadius:'20px', border:'var(--color-our-orange) 2px solid'}} src='./images/Imagen-interior.webp' alt="" />
           </div>
         </div>
 
