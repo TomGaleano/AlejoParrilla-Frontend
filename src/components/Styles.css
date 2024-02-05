@@ -324,9 +324,9 @@
     min-height: 100vh;
 }
 
-.margin-font-size_SN {
+.SobreNosotros-title_SN {
     margin: .2rem;
-    font-size: 5vh;
+    font-size: 6vh;
 }
 
 .flex-wrap-justify-align_SN {
@@ -369,11 +369,17 @@
     border: var(--color-our-orange) 2px solid;
 }
 
-.flex-direction-background-align_SN {
+.Mision_Container_SN {
     display: flex;
     flex-direction: column;
-    background: red;
+    background: var(--color-our-beige);
     align-items: center;
+    height: 100vh;
+}
+
+.Mision-title {
+    font-size: 6vh;
+    color: var(--color-our-orange);
 }
 
 .border-background_SN {

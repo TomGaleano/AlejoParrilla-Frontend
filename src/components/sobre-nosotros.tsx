@@ -1,12 +1,13 @@
 import "./Styles.css";
 import Carousel from "./carousel";
+import CarouselUpToDown  from "./carouselUpToDown";
 
 export const Sobrenosotros = (): JSX.Element => {
   return (
     <div className="overflow-hidden_SN">
       <div className="padding-top-min-height_SN landing">
         {/* Primera sección */}
-        <h1 className='title tit-sobre-nosotros margin-font-size_SN'>Sobre Nosotros</h1>
+        <h1 className='title tit-sobre-nosotros SobreNosotros-title_SN'>Sobre Nosotros</h1>
         <div className="sobre-nosotros-container flex-wrap-justify-align_SN">
           <div className="sobre-nosotros-container-item width-min-width-color_SN">
             <div className="font-size-padding-text-align_SN">
@@ -36,16 +37,12 @@ export const Sobrenosotros = (): JSX.Element => {
             <img className="img-width-height-margin-border_SN" src='./images/Imagen-interior.webp' alt="" />
           </div>
         </div>
-
-
       </div>
+
       {/* Segunda Sección */}
-
-
-
-      <div className='container flex-direction-background-align_SN'>
-        <h2>Misión</h2>
-
+      <div className='container Mision_Container_SN'>
+        <h2 className="Mision-title">Misión</h2>
+        <CarouselUpToDown />
       </div>
       {/* Tercera Sección */}
 
