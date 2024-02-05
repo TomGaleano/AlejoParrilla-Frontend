@@ -37,7 +37,7 @@ function SeeMenu() {
             {slides.map((slideItems, index) => (
                 <SwiperSlide key={index}>
                     <div className="grid-container">
-                        {slideItems.map((item, itemIndex) => (
+                        {slideItems.map((item) => (
                             <div className="menu_item">
                             <img src={item.image} alt={item.name} className="menu_image" />
                             <div className="menu_text">
