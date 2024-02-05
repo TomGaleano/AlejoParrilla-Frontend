@@ -630,7 +630,6 @@
         display: none !important;
     }
     .sobre-nosotros-container-item div{
-        width: 100%;
         padding: 0px !important;
         
     }
@@ -638,6 +637,21 @@
 }
 
 .info-card{
-    background: red !im;
+    background:var(--color-our-brown-light);
+    border-radius: 20px;
+    width:100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
 }
-  
+
+.info-card h2{
+    margin: 0;
+}
+.info-card p{
+    margin: 0;
+}
