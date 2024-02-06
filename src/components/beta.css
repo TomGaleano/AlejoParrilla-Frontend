@@ -98,7 +98,9 @@
     font-weight: bold;
     color: var(--color-our-orange);
     margin: 0;
+    transition: font-size 0.3s ease;
 }
+
 .bento_arrow {
     position: absolute;
     bottom: 3%;
@@ -107,6 +109,7 @@
     font-weight: bold;
     color: var(--color-our-orange);
     margin: 0;
+    transition: font-size 0.3s ease;
 }
 
 .grid-container {
@@ -126,6 +129,24 @@
 .bento_square:hover .bento_title, .bento_square:hover .bento_arrow {
     font-size: 2.3vw;
 }
+
+.bento_menu_navbar{
+    display: flex;
+    padding: 1vh;
+    align-items: center;
+}
+.bento_navbar {
+    position: relative;
+    font-size: 2.2vw;
+    color: var(--color-our-orange);
+    cursor: pointer;
+}
+.bento_menu_navbar h1{
+    display: flex;
+    font-size: 2.7vw;
+    justify-content: space-between;
+    padding: 1vh;
+    cursor: auto;
 
 @media (max-width: 1024px) {
     .newMenu {

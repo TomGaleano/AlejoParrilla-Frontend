@@ -14,14 +14,16 @@ interface MenuItem {
     is_available: boolean;
 }
 
-function SeeMenu() {
-    const [category] = useState('Hamburguesas');
+interface SeeMenuProps {
+    category?: string;
+}
+
+function SeeMenu({ category = 'Hamburguesas' }: SeeMenuProps) {
     const [items, setItems] = useState<MenuItem[]>([]);
     const itemsPerSlide = 6;
     const slides = [];
 
     useEffect(() => {
-        // Filter the items from the JSON file by category
         const filteredItems = allMenu.filter(item => item.category === category);
         setItems(filteredItems);
     }, [category]);
@@ -30,27 +32,30 @@ function SeeMenu() {
     }
 
     return (
-        <Swiper
-            slidesPerView={1}
-            spaceBetween={10}
-        >
-            {slides.map((slideItems, index) => (
-                <SwiperSlide key={index}>
-                    <div className="grid-container">
-                        {slideItems.map((item) => (
-                            <div className="menu_item">
-                            <img src={item.image} alt={item.name} className="menu_image" />
-                            <div className="menu_text">
-                                <h3 className="menu_item_title">{item.name}</h3>
-                                <p className="menu_item_description">{item.description}</p>
-                                <p className="menu_item_price">Precio: ${item.price}</p>
-                            </div>
+        <div>
+            <h1>{category}</h1>
+            <Swiper
+                slidesPerView={1}
+                spaceBetween={10}
+            >
+                {slides.map((slideItems, index) => (
+                    <SwiperSlide key={index}>
+                        <div className="grid-container">
+                            {slideItems.map((item) => (
+                                <div className="">
+                                    <img src={item.image} alt={item.name} className="" />
+                                    <div className="">
+                                        <h3 className="">{item.name}</h3>
+                                        <p className="">{item.description}</p>
+                                        <p className="">Precio: ${item.price}</p>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
-                        ))}
-                    </div>
-                </SwiperSlide>
-            ))}
-        </Swiper>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        </div>
     );
 }
 
