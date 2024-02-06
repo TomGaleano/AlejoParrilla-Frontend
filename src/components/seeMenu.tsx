@@ -1,8 +1,15 @@
-import { useState, useEffect } from 'react';
+// @ts-nocheck
+
+import { useState, useEffect, useRef } from 'react';
 import "./beta.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import allMenu from '../../src/json/allmenu.json'; // Import the JSON file
+import allMenu from '../../src/json/allmenu.json';
+import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
+
 
 interface MenuItem {
     id: number;
@@ -20,41 +27,53 @@ interface SeeMenuProps {
 
 function SeeMenu({ category = 'Hamburguesas' }: SeeMenuProps) {
     const [items, setItems] = useState<MenuItem[]>([]);
+    const [slides, setSlides] = useState<MenuItem[][]>([]);
     const itemsPerSlide = 6;
-    const slides = [];
+    const swiperRef = useRef(null);
 
     useEffect(() => {
         const filteredItems = allMenu.filter(item => item.category === category);
         setItems(filteredItems);
     }, [category]);
-    for (let i = 0; i < items.length; i += itemsPerSlide) {
-        slides.push(items.slice(i, i + itemsPerSlide));
-    }
+
+    useEffect(() => {
+        const newSlides = [];
+        for (let i = 0; i < items.length; i += itemsPerSlide) {
+            newSlides.push(items.slice(i, i + itemsPerSlide));
+        }
+        setSlides(newSlides);
+    }, [items]);
 
     return (
         <div>
-            <h1>{category}</h1>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={10}
+                onSwiper={(swiper) => { swiperRef.current = swiper; }}
             >
                 {slides.map((slideItems, index) => (
                     <SwiperSlide key={index}>
-                        <div className="grid-container">
+                        <div className="grid-container" >
                             {slideItems.map((item) => (
-                                <div className="">
-                                    <img src={item.image} alt={item.name} className="" />
-                                    <div className="">
-                                        <h3 className="">{item.name}</h3>
-                                        <p className="">{item.description}</p>
-                                        <p className="">Precio: ${item.price}</p>
+                                <div className="newMenu_container" key={item.id} >
+                                    <img src={item.image} alt={item.name} className="newMenu_image" />
+                                    <div className="newMenu_subcontainer">
+                                        <h3 className="newMenu_title">{item.name}</h3>
+                                        <p className="newMenu_description">{item.description}</p>
+                                        <p className="newMenu_price">Precio: ${item.price}</p>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </SwiperSlide>
                 ))}
+
             </Swiper>
+
+            <div className='swiper_controls'>
+                <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronLeft} onClick={() => swiperRef.current?.slidePrev()}/>
+                <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronRight} onClick={() => swiperRef.current?.slideNext()}/>
+            </div>
         </div>
     );
 }

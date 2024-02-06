@@ -26,10 +26,10 @@ function NewMenu() {
             <div className="bento_grid">
                 <div className="bento_selector">
                     <div className="bento_option" onClick={() => setCurrentPage('primera_pagina')}>
-                        <h2 className="bento_option_title">Primera página</h2>
+                        <h2 className="bento_option_title">1<sup>ra</sup> página</h2>
                     </div>
                     <div className="bento_option" onClick={() => setCurrentPage('segunda_pagina')}>
-                        <h2 className="bento_option_title">Segunda página</h2>
+                        <h2 className="bento_option_title">2<sup>da</sup> página</h2>
                     </div>
                 </div>
                 <div className={`primera_pagina ${currentPage === 'primera_pagina' ? 'show' : 'hide'}`}>

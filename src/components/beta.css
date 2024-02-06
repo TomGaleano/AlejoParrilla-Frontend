@@ -1,6 +1,7 @@
 .newMenu{
     background-color: var(--color-our-blue-light);
     padding: 0% 30%;
+    padding-top: 6.5vw;
 }
 .bento_selector {
     display: flex;
@@ -147,13 +148,41 @@
     justify-content: space-between;
     padding: 1vh;
     cursor: auto;
+}
 
+
+.newMenu_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 1vh;
+    background-color: var(--color-our-beige);
+    border-radius: 10px;
+    height: 12vw;
+}
+
+.swiper_controls{
+    display: flex;
+    justify-content: right;
+    padding: 1vh;
+}
+.bento_navbutton {
+    font-size: 2vw;
+    color: var(--color-our-beige);
+    cursor: pointer;
+    padding: 1vh;
+}
 @media (max-width: 1024px) {
+    .bento_navbar, .bento_menu_navbar h1 {
+        font-size: xx-large;
+    }
     .newMenu {
         padding: 0% 5%;
+        padding-bottom: 12vh;
     }
     .bento_option_title {
-        font-size: 2.5vh;
+        font-size: large;
         padding: 10px;
     }
     .big_square {
@@ -166,6 +195,13 @@
         height: 76vw;
     }
     .bento_title, .bento_arrow {
-        font-size: 2.5vh;
+        font-size: large;
+        bottom: 5%;
+    }
+    .bento_title {
+        left: 5%;
+    }
+    .bento_arrow {
+        right: 5%;
     }
 }
