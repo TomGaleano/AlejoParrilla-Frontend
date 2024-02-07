@@ -4,9 +4,9 @@ import Carousel from "./carousel";
 export const Sobrenosotros = (): JSX.Element => {
   return (
     <div style={{ overflow: 'hidden' }}>
-      <div style={{ paddingTop: '5vh', minHeight:'100vh' }} className="landing">
+      <div style={{minHeight:'100vh' }} className="landing">
         {/* Primera sección */}
-        <h1 className='title tit-sobre-nosotros' style={{marginTop:'1rem',fontSize:'5vh'}}>Sobre Nosotros</h1>
+        <h1 className='title tit-sobre-nosotros' style={{fontSize:'5vh',margin:'0',padding:'0px'}}>Sobre Nosotros</h1>
         <div className="sobre-nosotros-container" style={{display:'flex', flexWrap:'wrap-reverse', justifyContent:'space-evenly', alignItems:'stretch'}}>
           <div className="sobre-nosotros-container-item" style={{width:'50%',minWidth:'250px', color:'#ffffff'}}>
             <div className="" style={{fontSize:'1rem', padding:'3rem',paddingTop:'0px', textAlign:'justify'}}>
@@ -49,32 +49,46 @@ export const Sobrenosotros = (): JSX.Element => {
       </div>
       {/* Tercera Sección */}
 
-      <div className="container landing">
-        <div className="" style={{display:'flex', flexDirection:'row'}}>
-          <div className="" style={{border:'red 2px solid', background:'#ffffff'}}>
-            <div className="">
-              <img src="" alt="" />
+      <div className="container landing" style={{display:'flex',flexDirection:'column'}}>
+        <h2 className="subtitle">Visión</h2>
+        <div className="container-vision">
+
+          <div className="container-vision-item">
+            <div className="container-vision-item-div">
+              <img src='./images/alejo-parrilla-1.jpg' alt="" />
             </div>
-            <p className="" style={{textAlign:'justify'}}>En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato.</p>
-          </div>
-          <div className="">
-            <div className="">
-              <img src="" alt="" />
+            <div className="container-vision-item-div">
+              <p>En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato. </p>
             </div>
-            <p className="">Visualizamos nuestro restaurante como un punto de encuentro donde la excelencia de la parrilla se fusiona con la autenticidad de la cocina colombiana 😎.</p>
           </div>
-          <div className="">
-            <div className="">
-              <img src="" alt="" />
+
+          <div className="container-vision-item">
+            <div className="container-vision-item-div">
+              <img src="./images/alejo-parrilla-1.jpg" alt="" />
             </div>
-            <p className="">Buscamos marcar tendencias y crear recuerdos inolvidables para nuestros clientes, ofreciendo una experiencia única que refleje la autenticidad y la diversidad de nuestra oferta.</p>
-          </div>
-          <div className="">
-            <div className="">
-              <img src="" alt="" />
+            <div className="container-vision-item-div">
+              <p>Visualizamos nuestro restaurante como un punto de encuentro donde la excelencia de la parrilla se fusiona con la autenticidad de la cocina colombiana.</p>
             </div>
-            <p className="">Nos esforzamos por ser reconocidos como Alejo Parrilla, un lugar donde la calidad de la parrilla y la calidez de la experiencia  se encuentran por deleitar a todos nuestos comensales.</p>
           </div>
+
+          <div className="container-vision-item">
+            <div className="container-vision-item-div">
+              <img src="./images/alejo-parrilla-1.jpg" alt="" />
+            </div>
+            <div className="container-vision-item-div">
+              <p>Buscamos marcar tendencias y crear recuerdos inolvidables para nuestros clientes, ofreciendo una experiencia única que refleje la autenticidad y la diversidad de nuestra oferta. </p>
+            </div>
+          </div>
+
+          <div className="container-vision-item">
+            <div className="container-vision-item-div">
+              <img src="./images/alejo-parrilla-1.jpg" alt="" />
+            </div>
+            <div className="container-vision-item-div">
+              <p>Nos esforzamos por ser reconocidos como Alejo Parrilla, un lugar donde la calidad de la parrilla y la calidez de la experiencia  se encuentran por deleitar a todos nuestos comensales.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
