@@ -43,6 +43,15 @@
 }
 
 
+.bento_image{
+    padding-left: 1.5vw;
+    width: 20dvw;
+    transition: transform 0.3s ease;
+}
+.bento_image:hover{
+    transform: scale(1.1);
+}
+
 .big_square {
     position: relative;
     height: 22vw;
@@ -127,6 +136,7 @@
 .hide {
     display: none;
 }
+
 .bento_square:hover .bento_title, .bento_square:hover .bento_arrow {
     font-size: 2.3vw;
 }

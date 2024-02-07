@@ -35,6 +35,7 @@ function NewMenu() {
                 <div className={`primera_pagina ${currentPage === 'primera_pagina' ? 'show' : 'hide'}`}>
                     <div className="bento_menu_1_top">
                         <div className="big_square bento_square" onClick={() => {setCategory('Hamburguesas'); handleClick();}}>
+                            <img src="dist/images/menu_categories/alejoparrilla_category_hamburguesa.png" alt="Hamburguesas" className="bento_image" />
                             <h3 className="bento_title">
                                 Hamburguesas
                             </h3>
