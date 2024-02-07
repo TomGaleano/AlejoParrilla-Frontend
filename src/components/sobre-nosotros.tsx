@@ -1,5 +1,6 @@
 import "./Styles.css";
 import Carousel from "./carousel";
+import CarouselUpToDown  from "./carouselUpToDown";
 
 export const Sobrenosotros = (): JSX.Element => {
   return (
@@ -32,20 +33,16 @@ export const Sobrenosotros = (): JSX.Element => {
           </div>
 
 
-          <div className="sobre-nosotros-container-item" style={{boxSizing: 'border-box', width:'50%', padding:'2rem'}}>
-            <img style={{width:'100%', height:'auto', margin:'auto', borderRadius:'20px', border:'var(--color-our-orange) 2px solid'}} src='./images/Imagen-interior.webp' alt="" />
+          <div className="sobre-nosotros-container-item box-sizing-width-padding_SN">
+            <img className="img-width-height-margin-border_SN" src='./images/Imagen-interior.webp' alt="" />
           </div>
         </div>
-
-        
       </div>
+
       {/* Segunda Sección */}
-
-
-
-      <div className='container' style={{display:'flex', flexDirection:'column', background:'red', alignItems:'center'}}>
-        <h2>Misión</h2>
-
+      <div className='container Mision_Container_SN'>
+        <h2 className="Mision-title">Misión</h2>
+        <CarouselUpToDown />
       </div>
       {/* Tercera Sección */}
 
@@ -93,20 +90,17 @@ export const Sobrenosotros = (): JSX.Element => {
       </div>
 
       {/* Cuarta Sección */}
-      <div style={{  width: '100vw' }}>
-        <div className="container" style={{ backgroundColor: 'white', marginTop: '0vh', marginBottom: '0vh'}}>
+      <div className="width_SN">
+        <div className="container background-color-margin-top-bottom_SN">
           <h2 className='title tit-sobre-nosotros'>Nuestra Filosofía</h2>
-          <div className="sobre-nosotros"style={{}}>
-
-
-
+          <div className="sobre-nosotros">
 
           </div>
         </div>
       </div>
-      <div className="container" style={{paddingTop:'0vh', marginTop:'0vh', paddingLeft:'0px', paddingRight: '0px'}}>
-        <div className="column landing" style={{padding: 0}}>
-          <h2 className="menu_title" style={{marginBottom:'4vh'}}>Nuestros restaurantes</h2>
+      <div className="container padding-top-margin-top-left-right_SN">
+        <div className="column landing" style={{ padding: 0 }}>
+          <h2 className="menu_title margin-bottom_SN">Nuestros restaurantes</h2>
           <Carousel />
         </div>
       </div>

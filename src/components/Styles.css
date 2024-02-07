@@ -10,13 +10,14 @@
     background-position: center center;
     background-size: cover;
 }
+
 .container p {
     color: var(--color-black);
     font-size: 3vh;
     font-weight: 500;
 }
 
-.landing{
+.landing {
     background-color: var(--color-our-blue-light);
     background-image: url("../assets/landing-background.png");
 }
@@ -25,9 +26,11 @@
     background-color: var(--color-our-blue-light);
     background-image: url("../assets/third-background.png");
 }
-.third-paragraph{
+
+.third-paragraph {
     color: white;
 }
+
 /*Definición de columnas y sus propiedades*/
 
 .column-main {
@@ -67,14 +70,17 @@
 .main-button {
     background-color: var(--color-our-blue-dark);
 }
+
 .second-button {
     background-color: var(--color-our-orange);
 }
+
 .container p {
     color: var(--color-black);
     font-size: 3vh;
     font-weight: 500;
 }
+
 .third-button {
     background-color: var(--color-white);
     color: var(--color-our-orange);
@@ -307,10 +313,109 @@
     background-image: url("../assets/brown&blue.svg");
 }
 
+
+/*Definicion de la seccion sobrenosotros*/
+.overflow-hidden_SN {
+    overflow: hidden;
+}
+
+.padding-top-min-height_SN {
+    padding-top: 5vh;
+    min-height: 100vh;
+}
+
+.SobreNosotros-title_SN {
+    margin: .2rem;
+    font-size: 6vh;
+}
+
+.flex-wrap-justify-align_SN {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.width-min-width-color_SN {
+    width: 50%;
+    min-width: 250px;
+    color: #ffffff;
+}
+
+.font-size-padding-text-align_SN {
+    font-size: 1rem;
+    padding: 3rem;
+    padding-top: 0px;
+    text-align: justify;
+}
+
+.flex-align-justify_SN {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box-sizing-width-padding_SN {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 2rem;
+}
+
+.img-width-height-margin-border_SN {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+    border: var(--color-our-orange) 2px solid;
+}
+
+.Mision_Container_SN {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-our-beige);
+    align-items: center;
+    height: 100vh;
+}
+
+.Mision-title {
+    font-size: 6vh;
+    color: var(--color-our-orange);
+}
+
+.border-background_SN {
+    border: red 2px solid;
+    background: #ffffff;
+}
+
+.text-align_SN {
+    text-align: justify;
+}
+
+.width_SN {
+    width: 100vw;
+}
+
+.background-color-margin-top-bottom_SN {
+    background-color: white;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+
+.padding-top-margin-top-left-right_SN {
+    padding-top: 0vh;
+    margin-top: 0vh;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.margin-bottom_SN {
+    margin-bottom: 4vh;
+}
+
 /*Definición de la sección de restaurantes en sobre nosotros y sus propiedades*/
 
 
-.general-box{
+.general-box {
     display: flex;
     flex-direction: column;
     background: var(--color-our-blue-gray);
@@ -322,7 +427,7 @@
     margin: 15px;
 }
 
-.restaurant_container{
+.restaurant_container {
     background-color: var(--color-our-blue-gray);
     min-width: 100px;
     max-width: 80%;
@@ -363,18 +468,20 @@
 .restaurant_container-div2 p {
     margin: 5px 0;
     font-size: 2vh !important;
-    color:#ffffff;
-  }
-  .restaurant_container-div2 p a{
-    color:#ffffff;
-  }
-  @media (max-width: 1024px) {
+    color: #ffffff;
+}
+
+.restaurant_container-div2 p a {
+    color: #ffffff;
+}
+
+@media (max-width: 1024px) {
     .restaurant_container {
-      flex-wrap: wrap;
-      display: inline-flex;
-      min-width: 200px;
-      max-width: 300px;
-      margin: auto;
+        flex-wrap: wrap;
+        display: inline-flex;
+        min-width: 200px;
+        max-width: 300px;
+        margin: auto;
     }
 
     .restaurant_container-div1,
@@ -598,40 +705,46 @@
 
 /* Estilos para la barra de desplazamiento */
 ::-webkit-scrollbar {
-    width: 8px; /* Ancho de la barra de desplazamiento */
-  }
-  
-  /* Estilo del riel de la barra de desplazamiento */
-  ::-webkit-scrollbar-track {
-    background: var(--color-our-blue-gray); /* Color del riel de la barra de desplazamiento */
-  }
-  
-  /* Estilo del pulgar de la barra de desplazamiento */
-  ::-webkit-scrollbar-thumb {
-    background: var(--color-our-orange); /* Color del pulgar de la barra de desplazamiento */
-     border-radius: 3px;/* Radio de borde del pulgar de la barra de desplazamiento */
-  }
-  
-  /* Estilo del pulgar de la barra de desplazamiento al pasar el mouse sobre él */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Cambia el color del pulgar al pasar el mouse sobre él */
+    width: 8px;
+    /* Ancho de la barra de desplazamiento */
+}
 
-  }
+/* Estilo del riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background: var(--color-our-blue-gray);
+    /* Color del riel de la barra de desplazamiento */
+}
+
+/* Estilo del pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background: var(--color-our-orange);
+    /* Color del pulgar de la barra de desplazamiento */
+    border-radius: 3px;
+    /* Radio de borde del pulgar de la barra de desplazamiento */
+}
+
+/* Estilo del pulgar de la barra de desplazamiento al pasar el mouse sobre él */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Cambia el color del pulgar al pasar el mouse sobre él */
+
+}
 
 /* Estilos de seccion 1 apartado de sobre nosotros */
 
 @media screen and (max-width: 800px) {
-    .sobre-nosotros-container-item{
+    .sobre-nosotros-container-item {
         width: 100%;
         padding: 0;
         min-width: none;
     }
-    .sobre-nosotros-container-item:nth-child(2){
+
+    .sobre-nosotros-container-item:nth-child(2) {
         display: none !important;
     }
     .sobre-nosotros-container-item div{
         padding: 0px !important;
-        
+
     }
 
 }

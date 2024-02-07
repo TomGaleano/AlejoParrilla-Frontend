@@ -5,14 +5,16 @@
     padding-bottom: 2vh;
     padding-left: 10vh;
     padding-right: 10vh;
-    background-color: var(--color-our-blue-light);
+    background-color: var(--color-our-blue);
     color: var(--color-white);
 }
 
 .footer .column {
     display: flex;
-    justify-content: center; /* horizontally center */
-    align-items: center; /* vertically center */
+    justify-content: center;
+    /* horizontally center */
+    align-items: center;
+    /* vertically center */
     flex: 1;
     margin-right: 20px;
     overflow: auto;
@@ -43,17 +45,21 @@
     text-decoration: none;
 }
 
-.footer .hours, .footer p {
+.footer .hours,
+.footer p {
     margin: 0;
     margin-top: 10px;
     font-size: 19px;
 }
+
 .footer-logo {
     width: 30vh;
 }
+
 .tit_alt {
     font-size: 6vh;
 }
+
 .social-icons {
     display: flex;
     justify-content: center;
@@ -61,32 +67,43 @@
 }
 
 .social-icon-tw {
-    font-size: 28px; /* Adjust this value to change the size of the icons */
-    margin-right: 10px; /* Add some space between the icons */
+    font-size: 28px;
+    /* Adjust this value to change the size of the icons */
+    margin-right: 10px;
+    /* Add some space between the icons */
 }
+
 .social-icon-fa {
-    font-size: 28px; /* Adjust this value to change the size of the icons */
-    margin-right: 3px; /* Add some space between the icons */
+    font-size: 28px;
+    /* Adjust this value to change the size of the icons */
+    margin-right: 3px;
+    /* Add some space between the icons */
 }
 
 .rappi-logo {
-    height: 22px; /* Make the logo the same height as the icons */
+    height: 22px;
+    /* Make the logo the same height as the icons */
     padding-bottom: 2px;
     padding-top: 1vh;
     padding-left: 1vh;
-    width: 40px; /* Set the width of the Rappi logo */
-    height: 40px; /* Set the height of the Rappi logo */
+    width: 40px;
+    /* Set the width of the Rappi logo */
+    height: 40px;
+    /* Set the height of the Rappi logo */
 }
+
 @media (max-width: 600px) {
     .column:has(img) {
         display: run-in;
     }
+
     .footer {
         flex-direction: column;
     }
 
     .footer .column img {
-        max-width: 100%; /* Ensure images scale down to fit their container */
+        max-width: 100%;
+        /* Ensure images scale down to fit their container */
     }
 
     .footer .column {
@@ -98,7 +115,9 @@
         margin-bottom: 0;
     }
 
-    .footer .contact-info, .footer .hours, .footer p {
+    .footer .contact-info,
+    .footer .hours,
+    .footer p {
         font-size: 14px;
     }
 }
