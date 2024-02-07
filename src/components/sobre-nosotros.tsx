@@ -92,7 +92,7 @@ export const Sobrenosotros = (): JSX.Element => {
       {/* Cuarta Sección */}
       <div className="width_SN">
         <div className="container background-color-margin-top-bottom_SN">
-          <h2 className='title tit-sobre-nosotros'>Nuestra Filosofía</h2>
+          <h2 className='title tit-sobre-nosotros'>Nuestra Recuperación</h2>
           <div className="sobre-nosotros">
 
           </div>
