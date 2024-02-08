@@ -2,7 +2,7 @@
 .newMenu{
     background-color: var(--color-our-blue-light);
     padding: 0% 30%;
-    padding-top: 6vw;
+    padding-top: 0.5vw;
     margin: 0vh;
 }
 .newMenu h1{

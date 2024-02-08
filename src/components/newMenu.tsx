@@ -5,8 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { useRef, useState } from 'react';
 import SeeMenu from "./seeMenu";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import { Swiper, SwiperSlide } from '../../node_modules/swiper/swiper-react';
+import '../../node_modules/swiper/swiper.min.css';
+import '../../node_modules/swiper/swiper-bundle.css';
+import '../../node_modules/swiper/modules/effect-cube.min.css';
 
 function NewMenu() {
     const [category, setCategory] = useState('Hamburguesas');
@@ -32,6 +34,7 @@ function NewMenu() {
                     slidesPerView={1}
                     spaceBetween={10}
                     onSwiper={(swiper) => { swiperRef.current = swiper; }}
+                    key={1}
                     
                 >
                     <SwiperSlide key={1}>

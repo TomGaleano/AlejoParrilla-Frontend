@@ -9,7 +9,7 @@ body {
 }
 
 .header__logo {
-    padding-left: 20px; /* Adjust as needed */
+    padding-left: 5vw; /* Adjust as needed */
     max-width: 200px; /* Adjust as needed */
     max-height: 90%; /* Adjust as needed */
 }
@@ -36,11 +36,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 50px;
+    padding: 10px 0px;
     padding-top: 20px;
     background-color: var(--color-our-blue);
     z-index: 1000; /* This ensures the navbar stays on top of other elements */
@@ -49,7 +49,6 @@ body {
 
 .header__nav {
     position: absolute;
-    right: 4%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,11 +108,11 @@ body {
     position: absolute;
     right: 0%;
     top: 0%;
-    width: 16vw;
+    width: 15vw;
+    margin-right: 5vw;
     border-radius: 25px;
     box-shadow: 0 10px 25px rgba(0,0,0,.1);
     background-color: var(--color-our-orange);
-    margin-right: 5vw;
     color: var(--color-white);
     font-size: 1.3vw;
   }
