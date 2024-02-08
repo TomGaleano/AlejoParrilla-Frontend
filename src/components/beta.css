@@ -64,9 +64,7 @@
     border-radius: 20px;
     background-color: var(--color-our-beige);
 }
-.small_square img{
-    padding-left: 3vw;
-}
+
 
 .long_square{
     position: relative;
@@ -187,7 +185,30 @@
     cursor: pointer;
     padding: 1vh;
 }
+.category_bowls, .category_rapidas{
+    width: 9vw;
+    padding-left: 3vw;
+}
+.category_entradas {
+    width: 13vw;
+    padding-left: 5vw;
+}
+.category_sopas{
+    width: 13vw;
+}
+
+.category_bebidas{
+    width: 15vw;
+    padding-left: 0.7vw;
+    padding-top: 5vw;
+}
+.category_tipicos, .category_postres{
+    width: 8.5vw
+}
 @media (max-width: 1024px) {
+    .bento_menu, .bento_grid{
+        padding-top: 20vh;
+    }
     .bento_navbar, .bento_menu_navbar h1 {
         font-size: xx-large;
     }
@@ -200,16 +221,16 @@
         padding: 10px;
     }
     .big_square {
-        height: 50vw;
+        height: 60vw;
     }
     .long_square {
-        height: 25vw;
+        height: 42vw;
     }
     .tall_square {
         height: 76vw;
     }
     .bento_title, .bento_arrow {
-        font-size: large;
+        font-size: medium;
         bottom: 5%;
     }
     .bento_title {
@@ -217,5 +238,37 @@
     }
     .bento_arrow {
         right: 5%;
+    }
+    .category_hamburguesa {
+        padding-top: 3vw;
+        width: 50vw;
+    }
+    .category_bowls, .category_rapidas{
+        width: 25vw;
+        padding-left: 3vw;
+        padding-bottom: 3vw;
+    }
+    .category_entradas {
+        width: 40vw;
+        padding-left: 5vw;
+    }
+    .category_sopas{
+        padding-top: 2vw;
+        width: 30vw;
+    }
+    
+    .category_bebidas{
+        width: 31vw;
+        padding-left: 0.7vw;
+        padding-top: 10vw;
+    }
+    .category_tipicos, .category_postres{
+        width: 20vw;
+        padding-left: 4vw;
+    }
+    .category_infantil{
+        width: 45vw;
+        padding-left: 5vw;
+        padding-bottom: 3vw;
     }
 }

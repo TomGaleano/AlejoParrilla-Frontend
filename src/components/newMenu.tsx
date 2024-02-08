@@ -35,21 +35,21 @@ function NewMenu() {
                     <div className={`primera_pagina ${currentPage === 'primera_pagina' ? 'show' : 'hide'}`}>
                         <div className="bento_menu_1_top">
                             <div className="big_square bento_square" onClick={() => { setCategory('Hamburguesas'); handleClick(); }}>
-                                <img src="./images/menu_categories/alejoparrilla_category_hamburguesa.png" alt="Hamburguesas" className="bento_image" />
+                                <img src="./images/menu_categories/alejoparrilla_category_hamburguesa.png" alt="Hamburguesas" className="bento_image category_hamburguesa" />
                                 <h3 className="bento_title">
                                     Hamburguesas
                                 </h3>
                                 <FontAwesomeIcon className="bento_arrow" icon={faCircleChevronRight} />
                             </div>
                             <div className="small_square bento_square" onClick={() => { setCategory('Bowls'); handleClick(); }}>
-                                <img src="./images/menu_categories/alejoparrilla_category_bowls.webp" alt="Bowls" className="bento_image" style={{ width: '9vw' }} />
+                                <img src="./images/menu_categories/alejoparrilla_category_bowls.webp" alt="Bowls" className="bento_image category_bowls"  />
                                 <h3 className="bento_title">
                                     Bowls
                                 </h3>
                                 <FontAwesomeIcon className="bento_arrow" icon={faCircleChevronRight} />
                             </div>
                             <div className="small_square bento_square" onClick={() => { setCategory('Rápidas'); handleClick(); }}>
-                                <img src="./images/menu_categories/alejoparrilla_category_rapidas.webp" alt="Rapidas" className="bento_image" style={{ width: '9vw' }} />
+                                <img src="./images/menu_categories/alejoparrilla_category_rapidas.webp" alt="Rapidas" className="bento_image category_rapidas"  />
                                 <h3 className="bento_title">
                                     Rápidas
                                 </h3>
@@ -58,14 +58,14 @@ function NewMenu() {
                         </div>
                         <div className="bento_menu_1_bottom">
                             <div className="small_square bento_square" onClick={() => { setCategory('Entradas'); handleClick(); }}>
-                                <img src="./images/menu_categories/alejoparrilla_category_entradas.webp" alt="Entradas" className="bento_image" style={{ width: '13vw', paddingLeft: '4.5vw' }} />
+                                <img src="./images/menu_categories/alejoparrilla_category_entradas.webp" alt="Entradas" className="bento_image category_entradas" />
                                 <h3 className="bento_title">
                                     Entradas
                                 </h3>
                                 <FontAwesomeIcon className="bento_arrow" icon={faCircleChevronRight} />
                             </div>
                             <div className="long_square bento_square" onClick={() => { setCategory('Sopas'); handleClick(); }}> {/* Eso de geometría no es lo mío */}
-                                <img src="./images/menu_categories/alejoparrilla_category_sopas.webp" alt="Sopas" className="bento_image" style={{ width: '13vw' }} />
+                                <img src="./images/menu_categories/alejoparrilla_category_sopas.webp" alt="Sopas" className="bento_image category_sopas" />
                                 <h3 className="bento_title">
                                     Sopas
                                 </h3>
@@ -77,28 +77,28 @@ function NewMenu() {
                     <div className={`segunda_pagina ${currentPage === 'segunda_pagina' ? 'show' : 'hide'}`}>
                         <div className="bento_menu_2">
                             <div className="tall_square bento_square" onClick={() => { setCategory('Bebidas'); handleClick(); }}> {/* No pregunten que es un tall square, solo déjenme sólo */}
-                                <img src="./images/menu_categories/alejoparrilla_category_bebidas.webp" alt="Bebidas" className="bento_image" style={{ width: '15vw', paddingLeft: '0.7vw', paddingTop: '5vw' }} />
+                                <img src="./images/menu_categories/alejoparrilla_category_bebidas.webp" alt="Bebidas" className="bento_image category_bebidas" />
                                 <h3 className="bento_title">
                                     Bebidas
                                 </h3>
                                 <FontAwesomeIcon className="bento_arrow" icon={faCircleChevronRight} />
                             </div>
                             <div className="small_square_2 bento_square" onClick={() => { setCategory('Típicos'); handleClick(); }}>
-                                <img src="./images/menu_categories/alejoparrilla_category_tipicos.webp" alt="Tipicos" className="bento_image" style={{ width: '8.5vw' }} />
+                                <img src="./images/menu_categories/alejoparrilla_category_tipicos.webp" alt="Tipicos" className="bento_image category_tipicos" />
                                 <h3 className="bento_title">
                                     Típicos
                                 </h3>
                                 <FontAwesomeIcon className="bento_arrow" icon={faCircleChevronRight} />
                             </div>
                             <div className="small_square_2 bento_square" onClick={() => { setCategory('Postres'); handleClick(); }}>
-                                <img src="./images/menu_categories/alejoparrilla_category_postres.webp" alt="Postres" className="bento_image" style={{ width: '8.5vw' }} />
+                                <img src="./images/menu_categories/alejoparrilla_category_postres.webp" alt="Postres" className="bento_image category_postres" />
                                 <h3 className="bento_title">
                                     Postres
                                 </h3>
                                 <FontAwesomeIcon className="bento_arrow" icon={faCircleChevronRight} />
                             </div>
                             <div className="big_square_2 bento_square" onClick={() => { setCategory('Menú Infantil'); handleClick(); }}>
-                                <img src="./images/menu_categories/alejoparrilla_category_menu_infantil.webp" alt="Menú infantil" className="bento_image" />
+                                <img src="./images/menu_categories/alejoparrilla_category_menu_infantil.webp" alt="Menú infantil" className="bento_image category_infantil" />
                                 <h3 className="bento_title">
                                     Menú Infantil
                                 </h3>
