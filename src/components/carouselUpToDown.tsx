@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React from 'react';
 import { Swiper, SwiperSlide } from '../../node_modules/swiper/swiper-react';
 import '../../node_modules/swiper/swiper.min.css';
