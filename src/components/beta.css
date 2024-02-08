@@ -1,13 +1,20 @@
+
 .newMenu{
     background-color: var(--color-our-blue-light);
     padding: 0% 30%;
-    padding-top: 6.5vw;
+    padding-top: 6vw;
+    margin: 0vh;
 }
-.bento_selector {
-    display: flex;
-    justify-content: space-between;
-    padding: 1vh;
+.newMenu h1{
+    font-size: 3.3vw;
+    color: var(--color-our-orange);
+    text-align: center;
+    margin: 0vh;
+    margin-bottom: 1vh;
+
 }
+
+
 .bento_option {
     align-items: center;
     background-color: var(--color-our-brown-light);
@@ -78,7 +85,7 @@
 
 .tall_square{
     position: relative;
-    height: 37vw;
+    height: 37.5vw;
     border-radius: 20px;
     grid-column: 1;
     grid-row: 1 / span 2;
