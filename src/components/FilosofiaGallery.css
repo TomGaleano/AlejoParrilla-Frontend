@@ -1,0 +1,141 @@
+.ContainerGallery {
+    display: flex;
+    width: 60vw;
+    height: 70vh;
+    color: white;
+    padding: 2.5%;
+}
+
+.ContainerGallery-1,
+.ContainerGallery-2,
+.ContainerGallery-3 {
+    width: 0px;
+    flex-grow: 1;
+    opacity: .8;
+    transition: 0.5s ease;
+    padding: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: justify-content 0.5s ease;
+    text-align: center;
+}
+
+.ContainerGallery-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/GalleryRestaurante1.webp');
+    background-size: cover;
+}
+
+.ContainerGallery-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/GalleryRestaurante2.webp');
+    background-size: cover;
+}
+
+.ContainerGallery-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/GalleryRestaurante3.webp');
+    background-size: cover;
+}
+
+.ContainerGallery-1:hover,
+.ContainerGallery-2:hover,
+.ContainerGallery-3:hover,
+.ContainerGallery-1:active,
+.ContainerGallery-2:active,
+.ContainerGallery-3:active {
+    cursor: crosshair;
+    width: 30%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.text-container {
+    transition: opacity 0.2s ease;
+    transform: translateY(45%);
+}
+
+.containerText-paragraph {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.ContainerGallery-1:hover .containerText-paragraph,
+.ContainerGallery-2:hover .containerText-paragraph,
+.ContainerGallery-3:hover .containerText-paragraph,
+.ContainerGallery-1:active .containerText-paragraph,
+.ContainerGallery-2:active .containerText-paragraph,
+.ContainerGallery-3:active .containerText-paragraph {
+    opacity: 1;
+}
+
+.containerTitle {
+    transition: transform 0.5s ease;
+    position: relative;
+    font-size: 1.5rem;
+    color: rgb(255, 132, 0);
+    font-weight: bolder;
+}
+
+.ContainerGallery-1:hover .text-container,
+.ContainerGallery-2:hover .text-container,
+.ContainerGallery-3:hover .text-container,
+.ContainerGallery-1:active .text-container,
+.ContainerGallery-2:active .text-container,
+.ContainerGallery-3:active .text-container {
+    transform: translateY(0);
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(20px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .ContainerGallery {
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+    }
+
+    .ContainerGallery-1,
+    .ContainerGallery-2,
+    .ContainerGallery-3 {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .ContainerGallery-1:hover,
+    .ContainerGallery-2:hover,
+    .ContainerGallery-3:hover,
+    .ContainerGallery-1:active,
+    .ContainerGallery-2:active,
+    .ContainerGallery-3:active {
+        width: 100%;
+        height: 50vh;
+    }
+}

@@ -66,10 +66,12 @@
 
 }
 
-.swiper-slide-next,
+.swiper-slide-next {
+    transform: scale(0.8) translateY(-80%);
+}
+
 .swiper-slide-prev {
-    transform: scale(0.8);
-    /* Ajusta este valor según tus necesidades */
+    transform: scale(0.8) translateY(70%);
 }
 
 .swiper-button-next,
@@ -98,12 +100,12 @@
 }
 
 .swiper-button-next {
-    top: 60%;
+    top: 55%;
     /* Ajusta este valor según tus necesidades */
 }
 
 .swiper-button-prev {
-    top: 40%;
+    top: 45%;
     /* Ajusta este valor según tus necesidades */
 }
 
@@ -115,4 +117,25 @@
 .swiper-button-prev::after {
     content: '▲';
 
+}
+
+/* Media queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .TextContainer {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .slideContainer-1,
+    .slideContainer-2,
+    .slideContainer-3 {
+        height: 50vh;
+        width: 90%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+        /* Los botones desaparecen en dispositivos móviles */
+    }
 }
