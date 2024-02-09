@@ -837,8 +837,6 @@
 
 .info-card p {
     margin: 0;
-<<<<<<< HEAD
-=======
 }
 
 /*  */
@@ -886,5 +884,4 @@
     .container-vision-item-div:nth-child(2) {
         display: block;
     }
->>>>>>> 93de544fd09ac631cbc6b4f4d5c06ee9603bcd06
 }
