@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import "./beta.css";
-import { Swiper, SwiperSlide } from '../../node_modules/swiper/swiper-react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import '../../node_modules/swiper/swiper.min.css';
 import '../../node_modules/swiper/swiper-bundle.css';
 import '../../node_modules/swiper/modules/effect-cube.min.css';

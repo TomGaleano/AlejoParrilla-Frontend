@@ -5,12 +5,9 @@ import { Swiper, SwiperSlide } from '../../node_modules/swiper/swiper-react';
 import '../../node_modules/swiper/swiper.min.css';
 import '../../node_modules/swiper/swiper-bundle.css';
 import '../../node_modules/swiper/modules/effect-cube.min.css';
-import SwiperCore from 'swiper/core';
-import EffectCube from 'swiper/core';
-import Navigation from 'swiper/core';
+
 import "./carouselUpToDown.css";
 
-SwiperCore.use([EffectCube, Navigation]);
 
 const CarouselUpToDown: React.FC = () => {
 
