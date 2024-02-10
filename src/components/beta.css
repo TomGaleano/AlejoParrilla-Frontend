@@ -1,12 +1,20 @@
+
 .newMenu{
     background-color: var(--color-our-blue-light);
     padding: 0% 30%;
+    padding-top: 0.5vw;
+    margin: 0vh;
 }
-.bento_selector {
-    display: flex;
-    justify-content: space-between;
-    padding: 1vh;
+.newMenu h1{
+    font-size: 3.3vw;
+    color: var(--color-our-orange);
+    text-align: center;
+    margin: 0vh;
+    margin-bottom: 1vh;
+
 }
+
+
 .bento_option {
     align-items: center;
     background-color: var(--color-our-brown-light);
@@ -42,6 +50,13 @@
 }
 
 
+.bento_image{
+    padding-left: 1.5vw;
+    width: 20dvw;
+    transition: transform 0.3s ease;
+}
+
+
 .big_square {
     position: relative;
     height: 22vw;
@@ -57,6 +72,7 @@
     background-color: var(--color-our-beige);
 }
 
+
 .long_square{
     position: relative;
     height: 15vw;
@@ -69,7 +85,7 @@
 
 .tall_square{
     position: relative;
-    height: 37vw;
+    height: 37.5vw;
     border-radius: 20px;
     grid-column: 1;
     grid-row: 1 / span 2;
@@ -89,6 +105,7 @@
     background-color: var(--color-our-beige);
 }
 
+
 .bento_title {
     position: absolute;
     bottom: 3%;
@@ -97,18 +114,26 @@
     font-weight: bold;
     color: var(--color-our-orange);
     margin: 0;
+    transition: font-size 0.3s ease;
 }
+
 .bento_arrow {
     position: absolute;
     bottom: 3%;
     right: 3%;
-    font-size: 2.3vw;
+    font-size: 2.1vw;
     font-weight: bold;
     color: var(--color-our-orange);
     margin: 0;
+    transition: font-size 0.3s ease;
 }
 
-
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
 
 .show {
     display: block;
@@ -118,24 +143,139 @@
     display: none;
 }
 
+.bento_square:hover .bento_title, .bento_square:hover .bento_arrow {
+    font-size: 2.3vw;
+}
+.bento_square:hover .bento_image{
+    transform: scale(1.1);
+}
+
+.bento_menu_navbar{
+    display: flex;
+    padding: 1vh;
+    align-items: center;
+}
+.bento_navbar {
+    position: relative;
+    font-size: 2.2vw;
+    color: var(--color-our-orange);
+    cursor: pointer;
+}
+.bento_menu_navbar h1{
+    display: flex;
+    font-size: 2.7vw;
+    justify-content: space-between;
+    padding: 1vh;
+    cursor: auto;
+}
+
+
+.newMenu_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 1vh;
+    background-color: var(--color-our-beige);
+    border-radius: 10px;
+    height: 12vw;
+}
+
+.swiper_controls{
+    display: flex;
+    justify-content: right;
+    padding: 1vh;
+}
+.bento_navbutton {
+    font-size: 2vw;
+    color: var(--color-our-beige);
+    cursor: pointer;
+    padding: 1vh;
+}
+.category_bowls, .category_rapidas{
+    width: 9vw;
+    padding-left: 3vw;
+}
+.category_entradas {
+    width: 13vw;
+    padding-left: 5vw;
+}
+.category_sopas{
+    width: 13vw;
+}
+
+.category_bebidas{
+    width: 15vw;
+    padding-left: 0.7vw;
+    padding-top: 5vw;
+}
+.category_tipicos, .category_postres{
+    width: 8.5vw
+}
 @media (max-width: 1024px) {
+    .bento_menu, .bento_grid{
+        padding-top: 20vh;
+    }
+    .bento_navbar, .bento_menu_navbar h1 {
+        font-size: xx-large;
+    }
     .newMenu {
         padding: 0% 5%;
+        padding-bottom: 12vh;
     }
     .bento_option_title {
-        font-size: 2.5vh;
+        font-size: large;
         padding: 10px;
     }
     .big_square {
-        height: 50vw;
+        height: 60vw;
     }
     .long_square {
-        height: 25vw;
+        height: 42vw;
     }
     .tall_square {
         height: 76vw;
     }
     .bento_title, .bento_arrow {
-        font-size: 2.5vh;
+        font-size: medium;
+        bottom: 5%;
+    }
+    .bento_title {
+        left: 5%;
+    }
+    .bento_arrow {
+        right: 5%;
+    }
+    .category_hamburguesa {
+        padding-top: 3vw;
+        width: 50vw;
+    }
+    .category_bowls, .category_rapidas{
+        width: 25vw;
+        padding-left: 3vw;
+        padding-bottom: 3vw;
+    }
+    .category_entradas {
+        width: 40vw;
+        padding-left: 5vw;
+    }
+    .category_sopas{
+        padding-top: 2vw;
+        width: 30vw;
+    }
+    
+    .category_bebidas{
+        width: 31vw;
+        padding-left: 0.7vw;
+        padding-top: 10vw;
+    }
+    .category_tipicos, .category_postres{
+        width: 20vw;
+        padding-left: 4vw;
+    }
+    .category_infantil{
+        width: 45vw;
+        padding-left: 5vw;
+        padding-bottom: 3vw;
     }
 }

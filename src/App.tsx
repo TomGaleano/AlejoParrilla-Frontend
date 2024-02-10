@@ -4,8 +4,8 @@ import { Inicio } from './components/inicio';
 import { Sobrenosotros } from './components/sobre-nosotros';
 import { Vinculate } from './components/vinculate';
 import Navbar from './components/navbar';
-import MenuGrid from './components/menu';
 import LoadingPage from './components/loadingPage';
+import NewMenu from './components/newMenu';
 //import ReactGA from 'react-ga';
 
 //const trackingId = <Tracking ID HERE>;
@@ -55,7 +55,7 @@ function App() {
       case 'Contacto':
         return <Vinculate />;
       case 'Menú':
-        return <div style={{ paddingTop: '10vh' }}><MenuGrid /></div>;
+        return <div><NewMenu /></div>;
       default:
         return <Inicio />;
     }
