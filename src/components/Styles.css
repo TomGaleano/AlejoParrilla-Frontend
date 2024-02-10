@@ -320,6 +320,15 @@
     overflow: hidden;
 }
 
+.sobre-nosotros-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.5%;
+}
+
 .padding-top-min-height_SN {
     padding-top: 5vh;
     min-height: 100vh;
@@ -426,6 +435,50 @@
 
 .margin-bottom_SN {
     margin-bottom: 4vh;
+}
+
+/* Tus estilos existentes... */
+
+/* Media queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+
+    .sobre-nosotros-container,
+    .flex-wrap-justify-align_SN,
+    .flex-align-justify_SN {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .width-min-width-color_SN,
+    .box-sizing-width-padding_SN {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .font-size-padding-text-align_SN {
+        font-size: 0.9rem;
+        padding: 1.5rem;
+        padding-top: 0px;
+    }
+
+    .SobreNosotros-title_SN,
+    .Mision-title {
+        font-size: 4vh;
+    }
+
+    .FilosofiaContainer_SN {
+        align-items: center;
+    }
+
+    .img-width-height-margin-border_SN {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .Mision_Container_SN {
+        height: auto;
+    }
 }
 
 /*Definición de la sección de restaurantes en sobre nosotros y sus propiedades*/

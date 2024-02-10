@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {  useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavBar.css";
 import logo from "../assets/LOGOO-300x114.png";
@@ -44,7 +44,11 @@ function Navbar({
         setView(view);
         handleToggle();
         window.scrollTo(0, 0);
+        if (window.innerWidth > 768) {
+            setIsOpen(false);
+        }
     };
+
 
     return (
         <header className="header">
