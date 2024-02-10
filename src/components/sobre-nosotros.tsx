@@ -8,7 +8,7 @@ import FilosofiaGallery from "./FilosofiaGallery";
 export const Sobrenosotros = (): JSX.Element => {
   return (
     <div style={{ overflow: 'hidden' }}>
-      <div style={{ minHeight: '100vh' }} className="landing">
+      <div style={{ minHeight: '80vh', paddingTop: '20vh' }} className="landing">
         {/* Primera sección */}
         <div className="sobre-nosotros-container">
           <div className="sobre-nosotros-container-item" style={{ width: '50%', minWidth: '250px', color: '#ffffff' }}>
