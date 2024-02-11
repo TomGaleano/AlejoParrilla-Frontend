@@ -222,6 +222,10 @@
     .newMenu {
         padding: 0% 5%;
         padding-bottom: 12vh;
+        padding-top: 20vh;
+    }
+    .newMenu h1 {
+        font-size: 15vw;
     }
     .bento_option_title {
         font-size: large;
@@ -245,6 +249,9 @@
     }
     .bento_arrow {
         right: 5%;
+    }
+    .bento_navbutton{
+        font-size: 10vw;
     }
     .category_hamburguesa {
         padding-top: 3vw;
