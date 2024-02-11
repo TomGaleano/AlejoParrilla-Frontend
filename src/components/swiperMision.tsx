@@ -6,7 +6,7 @@ import '../../node_modules/swiper/swiper.min.css';
 import '../../node_modules/swiper/swiper-bundle.css';
 import '../../node_modules/swiper/modules/effect-cube.min.css';
 
-import "./carouselUpToDown.css";
+import "./SwiperMision.css";
 
 
 const CarouselUpToDown: React.FC = () => {

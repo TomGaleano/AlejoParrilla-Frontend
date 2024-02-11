@@ -30,17 +30,17 @@
 }
 
 .slideContainer-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Restaurante-Slide-1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Slide-Mision-1.webp');
     background-size: cover;
 }
 
 .slideContainer-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Restaurante-Slide-2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Slide-Mision-2.webp');
     background-size: cover;
 }
 
 .slideContainer-3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Restaurante-Slide-3.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Slide-Mision-3.webp');
     background-size: cover;
 }
 

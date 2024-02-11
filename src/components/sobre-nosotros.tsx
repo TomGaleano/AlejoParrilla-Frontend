@@ -1,6 +1,6 @@
 import "./Styles.css";
 import Carousel from "./carousel";
-import CarouselUpToDown from "./carouselUpToDown";
+import CarouselUpToDown from "./swiperMision";
 import VisionComponent from "./VisonCard";
 import FilosofiaGallery from "./FilosofiaGallery";
 
