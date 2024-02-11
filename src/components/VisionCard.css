@@ -6,17 +6,18 @@
 }
 .container-vision-item{
     margin: 20px;
-    width: 200px;
+    min-width:200px;
+    width: 300px;
     height: 300px;
     border-radius: 20px;
     background-size: cover;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
     background-position: center top;
     overflow: hidden;
 }
 .container-vision-item-div{
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,68 +42,3 @@
 .container-vision-item.clicked .container-vision-item-div {
     opacity: 1;
 }
-/* Componente Antiguo
-.container-vision-item{
-    width: 200px;
-    background: var(--color-our-orange-light);
-    border-radius: 20px;
-    margin: 10px;
-    height: auto;
-}
-.container-vision-item .container-vision-item-div:nth-child(1) {
-    position: relative; 
-    display: block;
-}
-.container-vision-item  .container-vision-item-div:nth-child(1) img {
-    width: 100%;
-    height: auto;
-    transition: opacity 0.3s ease-in-out;
-}
-.container-vision-item:hover .container-vision-item-div:nth-child(1) img {
-    opacity: 0.5;
-}
-  
-  
-.container-vision-item:hover .container-vision-item-div:nth-child(1) p {
-    display: block;
-}
-.container-vision-item .container-vision-item-div:nth-child(1) p {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
-}
-
-
-
-.container-vision-item-div:nth-child(1){
-    overflow: hidden;
-    height: 150px
-}
-.container-vision-item-div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-.container-vision-item-div p{
-    text-align: justify;
-    font-size: .8rem;
-    padding: .4rem;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.container-vision-item-div:nth-child(2){
-    display: none;
-}
-.container-vision-item:hover, .container-vision-item:active{
-    .container-vision-item-div:nth-child(2){
-        display: block;
-    }
-}
-*/

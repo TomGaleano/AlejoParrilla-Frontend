@@ -20,7 +20,6 @@
 .landing {
     background-color: var(--color-our-blue-light);
     background-image: url("../assets/landing-background.png");
-    height: 90vh;
 }
 
 .third {
@@ -119,6 +118,7 @@
 .tit-sobre-nosotros {
     text-align: center;
     padding-top: 9vh;
+    margin-bottom: .3;
     color: var(--color-our-orange);
 }
 
@@ -318,6 +318,12 @@
 /*Definicion de la seccion sobrenosotros*/
 .overflow-hidden_SN {
     overflow: hidden;
+}
+
+.sobre-nosotros-title{
+    font-size: 6vh;
+    color: var(--color-our-orange);
+    text-align: center;
 }
 
 .sobre-nosotros-container {
