@@ -24,13 +24,27 @@ const VisionCard: React.FC<Vision> = ({ imageUrl, text, title }) => {
 }
 const VisionComponent = () => {
   return(
-    <div className="container-vision">
-      <VisionCard imageUrl="./images/alejo-parrilla-1.jpg" title="Destino culinario 
-de referencia" text="En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato."/>
-      <VisionCard imageUrl="./images/alejo-parrilla-2.jpg" title="Punto de encuentro" text="En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato."/>
-      <VisionCard imageUrl="./images/alejo-parrilla-2.jpg" title="Experiencia Única" text="En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato."/>
-      <VisionCard imageUrl="./images/alejo-parrilla-2.jpg" title="Calidad Ante todo" text="En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato."/>
+    <div className="container-vision" style={{}}>
+      <VisionCard imageUrl="./images/alejo-parrilla-1.jpg" title="Destino culinario" text='En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato.'/>
+      <VisionCard imageUrl="./images/alejo-parrilla-1.jpg" title="Destino culinario" text='En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato.'/>
+      <VisionCard imageUrl="./images/alejo-parrilla-1.jpg" title="Destino culinario" text='En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato.'/>
+      <VisionCard imageUrl="./images/alejo-parrilla-1.jpg" title="Destino culinario" text='En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato.'/>
     </div>
   )
 }
 export default VisionComponent;
+{/*<VisionCard imageUrl="./images/alejo-parrilla-1.jpg" title="Destino culinario 
+de referencia" text="En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato."/>
+      </div>
+      <div>
+        <VisionCard imageUrl="./images/alejo-parrilla-1.jpg" title="Destino culinario 
+de referencia" text="En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato."/>
+      </div>
+      <div>
+        <VisionCard imageUrl="./images/alejo-parrilla-1.jpg" title="Destino culinario 
+de referencia" text="En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato."/>
+      </div>
+      <div>
+        <VisionCard imageUrl="./images/alejo-parrilla-1.jpg" title="Destino culinario 
+de referencia" text="En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato."/>
+</div>*/}

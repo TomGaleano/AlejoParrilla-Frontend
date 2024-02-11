@@ -1,7 +1,7 @@
 .container-vision{ /* contenedor general de la sección */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 .container-vision-item{

@@ -1,47 +1,45 @@
+import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import DetallesRestaurante from './info-restaurantes';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/effect-coverflow';
+import 'swiper/css/grid';
 import 'swiper/css/pagination';
-import DetallesRestaurante from './info-restaurantes';
 
-// import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { Grid, Pagination } from 'swiper/modules';
 
 const Carousel=()=> {
   return (
     <>
-      <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
+    <div>
+    <Swiper
+        slidesPerView={3}
+        grid={{
+          rows: 2,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Grid, Pagination]}
         className="mySwiper"
       >
         <SwiperSlide>
-        <DetallesRestaurante id={4}/>
+          <DetallesRestaurante id={1}/>
         </SwiperSlide>
         <SwiperSlide>
-        <DetallesRestaurante id={4}/>
+          <DetallesRestaurante id={1}/>
         </SwiperSlide>
         <SwiperSlide>
-        <DetallesRestaurante id={4}/>
+          <DetallesRestaurante id={1}/>
         </SwiperSlide>
         <SwiperSlide>
-          <DetallesRestaurante id={4}/>
+          <DetallesRestaurante id={1}/>
         </SwiperSlide>
       </Swiper>
+    </div>
     </>
   );
 }
