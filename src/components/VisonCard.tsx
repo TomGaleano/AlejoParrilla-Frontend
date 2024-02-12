@@ -33,18 +33,3 @@ const VisionComponent = () => {
   )
 }
 export default VisionComponent;
-{/*<VisionCard imageUrl="./images/alejo-parrilla-1.jpg" title="Destino culinario 
-de referencia" text="En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato."/>
-      </div>
-      <div>
-        <VisionCard imageUrl="./images/alejo-parrilla-1.jpg" title="Destino culinario 
-de referencia" text="En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato."/>
-      </div>
-      <div>
-        <VisionCard imageUrl="./images/alejo-parrilla-1.jpg" title="Destino culinario 
-de referencia" text="En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato."/>
-      </div>
-      <div>
-        <VisionCard imageUrl="./images/alejo-parrilla-1.jpg" title="Destino culinario 
-de referencia" text="En Alejo Parrilla, aspiramos a ser el destino culinario de referencia, liderando la industria gastronómica con inovación y tradición en cada plato."/>
-</div>*/}
