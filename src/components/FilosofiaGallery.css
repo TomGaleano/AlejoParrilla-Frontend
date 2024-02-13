@@ -60,12 +60,12 @@
 
 .text-container {
     transition: opacity 0.2s ease;
-    transform: translateY(45%);
+    transform: translateY(25%);
 }
 
 .containerText-paragraph {
     opacity: 0;
-    transition: opacity 0.5s ease;
+    animation-fill-mode: forwards;
 }
 
 .ContainerGallery-1:hover .containerText-paragraph,
@@ -74,7 +74,37 @@
 .ContainerGallery-1:active .containerText-paragraph,
 .ContainerGallery-2:active .containerText-paragraph,
 .ContainerGallery-3:active .containerText-paragraph {
-    opacity: 1;
+    animation: fadeIn 4s;
+}
+
+.ContainerGallery-1:not(:hover) .containerText-paragraph,
+.ContainerGallery-2:not(:hover) .containerText-paragraph,
+.ContainerGallery-3:not(:hover) .containerText-paragraph {
+    animation: fadeOut 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    1% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .containerTitle {
