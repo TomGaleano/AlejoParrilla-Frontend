@@ -22,6 +22,10 @@
     background-image: url("../assets/landing-background.png");
 }
 
+.second {
+    background-color: var(--color-our-beige);
+}
+
 .third {
     background-color: var(--color-our-blue-light);
     background-image: url("../assets/third-background.png");
@@ -320,7 +324,7 @@
     overflow: hidden;
 }
 
-.sobre-nosotros-title{
+.sobre-nosotros-title {
     font-size: 6vh;
     color: var(--color-our-orange);
     text-align: center;
@@ -389,7 +393,9 @@
     flex-direction: column;
     background: var(--color-our-beige);
     align-items: center;
-    height: 130vh;
+    justify-content: flex-start;
+    height: 120vh;
+
 }
 
 .FilosofiaContainer_SN {
@@ -410,6 +416,8 @@
 .Mision-title {
     font-size: 6vh;
     color: var(--color-our-orange);
+    padding-bottom: 0%;
+    margin-bottom: 0%;
 }
 
 .border-background_SN {
@@ -855,6 +863,7 @@
     justify-items: center;
     align-items: center;
 }
+
 @media (max-width: 600px) {
     .container-vision {
         grid-template-columns: 1fr !important;
@@ -898,9 +907,10 @@
         display: block;
     }
 }
+
 /* Sección de carrusel de restaurante */
 
-.RestaurantsContainer{
+.RestaurantsContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -913,9 +923,9 @@
     height: 265px;
     background: white;
     border-radius: 30px;
-  }
-  
-  .restaurant-card-image {
+}
+
+.restaurant-card-image {
     width: 100%;
     height: 50%;
     border-top-left-radius: 30px;
@@ -926,16 +936,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
-  
-  .restaurant-card-text {
+}
+
+.restaurant-card-text {
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: space-around;
-  }
-  
-  .restaurant-card-icon-box {
+}
+
+.restaurant-card-icon-box {
     margin-top: 15px;
     width: 70%;
     padding: 10px;
@@ -944,36 +954,36 @@
     display: flex;
     align-items: center;
     justify-content: left;
-  }
-  
-  .restaurant-card-icon-box svg {
+}
+
+.restaurant-card-icon-box svg {
     width: 17px;
-  }
-  
-  .restaurant-card-text .h3 {
+}
+
+.restaurant-card-text .h3 {
     font-family: 'Lucida Sans' sans-serif;
     font-size: 15px;
     font-weight: 600;
     color: black;
     margin: 0;
-  }
-  
-  .restaurant-card-text .p {
+}
+
+.restaurant-card-text .p {
     font-family: 'Lucida Sans' sans-serif;
     color: #999999;
     font-size: 13px;
     margin: 0;
-  }
-  
-  .restaurant-card-icon-box .restaurant-card-span {
+}
+
+.restaurant-card-icon-box .restaurant-card-span {
     margin-left: 10px;
     font-family: 'Lucida Sans' sans-serif;
     font-size: 13px;
     font-weight: 500;
     color: #9198e5;
-  }
-  
-  .restaurant-card:hover {
+}
+
+.restaurant-card:hover {
     cursor: pointer;
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
-  }
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}

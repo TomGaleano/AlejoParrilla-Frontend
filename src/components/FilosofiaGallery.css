@@ -118,15 +118,35 @@
 @media (max-width: 768px) {
     .ContainerGallery {
         flex-direction: column;
-        width: 90vw;
+        width: 100vw;
         height: auto;
+    }
+
+    .text-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: auto;
+        font-size: 0.9rem;
+        padding-top: 25%;
+    }
+
+    .text-container {
+        transition: opacity 0.2s ease;
+        transform: translateY(10%);
     }
 
     .ContainerGallery-1,
     .ContainerGallery-2,
     .ContainerGallery-3 {
+        display: flex;
         width: 100%;
         height: 20vh;
+        background-size: center;
+        align-items: center;
+        justify-content: center;
+        padding: 0%;
     }
 
     .ContainerGallery-1:hover,

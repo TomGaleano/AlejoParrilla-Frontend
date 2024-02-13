@@ -1,6 +1,8 @@
 .mySwiper {
     width: 100%;
     height: 100vh;
+    margin-top: 0%;
+    padding-top: 0%;
 }
 
 .TextContainer {
@@ -64,6 +66,12 @@
     z-index: 1;
     /* Añade esta línea */
 
+}
+
+.swiper_controls {
+    display: flex;
+    justify-content: right;
+    padding: 1vh;
 }
 
 .swiper-slide-next {

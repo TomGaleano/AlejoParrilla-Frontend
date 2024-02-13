@@ -35,7 +35,7 @@ function NewMenu() {
                     spaceBetween={10}
                     onSwiper={(swiper) => { swiperRef.current = swiper; }}
                     key={1}
-                    
+
                 >
                     <SwiperSlide key={1}>
                         <div className={`primera_pagina `}>
@@ -116,9 +116,9 @@ function NewMenu() {
                     </SwiperSlide>
                 </Swiper>
                 <div className='swiper_controls'>
-                <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronLeft} onClick={() => swiperRef.current?.slidePrev()}/>
-                <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronRight} onClick={() => swiperRef.current?.slideNext()}/>
-            </div>
+                    <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronLeft} onClick={() => swiperRef.current?.slidePrev()} />
+                    <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronRight} onClick={() => swiperRef.current?.slideNext()} />
+                </div>
             </div>
             )}
         </div>
