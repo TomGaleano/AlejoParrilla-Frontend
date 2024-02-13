@@ -3,8 +3,6 @@ import Carousel from "./carousel";
 import CarouselUpToDown from "./swiperMision";
 import VisionComponent from "./VisonCard";
 import FilosofiaGallery from "./FilosofiaGallery";
-import DetallesRestaurante from "./info-restaurantes";
-
 
 export const Sobrenosotros = (): JSX.Element => {
   return (
@@ -63,7 +61,7 @@ export const Sobrenosotros = (): JSX.Element => {
       {/* Quinta Sección */}
         <div className=" landing RestaurantsContainer" style={{}}>
           <h2 className="menu_title margin-bottom_SN">Nuestros restaurantes</h2>
-          <DetallesRestaurante id={1} />
+          <Carousel />
         </div>
     </div>
   );
