@@ -1,0 +1,149 @@
+.mySwiper {
+    width: 100%;
+    height: 100vh;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.TextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.slideContainer-1,
+.slideContainer-2,
+.slideContainer-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 70%;
+    border-radius: 30px;
+    position: relative;
+}
+
+.slideContainer-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Slide-Mision-1.webp');
+    background-size: cover;
+}
+
+.slideContainer-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Slide-Mision-2.webp');
+    background-size: cover;
+}
+
+.slideContainer-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Slide-Mision-3.webp');
+    background-size: cover;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    position: relative;
+    /* Añade esta línea */
+    opacity: 0.5;
+    /* Añade esta línea */
+    transition: opacity 0.3s;
+    /* Añade esta línea */
+}
+
+.swiper-slide-active {
+    opacity: 1;
+    /* Añade esta línea */
+    z-index: 1;
+    /* Añade esta línea */
+
+}
+
+.swiper_controls {
+    display: flex;
+    justify-content: right;
+    padding: 1vh;
+}
+
+.swiper-slide-next {
+    transform: scale(0.8) translateY(-80%);
+}
+
+.swiper-slide-prev {
+    transform: scale(0.8) translateY(70%);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    left: 10px;
+    /* Ajusta este valor según tus necesidades */
+    width: 50px;
+    /* Ajusta este valor según tus necesidades */
+    height: 50px;
+    /* Ajusta este valor según tus necesidades */
+    background-color: var(--color-our-orange);
+    /* Ajusta este valor según tus necesidades */
+    color: #fff;
+    /* Ajusta este valor según tus necesidades */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px;
+    /* Ajusta este valor según tus necesidades */
+}
+
+.swiper-button-next {
+    top: 55%;
+    /* Ajusta este valor según tus necesidades */
+}
+
+.swiper-button-prev {
+    top: 45%;
+    /* Ajusta este valor según tus necesidades */
+}
+
+.swiper-button-next::after {
+    content: '▼';
+
+}
+
+.swiper-button-prev::after {
+    content: '▲';
+
+}
+
+/* Media queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .TextContainer {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .slideContainer-1,
+    .slideContainer-2,
+    .slideContainer-3 {
+        height: 50vh;
+        width: 90%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+        /* Los botones desaparecen en dispositivos móviles */
+    }
+}

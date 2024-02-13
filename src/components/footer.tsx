@@ -27,13 +27,13 @@ const Footer = () => {
                         <span>+57 321-460-7611</span>
                     </a>
                 </div>
-                <p className="hours">Domingo a Domingo 10:00 a. m. a 9:00 p. m.</p>
+                <a href="">njnk</a>
                 <p>Contacto</p>
                 <p>Trabaja con nosotros</p>
             </div>
             <div className="column">
                 <iframe width="300" height="220" loading="lazy"
-                    src="https://www.google.com/maps/embed/v1/search?q=alejopparrilla&key=AIzaSyCzuFvJ5puhXUY7QnkqzYixNKDG-AM2FM4">
+                    src="https://www.google.com/maps/embed/v1/search?q=alejoparrilla&key=AIzaSyCzuFvJ5puhXUY7QnkqzYixNKDG-AM2FM4">
                 </iframe>
             </div>
         </div>

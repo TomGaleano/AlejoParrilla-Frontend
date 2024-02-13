@@ -3,11 +3,12 @@
 import { useState, useEffect, useRef } from 'react';
 import "./beta.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import '../../node_modules/swiper/swiper.min.css';
+import '../../node_modules/swiper/swiper-bundle.css';
+import '../../node_modules/swiper/modules/effect-cube.min.css';
 import allMenu from '../../src/json/allmenu.json';
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 
 
 
@@ -50,6 +51,7 @@ function SeeMenu({ category = 'Hamburguesas' }: SeeMenuProps) {
                 slidesPerView={1}
                 spaceBetween={10}
                 onSwiper={(swiper) => { swiperRef.current = swiper; }}
+                key={2}
             >
                 {slides.map((slideItems, index) => (
                     <SwiperSlide key={index}>

@@ -1,46 +1,20 @@
-.carousel{
-    overflow: hidden;
-    color: #ffffff;
-    width: 90vw;
-    padding: 0;
-    margin: auto;
-    box-sizing: border-box;
-    
-}
-.box{
-    margin: 0 auto;
-    background-color: lightgreen;
-    height: 300px;
 
-}
-.box h3{
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .swiper-slide {
     text-align: center;
-}
-
-.slick-dots li.slick-active button:before{
-    color: #19f5aa !important;
-}
-.slick-dots li button::before{
-    color: #000000 !important;
-    font-size: 1rem ;
-    top: 2rem !important;
-}
-.carousel-slider{
-        margin: auto
-}
-.carousel-box{
-    margin: auto !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    object-fit: contain !important;
-}
-.slick-slide > div {
-    overflow: hidden;
-    display: grid !important;
-    place-items: center !important;
-    width: 80%;
-    margin: auto;
-    height: 500px;
-    padding: 0px;
-}
+    font-size: 18px;
+    background: #fff;
+    height: calc((100% - 30px) / 2) !important;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

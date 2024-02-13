@@ -3,9 +3,7 @@ import './loader.css'
 import './Styles.css'
 
 
-interface Schedule {
-    [day: string]: string;
-}
+
 interface Restaurante {
     id: number;
     name: string;
@@ -13,7 +11,7 @@ interface Restaurante {
     address: string;
     phone: string;
     description: string;
-    schedule: Schedule;
+    schedule: string;
     url: string;
 }
 async function obtenerDatos(id: number): Promise<Restaurante | null> {
@@ -51,7 +49,25 @@ const DetallesRestaurante: React.FC<Props> = ({ id }) => {
     }
 
     return (
-        <div className='restaurant_container'>
+        <div className="restaurant-card">
+            <div className="restaurant-card-image" style={{backgroundImage:`url(${restaurante.image})`}}>
+            </div>
+            <div className="restaurant-card-text">
+                <p className="h3"> {restaurante.name}</p>
+                <p className="p">{restaurante.address}</p>
+                <p className='p'>{restaurante.schedule}</p>
+                <div style={{display:'flex'}}>
+                    <button style={{width:'50%'}}>Télefono</button>
+                    <button style={{width:'50%'}}>Ubicación</button>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default DetallesRestaurante;
+{/*
+<div className='restaurant_container'>
         <div className='restaurant_container-div1'>
           <img className='restaurant_container-div1-image' src={restaurante.image} alt="imagen del restaurante" />
         </div>
@@ -68,8 +84,4 @@ const DetallesRestaurante: React.FC<Props> = ({ id }) => {
             <span className='restaurant_container-div2-button-text'>Ubicación</span>
           </button>
         </div>
-      </div>
-    );
-};
-
-export default DetallesRestaurante;
+      </div>*/}
