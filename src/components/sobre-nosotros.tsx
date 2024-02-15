@@ -9,7 +9,7 @@ export const Sobrenosotros = (): JSX.Element => {
     <div style={{ overflow: 'hidden' }}>
       <div style={{ minHeight: '80vh', paddingTop: '12vh' }} className="landing">
         {/* Primera sección */}
-        <h1 className="title sobre-nosotros-title">Sobre Nosotros</h1>
+        <h1 className="title orange_center_text">Sobre Nosotros</h1>
         <div className="sobre-nosotros-container">
           <div className="sobre-nosotros-container-item" style={{ width: '50%', minWidth: '250px', color: '#ffffff' }}>
             <div className="" style={{ fontSize: '1rem', padding: '3rem', paddingTop: '0px', textAlign: 'justify' }}>
@@ -42,25 +42,25 @@ export const Sobrenosotros = (): JSX.Element => {
 
       {/* Segunda Sección */}
       <div className='container Mision_Container_SN'>
-        <h2 className="Mision-title">Misión</h2>
+        <h2 className="title_alt tit-sobre-nosotros">Misión</h2>
         <CarouselUpToDown />
       </div>
       {/* Tercera Sección */}
 
       <div className="landing" style={{ display: 'flex', flexDirection: 'column' }}>
-        <h2 className="subtitle">Visión</h2>
+        <h2 className="title_alt orange_center_text tit-sobre-nosotros">Visión</h2>
           <VisionComponent />
       </div>
 
       {/* Cuarta Sección */}
       <div className="FilosofiaContainer_SN">
-        <h2 className='title tit-sobre-nosotros'>Nuestra Filosofia</h2>
+        <h2 className='title_alt tit-sobre-nosotros'>Nuestra Filosofia</h2>
         <FilosofiaGallery />
       </div>
 
       {/* Quinta Sección */}
-        <div id="nuestros_restaurantes_container" className="" style={{}}>
-          <h2 className="title">Nuestros restaurantes</h2>
+        <div id="nuestros_restaurantes_container" className="landing">
+          <h2  id='nuestros_restaurantes_title'className="title_alt tit-sobre-nosotros">Nuestros restaurantes</h2>
           <Carousel />
         </div>
     </div>

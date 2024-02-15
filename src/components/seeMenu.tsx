@@ -73,8 +73,8 @@ function SeeMenu({ category = 'Hamburguesas' }: SeeMenuProps) {
             </Swiper>
 
             <div className='swiper_controls'>
-                <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronLeft} onClick={() => swiperRef.current?.slidePrev()}/>
-                <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronRight} onClick={() => swiperRef.current?.slideNext()}/>
+                <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronLeft} onClick={() => (swiperRef.current as Swiper)?.slidePrev()}/>
+                <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronRight} onClick={() => (swiperRef.current as Swiper)?.slideNext()}/>
             </div>
         </div>
     );

@@ -333,9 +333,8 @@
 .sobre-nosotros-container {
     display: flex;
     flex-wrap: wrap-reverse;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding-top: 2.5%;
 }
 
 .padding-top-min-height_SN {
@@ -965,7 +964,8 @@
     opacity: 1 !important;
   }
 #nuestros_restaurantes_container{
-    margin: 0 ;
+    padding: 20px;
+
 }
 .swiper-button-prev {
 
@@ -1014,4 +1014,55 @@
   
     cursor: pointer;
   
+  }
+
+#nuestros_restaurantes_title{
+    margin-top: 0;
+    text-align: center;
+    color: var(--color-our-orange);
+    margin-bottom: 5vh;
+}
+
+.orange_center_text{
+    text-align: center;
+    color: var(--color-our-orange);
+}
+
+
+.swiper-container {
+    position: relative;
+    padding-bottom: 50px; /* adjust this value to control the distance between the buttons and the carousel */
+  }
+  
+  #swiper-button-prev,
+  #swiper-button-next {
+    position: absolute;
+    bottom: 10px; /* adjust this value to control the distance between the buttons and the bottom of the carousel */
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  #swiper-button-prev {
+    left: 10px;
+  }
+  
+  #swiper-button-next {
+    right: 10px;
+  }
+  
+  #swiper-button-prev::after,
+  #swiper-button-next::after {
+    font-size: 20px;
+    content: '\276E'; /* left arrow icon */
+  }
+  
+  #swiper-button-next::after {
+    content: '\276F'; /* right arrow icon */
   }
