@@ -917,7 +917,7 @@
 .restaurant-card {
     width: 252px;
     height: 265px;
-    background: white;
+    background: var(--color-our-beige);
     border-radius: 30px;
 }
 
@@ -952,15 +952,16 @@
 .restaurant-card-button:hover{
     width: 100px;
     height: 30px;
-    background: var(--color-our-blue-gray);
+    background: var(--color-our-blue);
     transition: 0.5s;
     border-radius: 20px;
     border: none;
-    color: #fff;
+    color: var(--color-our-orange);
 }
 .restaurant-card-container-button{
     display: flex;
     justify-content: space-evenly;
+    padding: 5px 0;
 }
 
 .restaurant-card-text .h3 {
@@ -973,7 +974,7 @@
 
 .restaurant-card-text .p {
     font-family: 'Lucida Sans' sans-serif;
-    color: #999999;
+    color: var(--color-black);
     font-size: 13px;
     margin: 0;
 }
