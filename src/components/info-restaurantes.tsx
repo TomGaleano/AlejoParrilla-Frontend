@@ -56,6 +56,14 @@ const DetallesRestaurante: React.FC<Props> = ({ id }) => {
                 <p className="h3"> {restaurante.name}</p>
                 <p className="p">{restaurante.address}</p>
                 <p className='p'>{restaurante.schedule}</p>
+                <div className='restaurant-card-container-button'>
+                    <button className="restaurant-card-button">
+                        Teléfono
+                    </button>
+                    <button className="restaurant-card-button">
+                        Ubicación
+                    </button>
+                </div>
             </div>
         </div>
     );
