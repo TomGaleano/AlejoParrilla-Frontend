@@ -6,7 +6,7 @@ import DetallesRestaurante from './info-restaurantes';
 const Carousel = () => {
 
   const settings = {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
     pagination: {
@@ -14,7 +14,7 @@ const Carousel = () => {
     },
     breakpoints: {
       640: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       768: {
         slidesPerView: 3,
