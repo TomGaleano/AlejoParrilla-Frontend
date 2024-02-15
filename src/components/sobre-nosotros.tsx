@@ -59,7 +59,7 @@ export const Sobrenosotros = (): JSX.Element => {
       </div>
 
       {/* Quinta Sección */}
-        <div id="nuestros_restaurantes_container" className="" style={{background:'red'}}>
+        <div id="nuestros_restaurantes_container" className="" style={{}}>
           <h2 className="title">Nuestros restaurantes</h2>
           <Carousel />
         </div>

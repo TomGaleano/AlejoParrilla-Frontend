@@ -12,6 +12,14 @@ const Carousel = () => {
     pagination: {
       clickable: true,
     },
+
+    navigation: {
+
+      nextEl: '.swiper-button-next',
+
+      prevEl: '.swiper-button-prev',
+
+    },
     breakpoints: {
       640: {
         slidesPerView: 1,
@@ -31,6 +39,8 @@ const Carousel = () => {
       <SwiperSlide><DetallesRestaurante  id={2}/></SwiperSlide>
       <SwiperSlide><DetallesRestaurante  id={3}/></SwiperSlide>
       <SwiperSlide><DetallesRestaurante  id={4}/></SwiperSlide>
+      <div className="swiper-button-prev"></div>
+      <div className="swiper-button-next"></div>
     </Swiper>
   );
 };

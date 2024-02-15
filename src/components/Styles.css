@@ -967,3 +967,51 @@
 #nuestros_restaurantes_container{
     margin: 0 ;
 }
+.swiper-button-prev {
+
+    position: absolute;
+  
+    top: 50%;
+  
+    left: -30px;
+  
+    transform: translateY(-50%);
+  
+    width: 30px;
+  
+    height: 30px;
+  
+    background-color: #fff;
+  
+    border-radius: 50%;
+  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+    cursor: pointer;
+  
+  }
+  
+  
+  .swiper-button-next {
+  
+    position: absolute;
+  
+    top: 50%;
+  
+    right: -30px;
+  
+    transform: translateY(-50%);
+  
+    width: 30px;
+  
+    height: 30px;
+  
+    background-color: #fff;
+  
+    border-radius: 50%;
+  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+    cursor: pointer;
+  
+  }
