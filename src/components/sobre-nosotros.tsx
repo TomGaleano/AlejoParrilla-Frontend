@@ -59,8 +59,8 @@ export const Sobrenosotros = (): JSX.Element => {
       </div>
 
       {/* Quinta Sección */}
-        <div className=" landing RestaurantsContainer" style={{}}>
-          <h2 className="menu_title margin-bottom_SN">Nuestros restaurantes</h2>
+        <div className="landing" style={{}}>
+          <h2 className="">Nuestros restaurantes</h2>
           <Carousel />
         </div>
     </div>

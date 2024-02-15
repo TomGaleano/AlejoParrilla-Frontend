@@ -1,18 +1,38 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/bundle';
+import DetallesRestaurante from './info-restaurantes';
+
 const Carousel = () => {
+
+  const settings = {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+    },
+  };
+
   return (
-    <section id="tranding">
-      <div className="container">
-        <h3 className="text-center section-subheading">Popular Delivery</h3>
-        <h1 className="text-cent section-heading">Trending food</h1>
-        <div className="container">
-          <div className="swiper tranding-slider">
-            <div className="swiper-wraper">
-              {/*Slide Start*/}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Swiper {...settings}>
+      <SwiperSlide><DetallesRestaurante  id={1}/></SwiperSlide>
+      <SwiperSlide><DetallesRestaurante  id={2}/></SwiperSlide>
+      <SwiperSlide><DetallesRestaurante  id={3}/></SwiperSlide>
+      <SwiperSlide><DetallesRestaurante  id={4}/></SwiperSlide>
+    </Swiper>
   );
-}
+};
+
 export default Carousel;

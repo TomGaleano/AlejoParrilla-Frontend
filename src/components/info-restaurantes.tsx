@@ -57,8 +57,6 @@ const DetallesRestaurante: React.FC<Props> = ({ id }) => {
                 <p className="p">{restaurante.address}</p>
                 <p className='p'>{restaurante.schedule}</p>
                 <div style={{display:'flex'}}>
-                    <button style={{width:'50%'}}>Télefono</button>
-                    <button style={{width:'50%'}}>Ubicación</button>
                 </div>
             </div>
         </div>
@@ -66,22 +64,3 @@ const DetallesRestaurante: React.FC<Props> = ({ id }) => {
 };
 
 export default DetallesRestaurante;
-{/*
-<div className='restaurant_container'>
-        <div className='restaurant_container-div1'>
-          <img className='restaurant_container-div1-image' src={restaurante.image} alt="imagen del restaurante" />
-        </div>
-        <div className='restaurant_container-div2'>
-          <h2 className='restaurant_container-div2-item'>{restaurante.name }</h2>
-          <p className='restaurant_container-div2-item'>Dirección: <br/>{restaurante.address}</p>
-          <p className='restaurant_container-div2-item'>Teléfono: <br/><a href={`tel:+57${restaurante.phone}`}> {restaurante.phone}</a></p>
-          <button className='restaurant_container-div2-button restaurant_container-div2-item' onClick={() => window.open(restaurante.url, '_blank')}>
-            <span className="circle1"></span>
-            <span className="circle2"></span>
-            <span className="circle3"></span>
-            <span className="circle4"></span>
-            <span className="circle5"></span>
-            <span className='restaurant_container-div2-button-text'>Ubicación</span>
-          </button>
-        </div>
-      </div>*/}
