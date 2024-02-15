@@ -947,6 +947,7 @@
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    transition: 0.5s;
 }
 .restaurant-card-button:hover{
     width: 100px;
