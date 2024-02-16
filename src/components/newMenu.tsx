@@ -17,6 +17,7 @@ function NewMenu() {
     const handleClick = () => {
         setMenuActive(!isMenuActive);
     };
+    const [activeButton, setActiveButton] = useState('Primera página');
 
     return (
         <div className="newMenu">
@@ -30,6 +31,10 @@ function NewMenu() {
                     <SeeMenu category={category} />
                 </div>
             ) : (<div className="bento_display">
+                <div className="bento_button_container">
+                    <div className={`bento_button ${activeButton === 'Primera página' ? 'bento_active' : ''}`} onClick={() => { swiperRef.current?.slidePrev(); setActiveButton('Primera página'); }}> Primera página</div>
+                    <div className={`bento_button ${activeButton === 'Segunda página' ? 'bento_active' : ''}`} onClick={() => { swiperRef.current?.slideNext(); setActiveButton('Segunda página'); }}> Segunda página</div>
+                </div>
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={10}
@@ -50,7 +55,7 @@ function NewMenu() {
                                 <div className="small_square bento_square" onClick={() => { setCategory('Bowls'); handleClick(); }}>
                                     <img src="./images/menu_categories/alejoparrilla_category_bowls.webp" alt="Bowls" className="bento_image category_bowls" />
                                     <h3 className="bento_title">
-                                        Bowls
+                                        Parrilla
                                     </h3>
                                     <FontAwesomeIcon className="bento_arrow" icon={faCircleChevronRight} />
                                 </div>
@@ -98,9 +103,9 @@ function NewMenu() {
                                     <FontAwesomeIcon className="bento_arrow" icon={faCircleChevronRight} />
                                 </div>
                                 <div className="small_square_2 bento_square" onClick={() => { setCategory('Postres'); handleClick(); }}>
-                                    <img src="./images/menu_categories/alejoparrilla_category_postres.webp" alt="Postres" className="bento_image category_postres" />
+                                    <img src="./images/menu_categories/alejoparrilla_category_bowls.webp" alt="Bowls" className="bento_image category_postres" />
                                     <h3 className="bento_title">
-                                        Postres
+                                        Bowls
                                     </h3>
                                     <FontAwesomeIcon className="bento_arrow" icon={faCircleChevronRight} />
                                 </div>
@@ -115,10 +120,6 @@ function NewMenu() {
                         </div>
                     </SwiperSlide>
                 </Swiper>
-                <div className='swiper_controls'>
-                    <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronLeft} onClick={() => swiperRef.current?.slidePrev()} />
-                    <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronRight} onClick={() => swiperRef.current?.slideNext()} />
-                </div>
             </div>
             )}
         </div>

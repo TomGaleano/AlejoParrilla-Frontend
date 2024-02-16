@@ -426,9 +426,10 @@
 }
 
 
+
 .big_square {
     position: relative;
-    height: 22vw;
+    height: 19vw;
     border-radius: 20px;
     grid-column: 1;
     grid-row: 1 / span 2;
@@ -444,7 +445,7 @@
 
 .long_square{
     position: relative;
-    height: 15vw;
+    height: 14vw;
     border-radius: 20px;
     grid-column: 1;
     grid-row: 1;
@@ -454,7 +455,7 @@
 
 .tall_square{
     position: relative;
-    height: 37.5vw;
+    height: 33vw;
     border-radius: 20px;
     grid-column: 1;
     grid-row: 1 / span 2;
@@ -582,6 +583,31 @@
     width: 8.5vw
 }
 
+.bento_button{
+    background-color: var(--color-our-brown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin-left: 1vw;
+    margin-right: 1vw ;
+    color: var(--color-white);
+    font-size: 1.5vw;
+    cursor: pointer;
+    margin-bottom: 1vh;
+}
+.bento_button p{
+    padding: 1vh;
+    margin: 2px;
+}
+.bento_button_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Optional: add some gap between the buttons */
+}
+.bento_active{
+    background-color: var(--color-our-brown-light);
+}
 @media (max-width: 768px) {
     .FilosofiaContainer_SN {
         flex-direction: column;
@@ -992,6 +1018,9 @@
     }
     .bento_navbutton{
         font-size: 10vw;
+    }
+    .bento_button{
+        font-size: 4vw;
     }
     .category_hamburguesa {
         padding-top: 3vw;
