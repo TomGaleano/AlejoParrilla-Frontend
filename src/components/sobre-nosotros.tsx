@@ -7,14 +7,13 @@ import FilosofiaGallery from "./FilosofiaGallery";
 export const Sobrenosotros = (): JSX.Element => {
   return (
     <div style={{ overflow: 'hidden' }}>
-      <div style={{ minHeight: '80vh', paddingTop: '12vh' }} className="landing">
+      <div style={{ minHeight: '90vh', paddingTop: '12vh' }} className="landing landing_nosotros">
         {/* Primera sección */}
         <h1 className="title orange_center_text">Sobre Nosotros</h1>
         <div className="sobre-nosotros-container">
           <div className="sobre-nosotros-container-item" style={{ width: '50%', minWidth: '250px', color: '#ffffff' }}>
-            <div className="" style={{ fontSize: '1rem', padding: '3rem', paddingTop: '0px', textAlign: 'justify' }}>
+            <div className="sobre-nosotros" >
               <p>¡Bienvenidos a nuestros restaurantes! Disfruta de la mejor parrilla y platos típicos colombianos desde 1999. Ofrecemos gastronomía de calidad, con recetas tradicionales y sabores auténticos.</p>
-              <p>Nuestro personal con amplia experiencia prepara un menú completo: carnes, sopas, ensaladas, postres y bebidas típicas. Ambiente acogedor, decoración agradable y servicio profesional.</p>
               <p>Utilizamos los mejores insumos, frescos y naturales, y la mejor atención para hacer que tu experiencia en nuestros restaurantes sea única e inolvidable. Te invitamos a visitarnos y a comprobar por qué somos los mejores en Parrilla y platos típicos colombianos. ¡Te esperamos!</p>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-evenly', flexWrap: 'wrap' }}>
                 <div className="info-card" style={{}}>

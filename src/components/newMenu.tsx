@@ -1,6 +1,6 @@
 // @ts-nocheck
 
-import "./beta.css";
+import "./Styles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { useRef, useState } from 'react';

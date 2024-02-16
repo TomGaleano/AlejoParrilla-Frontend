@@ -1,7 +1,7 @@
 // @ts-nocheck
 
 import { useState, useEffect, useRef } from 'react';
-import "./beta.css";
+import "./Styles.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../../node_modules/swiper/swiper.min.css';
 import '../../node_modules/swiper/swiper-bundle.css';
