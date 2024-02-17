@@ -392,7 +392,7 @@
         "description": "Jugo de mora en leche",
         "category": "Bebidas",
         "price": 7400,
-        "image": "./images/menu-items/bebidas/jugo-de-mora_OeWOwWH.webp",
+        "image": "./images/menu-items/bebidas/jugo-de-mora.webp",
         "is_available": false
     },
     {
@@ -410,7 +410,7 @@
         "description": "Jugo de mango en agua.",
         "category": "Bebidas",
         "price": 6400,
-        "image": "./images/menu-items/bebidas/jugo-de-mango_uZx9SzC.webp",
+        "image": "./images/menu-items/bebidas/jugo-de-mango.webp",
         "is_available": false
     },
     {
@@ -428,7 +428,7 @@
         "description": "Jugo de lulo en leche.",
         "category": "Bebidas",
         "price": 7400,
-        "image": "./images/menu-items/bebidas/jugo-de-lulo_zZTfpF7.webp",
+        "image": "./images/menu-items/bebidas/jugo-de-lulo.webp",
         "is_available": false
     },
     {
@@ -446,7 +446,7 @@
         "description": "Jugo de fresa en leche.",
         "category": "Bebidas",
         "price": 7400,
-        "image": "./images/menu-items/bebidas/jugo-de-fresa_0N4IaZV.webp",
+        "image": "./images/menu-items/bebidas/jugo-de-fresa.webp",
         "is_available": false
     },
     {
@@ -473,7 +473,7 @@
         "description": "Jugo de guanabana en leche.",
         "category": "Bebidas",
         "price": 7400,
-        "image": "./images/menu-items/bebidas/jugo-de-guanabana_aBJuEuH.webp",
+        "image": "./images/menu-items/bebidas/jugo-de-guanabana.webp",
         "is_available": false
     },
     {
@@ -482,7 +482,7 @@
         "description": "temporal 16oz",
         "category": "Bebidas",
         "price": 8400,
-        "image": "./images/menu-items/bebidas/jugo-de-fresa_LnKWnZj.webp",
+        "image": "./images/menu-items/bebidas/jugo-de-fresa.webp",
         "is_available": false
     },
     {
