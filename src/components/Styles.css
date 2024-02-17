@@ -540,7 +540,7 @@
 }
 
 
-.newMenu_container {
+.newMenu_card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -549,27 +549,10 @@
     padding-top: 0vh;
     height: 12vw;
     width: 12vw;
-}
-.newMenu_container div{
-    display: none;
-}
-.newMenu_container:hover div{
-    display: block;
-}
-.newMenu_container.clicked div {
-    display: block;
-}
-.newMenu_subcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0vh 1vh;
-    text-align: center;
     background-color: var(--color-our-beige);
-    border-radius: 20px;
-
+    border-radius: 30px;
 }
+
 
 .swiper_controls{
     display: flex;
