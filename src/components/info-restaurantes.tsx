@@ -50,19 +50,19 @@ const DetallesRestaurante: React.FC<Props> = ({ id }) => {
 
     return (
         <div className="restaurant-card">
-            <div className="restaurant-card-image" style={{backgroundImage:`url(${restaurante.image})`}}>
+            <div className="restaurant-card-image" style={{ backgroundImage: `url(${restaurante.image})` }}>
             </div>
             <div className="restaurant-card-text">
                 <p className="h3"> {restaurante.name}</p>
                 <p className="p">{restaurante.address}</p>
                 <p className='p'>{restaurante.schedule}</p>
                 <div className='restaurant-card-container-button'>
-                    <button className="restaurant-card-button">
+                    <a type='button' className="restaurant-card-button" href={`tel:${restaurante.phone}`}>
                         Teléfono
-                    </button>
-                    <button className="restaurant-card-button">
+                    </a>
+                    <a type='button' className="restaurant-card-button" href={restaurante.url}>
                         Ubicación
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

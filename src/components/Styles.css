@@ -99,16 +99,24 @@
     font-size: 5vw;
     font-weight: 900;
     color: var(--color-white);
-    margin: 0.5rem;
+    margin: 0.8rem;
+    padding-top: 1%;
     text-align: left;
 }
 
 .title_alt {
-    font-size: 8.5vh;
+    font-size: 4vw;
     font-weight: 900;
-    color: var(--color-our-orange);
+    color: var(--color-white);
+    margin: 0.8rem;
+    padding: 3%;
     text-align: left;
-    margin: 0vh;
+}
+
+@media (max-width: 768px) {
+    .title_alt {
+        padding: 10%;
+    }
 }
 
 .subtitle {
@@ -334,7 +342,8 @@
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
-    align-items: center;
+    height: 100%;
+
 }
 
 .padding-top-min-height_SN {
@@ -375,16 +384,19 @@
 
 .box-sizing-width-padding_SN {
     box-sizing: border-box;
+    height: auto;
     width: 50%;
-    padding: 2rem;
+    padding-right: 2rem;
+    padding-top: 0%;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-width-height-margin-border_SN {
     width: 100%;
     height: auto;
-    margin: auto;
     border-radius: 20px;
-    border: var(--color-our-orange) 2px solid;
+    border-color: var(--color-our-orange) 2px solid;
 }
 
 .Mision_Container_SN {
@@ -449,10 +461,92 @@
     margin-bottom: 4vh;
 }
 
-/* Tus estilos existentes... */
+.overflow_hidden_SN {
+    overflow: hidden;
+}
+
+.minHeight_paddingTop_SN {
+    min-height: 80vh;
+    padding-top: 12vh;
+}
+
+.width_minWidth_color_SN {
+    width: 50%;
+    min-width: 250px;
+    color: #ffffff;
+}
+
+.fontSize_padding_paddingTop_SN {
+    font-size: 1rem;
+    padding: 3rem;
+    padding-top: 0px;
+}
+
+.display_alignItems_justifyContent_flexWrap_SN {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-width-height-margin-border_SN {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: none;
+}
+
+.display_flexDirection_SN {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-nosotros-container-item {
+    min-width: none;
+    height: auto;
+    margin: 0%;
+    padding-top: 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 /* Media queries para hacer el diseño responsive */
 @media (max-width: 768px) {
+
+    .display_alignItems_justifyContent_flexWrap_SN {
+        width: 100%;
+        height: 16rem;
+        padding-top: 5%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/Imagen-interior.webp');
+        background-size: cover;
+        border-radius: 20px;
+    }
+
+    .sobre-nosotros-container {
+        padding: 5%;
+    }
+
+    .sobre-nosotros-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* Fondo oscuro */
+    }
+
+    .sobre-nosotros-container-item {
+        width: 100%;
+    }
+
+    .img-width-height-margin-border_SN {
+        display: none;
+    }
 
     .sobre-nosotros-container,
     .flex-wrap-justify-align_SN,
@@ -460,6 +554,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .fontSize_padding_paddingTop_SN {
+        font-size: 1rem;
+        padding: 3rem;
+        margin: 10%;
+        text-align: center;
     }
 
     .width-min-width-color_SN,
@@ -940,7 +1041,8 @@
     flex-direction: column;
     align-items: space-around;
 }
-.restaurant-card-button{
+
+.restaurant-card-button {
     width: 100px;
     height: 30px;
     background: var(--color-our-orange);
@@ -948,8 +1050,14 @@
     border: none;
     cursor: pointer;
     transition: 0.5s;
+    align-items: center;
+    color: var(--color-our-blue);
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
 }
-.restaurant-card-button:hover{
+
+.restaurant-card-button:hover {
     width: 100px;
     height: 30px;
     background: var(--color-our-blue);
@@ -958,7 +1066,8 @@
     border: none;
     color: var(--color-our-orange);
 }
-.restaurant-card-container-button{
+
+.restaurant-card-container-button {
     display: flex;
     justify-content: space-evenly;
     padding: 5px 0;
@@ -983,70 +1092,73 @@
     cursor: pointer;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
+
 .swiper-slide {
     opacity: 1 !important;
-  }
-#nuestros_restaurantes_container{
+}
+
+#nuestros_restaurantes_container {
     padding: 20px;
 
 }
+
 .swiper-button-prev {
 
     position: absolute;
-  
-    top: 50%;
-  
-    left: -30px;
-  
-    transform: translateY(-50%);
-  
-    width: 30px;
-  
-    height: 30px;
-  
-    background-color: #fff;
-  
-    border-radius: 50%;
-  
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  
-    cursor: pointer;
-  
-  }
-  
-  
-  .swiper-button-next {
-  
-    position: absolute;
-  
-    top: 50%;
-  
-    right: -30px;
-  
-    transform: translateY(-50%);
-  
-    width: 30px;
-  
-    height: 30px;
-  
-    background-color: #fff;
-  
-    border-radius: 50%;
-  
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  
-    cursor: pointer;
-  
-  }
 
-#nuestros_restaurantes_title{
+    top: 50%;
+
+    left: -30px;
+
+    transform: translateY(-50%);
+
+    width: 30px;
+
+    height: 30px;
+
+    background-color: #fff;
+
+    border-radius: 50%;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    cursor: pointer;
+
+}
+
+
+.swiper-button-next {
+
+    position: absolute;
+
+    top: 50%;
+
+    right: -30px;
+
+    transform: translateY(-50%);
+
+    width: 30px;
+
+    height: 30px;
+
+    background-color: #fff;
+
+    border-radius: 50%;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    cursor: pointer;
+
+}
+
+#nuestros_restaurantes_title {
     margin-top: 0;
     text-align: center;
     color: var(--color-our-orange);
     margin-bottom: 5vh;
 }
 
-.orange_center_text{
+.orange_center_text {
     text-align: center;
     color: var(--color-our-orange);
 }
@@ -1054,13 +1166,15 @@
 
 .swiper-container {
     position: relative;
-    padding-bottom: 50px; /* adjust this value to control the distance between the buttons and the carousel */
-  }
-  
-  #swiper-button-prev,
-  #swiper-button-next {
+    padding-bottom: 50px;
+    /* adjust this value to control the distance between the buttons and the carousel */
+}
+
+#swiper-button-prev,
+#swiper-button-next {
     position: absolute;
-    bottom: 10px; /* adjust this value to control the distance between the buttons and the bottom of the carousel */
+    bottom: 10px;
+    /* adjust this value to control the distance between the buttons and the bottom of the carousel */
     width: 40px;
     height: 40px;
     background: #fff;
@@ -1070,22 +1184,24 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-  }
-  
-  #swiper-button-prev {
+}
+
+#swiper-button-prev {
     left: 10px;
-  }
-  
-  #swiper-button-next {
+}
+
+#swiper-button-next {
     right: 10px;
-  }
-  
-  #swiper-button-prev::after,
-  #swiper-button-next::after {
+}
+
+#swiper-button-prev::after,
+#swiper-button-next::after {
     font-size: 20px;
-    content: '\276E'; /* left arrow icon */
-  }
-  
-  #swiper-button-next::after {
-    content: '\276F'; /* right arrow icon */
-  }
+    content: '\276E';
+    /* left arrow icon */
+}
+
+#swiper-button-next::after {
+    content: '\276F';
+    /* right arrow icon */
+}

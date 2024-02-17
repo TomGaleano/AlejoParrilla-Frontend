@@ -53,18 +53,14 @@
     width: 100%;
     border-radius: 30px;
     position: relative;
-    /* Añade esta línea */
     opacity: 0.5;
-    /* Añade esta línea */
     transition: opacity 0.3s;
-    /* Añade esta línea */
+
 }
 
 .swiper-slide-active {
     opacity: 1;
-    /* Añade esta línea */
     z-index: 1;
-    /* Añade esta línea */
 
 }
 
@@ -129,6 +125,10 @@
 
 /* Media queries para hacer el diseño responsive */
 @media (max-width: 768px) {
+    .mySwiper {
+        overflow: visible;
+    }
+
     .TextContainer {
         width: 90%;
         font-size: 1.2rem;
@@ -143,7 +143,39 @@
 
     .swiper-button-next,
     .swiper-button-prev {
-        display: none;
-        /* Los botones desaparecen en dispositivos móviles */
+        transform: translateX(510%);
+        z-index: 1;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+        position: relative;
+        opacity: 0.5;
+        transition: opacity 0.3s;
+
+    }
+
+    .swiper-slide-active {
+        opacity: 1;
+        z-index: 1;
+
+    }
+
+    .swiper_controls {
+        display: flex;
+        justify-content: right;
+        padding: 1vh;
+    }
+
+    .swiper-slide-next {
+        transform: scale(0.8) translateY(-80%);
+    }
+
+    .swiper-slide-prev {
+        transform: scale(0.8) translateY(70%);
     }
 }

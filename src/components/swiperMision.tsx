@@ -18,7 +18,8 @@ const CarouselUpToDown: React.FC = () => {
             <Swiper
                 direction={'vertical'}
                 effect={'cube'}
-                grabCursor={true}
+                grabCursor={false}
+                allowTouchMove={false}
                 cubeEffect={{ "shadow": true, "slideShadows": true, "shadowOffset": 20, "shadowScale": 0.94 }}
                 className="mySwiper"
                 loop={true}
@@ -26,7 +27,7 @@ const CarouselUpToDown: React.FC = () => {
                 centeredSlides={true}
                 onSwiper={(swiper) => { swiperRef.current = swiper; }}
                 key={3}
-            >
+                autoplay={{ delay: 3000 }}            >
                 <SwiperSlide>
                     <div className='slideContainer-1'>
                         <h3 className='TextContainer'>En Alejo Parrilla, nuestra misión es cautivar a nuestros clientes con auténticos sabores colombianos fusionados con la pasión y la maestría de la parrilla.</h3>
