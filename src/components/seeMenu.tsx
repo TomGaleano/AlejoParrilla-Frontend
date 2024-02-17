@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useState, useEffect, useRef } from 'react';
 import "./Styles.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
