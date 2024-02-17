@@ -29,6 +29,7 @@ interface SeeMenuProps {
 function SeeMenu({ category = 'Hamburguesas' }: SeeMenuProps) {
     const [items, setItems] = useState<MenuItem[]>([]);
     const [slides, setSlides] = useState<MenuItem[][]>([]);
+    const [clicked, setClicked] = useState(false);
     const itemsPerSlide = 6;
     const swiperRef = useRef(null);
 
@@ -57,8 +58,16 @@ function SeeMenu({ category = 'Hamburguesas' }: SeeMenuProps) {
                     <SwiperSlide key={index}>
                         <div className="grid-container" >
                             {slideItems.map((item) => (
-                                <div className="newMenu_container" key={item.id} >
-                                    <img src={item.image} alt={item.name} className="newMenu_image" />
+                                <div
+                                    className={`newMenu_container ${clicked ? 'clicked' : ''}`}
+                                    onClick={() => setClicked(!clicked)}
+                                    key={item.id}
+                                    style={{
+                                        backgroundImage: `url(${item.image})`,
+                                        backgroundSize: 'cover',
+                                        backgroundRepeat: 'no-repeat'
+                                    }}
+                                >
                                     <div className="newMenu_subcontainer">
                                         <h3 className="newMenu_title">{item.name}</h3>
                                         <p className="newMenu_description">{item.description}</p>
@@ -73,8 +82,8 @@ function SeeMenu({ category = 'Hamburguesas' }: SeeMenuProps) {
             </Swiper>
 
             <div className='swiper_controls'>
-                <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronLeft} onClick={() => (swiperRef.current as Swiper)?.slidePrev()}/>
-                <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronRight} onClick={() => (swiperRef.current as Swiper)?.slideNext()}/>
+                <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronLeft} onClick={() => (swiperRef.current as Swiper)?.slidePrev()} />
+                <FontAwesomeIcon className="bento_navbutton" icon={faCircleChevronRight} onClick={() => (swiperRef.current as Swiper)?.slideNext()} />
             </div>
         </div>
     );
