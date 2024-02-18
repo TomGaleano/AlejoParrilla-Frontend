@@ -26,12 +26,12 @@ export const Inicio = (): JSX.Element => {
 
             <div className="container second">
                 <div className="column">
-                    <h2 className='title_alt'>Conoce sobre nosotros</h2>
+                    <h2 className='title_alt_IN'>Conoce sobre nosotros</h2>
                     <div className="line">
-                        <p>
+                        <p className="third-paragraph">
                             Nuestro menu tiene diferentes variedades de platos distribuidos entre carnes, pescados, comidas rapidas, bolws y demas.
                         </p>
-                        <button className="third-button">Conoce más</button>
+                        <button className="third-button">Sobre Nosotros</button>
                     </div>
 
                 </div>
@@ -45,12 +45,12 @@ export const Inicio = (): JSX.Element => {
                     <img src={parrilla} alt='Parrilla yummy' className="restaurant_image" />
                 </div>
                 <div className="column">
-                    <h2 className='title_alt'>Conoce sobre nosotros</h2>
+                    <h2 className='title_alt_IN'>Nuestro menu</h2>
                     <div className="line">
-                        <p style={{color:'white'}}>
+                        <p style={{ color: 'white' }}>
                             Nuestro menu tiene diferentes variedades de platos distribuidos entre carnes, pescados, comidas rapidas, bolws y demas.
                         </p>
-                        <button className="third-button">Conoce más</button>
+                        <button className="third-button">Menu en linea</button>
                     </div>
 
                 </div>
