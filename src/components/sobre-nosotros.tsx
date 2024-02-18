@@ -12,7 +12,7 @@ export const Sobrenosotros = (): JSX.Element => {
         <h1 className="title orange_center_text">Sobre Nosotros</h1>
         <div className="sobre-nosotros-container">
           <div className="sobre-nosotros-container-item width_minWidth_color_SN">
-            <div className="fontSize_padding_paddingTop_SN sobre-nosotros">
+            <div className="fontSize_padding_paddingTop_SN">
               <p>¡Bienvenidos a nuestros restaurantes! Disfruta de la mejor parrilla y platos típicos colombianos desde 1999. Ofrecemos gastronomía de calidad, con recetas tradicionales y sabores auténticos.</p>
               <p>Utilizamos los mejores insumos, frescos y naturales, y la mejor atención para hacer que tu experiencia en nuestros restaurantes sea única e inolvidable. Te invitamos a visitarnos y a comprobar por qué somos los mejores en Parrilla y platos típicos colombianos. ¡Te esperamos!</p>
               <div className="display_alignItems_justifyContent_flexWrap_SN">
