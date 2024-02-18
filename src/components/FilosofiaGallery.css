@@ -150,6 +150,8 @@
         flex-direction: column;
         width: 100vw;
         height: auto;
+        padding-top: 2.5%;
+        padding-bottom: 0%;
     }
 
     .text-container {
