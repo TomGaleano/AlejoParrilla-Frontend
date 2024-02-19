@@ -1,10 +1,12 @@
 import './Footer.css';
+
 import logo from '../assets/LOGOO-300x114.png';
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import rappi from '../assets/rappi.svg';
 
 
 const Footer = ({ setView }:{setView: (view: string) => void}) => {
+      
     const handleLinkClick = (view: string) => {
         setView(view);
         window.scrollTo(0, 0);
