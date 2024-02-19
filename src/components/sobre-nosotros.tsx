@@ -4,7 +4,13 @@ import CarouselUpToDown from "./swiperMision";
 import VisionComponent from "./VisonCard";
 import FilosofiaGallery from "./FilosofiaGallery";
 
-export const Sobrenosotros = (): JSX.Element => {
+interface SobrenosotrosProps {
+  selectedItemId: number | null;
+}
+
+
+function Sobrenosotros({ selectedItemId }: SobrenosotrosProps) {
+
   return (
     <div className="overflow_hidden_SN">
       <div className="landing minHeight_paddingTop_SN landing_nosotros">
@@ -64,3 +70,5 @@ export const Sobrenosotros = (): JSX.Element => {
     </div>
   );
 };
+
+export default Sobrenosotros;

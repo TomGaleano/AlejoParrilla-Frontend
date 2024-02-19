@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Helmet from 'react-helmet';
 import { Inicio } from './components/inicio';
-import { Sobrenosotros } from './components/sobre-nosotros';
+import Sobrenosotros from './components/sobre-nosotros';
 import { Vinculate } from './components/vinculate';
 import Navbar from './components/navbar';
 import LoadingPage from './components/loadingPage';
@@ -53,7 +53,7 @@ function App() {
       case 'Inicio':
         return <Inicio setView={setView}/>;
       case 'Nosotros':
-        return <Sobrenosotros />;
+        return <Sobrenosotros selectedItemId={selectedItem ? selectedItem.id : null} />;
       case 'Contacto':
         return <Vinculate />;
       case 'Menú':
