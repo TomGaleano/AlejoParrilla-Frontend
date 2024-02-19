@@ -3,7 +3,12 @@ import logo from '../assets/LOGOO-300x114.png';
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import rappi from '../assets/rappi.svg';
 
-const Footer = () => {
+
+const Footer = ({ setView }:{setView: (view: string) => void}) => {
+    const handleLinkClick = (view: string) => {
+        setView(view);
+        window.scrollTo(0, 0);
+    };
     return (
         <div className="footer">
             <div className="column logo-column">
@@ -27,9 +32,8 @@ const Footer = () => {
                         <span>+57 321-460-7611</span>
                     </a>
                 </div>
-                <a href="">njnk</a>
-                <p>Contacto</p>
-                <p>Trabaja con nosotros</p>
+                <p onClick={() => handleLinkClick('Contacto')} style={{cursor:"pointer"}}>Contacto</p>
+                <p onClick={() => handleLinkClick('Contacto')} style={{cursor:"pointer"}}>Trabaja con nosotros</p>
             </div>
             <div className="column">
                 <iframe width="300" height="220" loading="lazy"

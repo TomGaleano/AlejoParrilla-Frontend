@@ -3,9 +3,12 @@ import restaurant from '../assets/Nosotros-Fachada-AlejoParrilla.png';
 import parrilla from '../assets/parrila.png';
 
 
-export const Inicio = (): JSX.Element => {
+export const Inicio = ({ setView }:{setView: (view: string) => void}): JSX.Element => {
 
-
+    const handleLinkClick = (view: string) => {
+        setView(view);
+        window.scrollTo(0, 0);
+    };
     return (
         <div>
             <div className="container landing">
@@ -15,7 +18,7 @@ export const Inicio = (): JSX.Element => {
                     </div>
 
                     <div className="button-container">
-                        <button className="main-button">Menú en línea</button>
+                        <button className="main-button" onClick={() => handleLinkClick('Menú')}>Menú en línea</button>
                         <button className="second-button">Pide ya</button>
                     </div>
                 </div>
@@ -31,7 +34,7 @@ export const Inicio = (): JSX.Element => {
                         <p className="third-paragraph">
                             Nuestro menu tiene diferentes variedades de platos distribuidos entre carnes, pescados, comidas rapidas, bolws y demas.
                         </p>
-                        <button className="third-button">Sobre Nosotros</button>
+                        <button className="third-button" onClick={() => handleLinkClick('Nosotros')}>Sobre Nosotros</button>
                     </div>
 
                 </div>
@@ -50,7 +53,7 @@ export const Inicio = (): JSX.Element => {
                         <p style={{ color: 'white' }}>
                             Nuestro menu tiene diferentes variedades de platos distribuidos entre carnes, pescados, comidas rapidas, bolws y demas.
                         </p>
-                        <button className="third-button">Menu en linea</button>
+                        <button className="third-button" onClick={() => handleLinkClick('Menú')}>Menu en linea</button>
                     </div>
 
                 </div>

@@ -6,6 +6,8 @@ import { Vinculate } from './components/vinculate';
 import Navbar from './components/navbar';
 import LoadingPage from './components/loadingPage';
 import NewMenu from './components/newMenu';
+import Footer from './components/footer.tsx'
+
 //import ReactGA from 'react-ga';
 
 //const trackingId = <Tracking ID HERE>;
@@ -49,7 +51,7 @@ function App() {
   const renderView = () => {
     switch (view) {
       case 'Inicio':
-        return <Inicio />;
+        return <Inicio setView={setView}/>;
       case 'Nosotros':
         return <Sobrenosotros />;
       case 'Contacto':
@@ -57,7 +59,7 @@ function App() {
       case 'Menú':
         return <div><NewMenu /></div>;
       default:
-        return <Inicio />;
+        return <Inicio setView={setView}/>;
     }
   }
 
@@ -78,6 +80,7 @@ function App() {
           restaurantes={restaurantes}
         />
         {renderView()}
+        <Footer setView={setView} />
       </div>
         </>
       )}
