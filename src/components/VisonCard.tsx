@@ -16,7 +16,6 @@ const VisionCard: React.FC<Vision> = ({ imageUrl, text, title }) => {
   return(
     <div className={`container-vision-item ${isClicked ? 'clicked' : ''}`} onClick={handleClick} style={{backgroundImage:`url(${imageUrl})`}}>
       <div className='container-vision-item-div'>
-        <span style={{fontSize:'30px'}}>😎</span>
         <h2 style={{textAlign:'center'}}>{title}</h2>
         <p>{text}</p>
       </div>
