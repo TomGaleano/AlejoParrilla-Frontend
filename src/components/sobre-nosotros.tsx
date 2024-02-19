@@ -13,7 +13,7 @@ function Sobrenosotros({ selectedItemId }: SobrenosotrosProps) {
 
   return (
     <div className="overflow_hidden_SN">
-      <div className="landing minHeight_paddingTop_SN landing_nosotros">
+      <div className="landing minHeight_paddingTop_SN landing_nosotros second">
         {/* Primera sección */}
         <h1 className="title orange_center_text">Sobre Nosotros</h1>
         <div className="sobre-nosotros-container">
