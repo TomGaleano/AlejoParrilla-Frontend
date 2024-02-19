@@ -3,7 +3,7 @@ import restaurant from '../assets/Nosotros-Fachada-AlejoParrilla.png';
 import parrilla from '../assets/parrila.png';
 
 
-export const Inicio = ({ setView }:{setView: (view: string) => void}): JSX.Element => {
+export const Inicio = ({ setView }: { setView: (view: string) => void }): JSX.Element => {
 
     const handleLinkClick = (view: string) => {
         setView(view);
@@ -31,7 +31,7 @@ export const Inicio = ({ setView }:{setView: (view: string) => void}): JSX.Eleme
                 <div className="column">
                     <h2 className='title_alt_IN'>Conoce sobre nosotros</h2>
                     <div className="line">
-                        <p className="third-paragraph">
+                        <p style={{ color: 'white' }}>
                             Nuestro menu tiene diferentes variedades de platos distribuidos entre carnes, pescados, comidas rapidas, bolws y demas.
                         </p>
                         <button className="third-button" onClick={() => handleLinkClick('Nosotros')}>Sobre Nosotros</button>

@@ -63,7 +63,7 @@ function Sobrenosotros({ selectedItemId }: SobrenosotrosProps) {
       </div>
 
       {/* Quinta Sección */}
-      <div id="nuestros_restaurantes_container" className="landing">
+      <div id="nuestros_restaurantes_container" className="landing Nuestros_restaurantes_container">
         <h2 id='nuestros_restaurantes_title' className="title_alt orange_center_text">Nuestros restaurantes</h2>
         <Carousel />
       </div>
