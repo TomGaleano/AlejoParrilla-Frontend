@@ -30,9 +30,12 @@ const Carousel: React.FC<CarouselProps> = ({ selectedItemId }) =>  {
         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
-      1024: {
+      900:{
+        slidesPerView:3,
+      },
+      1300: {
         slidesPerView: 4,
       },
     },

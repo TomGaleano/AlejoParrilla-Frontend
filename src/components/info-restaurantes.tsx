@@ -50,7 +50,7 @@ const DetallesRestaurante: React.FC<Props> = ({ id, isSelected }) => {
     }
 
     return (
-        <div className="restaurant-card" style={isSelected ? { border:'red 2px solid'} : { /* estilos cuando isSelected es false */ }}
+        <div className="restaurant-card" style={isSelected ? { border:'var(--color-our-blue-dark) 2px solid', boxShadow:'0 0 10px rgba(0,123,255,0.5)', transition:'all 0.3s ease'} : { /* estilos cuando isSelected es false */ }}
         >
             <div className="restaurant-card-image" style={{ backgroundImage: `url(${restaurante.image})` }}>
             </div>
