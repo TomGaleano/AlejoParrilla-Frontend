@@ -10,6 +10,8 @@ import allMenu from '../../src/json/allmenu.json';
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ReactCardFlip from 'react-card-flip';
+import rappi from '../assets/rappi-alt.svg';
+import { useMediaQuery } from 'react-responsive';
 
 interface MenuItem {
     id: number;
@@ -28,7 +30,8 @@ interface SeeMenuProps {
 function SeeMenu({ category = 'Hamburguesas' }: SeeMenuProps) {
     const [items, setItems] = useState<MenuItem[]>([]);
     const [slides, setSlides] = useState<MenuItem[][]>([]);
-    const itemsPerSlide = 6;
+    const isMobile = useMediaQuery({ query: '(max-width: 1024px)' });
+    const itemsPerSlide = isMobile ? 4 : 6;
     const swiperRef = useRef(null);
 
     useEffect(() => {
@@ -62,33 +65,43 @@ function SeeMenu({ category = 'Hamburguesas' }: SeeMenuProps) {
                 key={2}
             >
                 {slides.map((slideItems, index) => (
-                     <SwiperSlide key={index}>
-                     <div className="grid-container" >
-                         {slideItems.map((item) => (
-                             <ReactCardFlip isFlipped={flippedState[item.id] || false} flipDirection="vertical">
-                                 <div
-                                     className='newMenu_card newMenu_front'
-                                     key={item.id}
-                                     style={{
-                                         backgroundImage: `url(${item.image})`,
-                                         backgroundSize: 'cover',
-                                         backgroundRepeat: 'no-repeat'
-                                     }}
-                                     onClick={() => handleFlip(item.id)}
-                                 >
-                                 </div>
-                                 <div
-                                     className="newMenu_card newMenu_back"
-                                     onClick={() => handleFlip(item.id)}
-                                 >
-                                     <h3 className="newMenu_title">{item.name}</h3>
-                                     <p className="newMenu_description">{item.description}</p>
-                                     <p className="newMenu_price">Precio: ${item.price}</p>
-                                 </div>
-                             </ReactCardFlip>
-                         ))}
-                     </div>
-                 </SwiperSlide>
+                    <SwiperSlide key={index}>
+                        <div className="grid-container" >
+                            {slideItems.map((item) => (
+                                <ReactCardFlip isFlipped={flippedState[item.id] || false} flipDirection="vertical">
+                                    <div
+                                        className='newMenu_card newMenu_front'
+                                        key={item.id}
+                                        style={{
+                                            backgroundImage: `url(${item.image})`,
+                                            backgroundSize: 'cover',
+                                            backgroundRepeat: 'no-repeat'
+                                        }}
+                                        onClick={() => handleFlip(item.id)}
+                                    >
+                                    </div>
+                                    <div
+                                        className="newMenu_card newMenu_back"
+                                        onClick={() => handleFlip(item.id)}
+                                    >
+                                        <h3 className="newMenu_title">{item.name}</h3>
+                                        <p className="newMenu_description">{item.description}</p>
+                                        <div className="newMenu_price_order">
+                                            <div>
+                                                <p className="newMenu_price">{item.price} COP</p>
+                                            </div>
+                                            <div>
+                                                <a href="https://www.rappi.com.co/restaurantes/900248801-alejo-parrilla" target="_blank" rel="noopener noreferrer">
+                                                    <img src={rappi} alt="Rappi logo" className="rappi-logo newMenu_icon" />
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </ReactCardFlip>
+                            ))}
+                        </div>
+                    </SwiperSlide>
                 ))}
             </Swiper>
 

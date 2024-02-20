@@ -602,13 +602,32 @@
     align-items: center;
     justify-content: center;
     padding: 2vh 1vh;
-    padding-top: 0vh;
     height: 12vw;
     width: 12vw;
-    background-color: var(--color-our-beige);
+    background-color: var(--color-our-blue);
     border-radius: 30px;
 }
-
+.newMenu_card h3{
+    color: var(--color-our-orange);
+    font-size: x-large;
+    margin: auto;
+}
+.newMenu_card p{
+    font-size: medium;
+    margin: auto;
+    color: var(--color-white);
+}
+.newMenu_price_order {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    margin: auto;
+}
+.newMenu_price {
+    background-color: var(--color-our-orange);
+    padding: 1vh 1vh;
+    border-radius: 20px;
+}
 
 .swiper_controls {
     display: flex;
@@ -618,7 +637,7 @@
 
 .bento_navbutton {
     font-size: 2vw;
-    color: var(--color-our-beige);
+    color: var(--color-our-orange);
     cursor: pointer;
     padding: 1vh;
 }
@@ -1111,6 +1130,21 @@
         padding-right: 1vh;
     }
 
+    .newMenu_card {
+        height: 35vw;
+        width: 35vw;
+    }
+    .newMenu_card h3{
+        font-size: 5vw;
+    }
+    .newMenu_card p{
+        display: none;
+    }
+    .newMenu_price_order p{
+        display: block;
+        font-size: small;
+    }
+
     .sobre-nosotros {
         padding-left: 0vh;
         margin-bottom: 0vh;
@@ -1241,6 +1275,16 @@
 
     .minHeight_paddingTop_SN {
         height: auto;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .bento_menu {
+        padding-top: 2vh;  
+    }
+    .bento_menu h2 {
+        font-size: 3.5vh;
     }
 }
 
@@ -1462,6 +1506,7 @@
     cursor: pointer;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
+
 
 .swiper-slide {
     opacity: 1 !important;
