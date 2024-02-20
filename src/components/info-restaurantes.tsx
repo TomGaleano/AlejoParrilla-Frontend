@@ -35,8 +35,9 @@ async function obtenerDatos(id: number): Promise<Restaurante | null> {
 
 interface Props {
     id: number;
+    isSelected: boolean;
 }
-const DetallesRestaurante: React.FC<Props> = ({ id }) => {
+const DetallesRestaurante: React.FC<Props> = ({ id, isSelected }) => {
     const [restaurante, setRestaurante] = useState<Restaurante | null>(null);
     useEffect(() => {
         obtenerDatos(id).then(setRestaurante);
@@ -49,7 +50,8 @@ const DetallesRestaurante: React.FC<Props> = ({ id }) => {
     }
 
     return (
-        <div className="restaurant-card">
+        <div className="restaurant-card" style={isSelected ? { border:'red 2px solid'} : { /* estilos cuando isSelected es false */ }}
+        >
             <div className="restaurant-card-image" style={{ backgroundImage: `url(${restaurante.image})` }}>
             </div>
             <div className="restaurant-card-text">
