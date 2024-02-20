@@ -131,6 +131,7 @@
 @media (max-width: 768px) {
     .title_alt {
         padding: 10%;
+        font-size: 2rem;
     }
 
     .title_alt_IN {
@@ -168,7 +169,7 @@
 /*Definición de imágenes y sus propiedades*/
 
 .restaurant_image {
-    padding: 6vh;
+    padding: 16vh;
 }
 
 /*Definición de menú y sus propiedades*/
