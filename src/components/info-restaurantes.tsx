@@ -62,7 +62,7 @@ const DetallesRestaurante: React.FC<Props> = ({ id, isSelected }) => {
                     <a type='button' className="restaurant-card-button" href={`tel:${restaurante.phone}`}>
                         Teléfono
                     </a>
-                    <a type='button' className="restaurant-card-button" href={restaurante.url}>
+                    <a type='button' className="restaurant-card-button" href={restaurante.url} target="_blank" rel="noopener noreferrer">
                         Ubicación
                     </a>
                 </div>
