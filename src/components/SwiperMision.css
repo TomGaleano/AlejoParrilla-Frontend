@@ -109,7 +109,7 @@
 }
 
 /* Media queries para hacer el diseño responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .mySwiper {
         width: 70%;
         overflow: visible;
@@ -117,7 +117,7 @@
 
     .TextContainer {
         width: 90%;
-        font-size: 1.2rem;
+        font-size: 2vh;
     }
 
     .slideContainer-1,

@@ -104,7 +104,7 @@
 /*Definición de títulos y sus propiedades*/
 
 .title {
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: 900;
     color: var(--color-white);
     margin: 0.8rem;
@@ -113,7 +113,7 @@
 }
 
 .title_alt {
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 900;
     color: var(--color-our-orange);
     margin: 0.8rem;
@@ -319,12 +319,9 @@
 
 .sobre-nosotros-container {
     display: flex;
-    flex-wrap: wrap-reverse;
     justify-content: center;
-    align-items: center;
     padding: 0vh 10vw;
-    height: 75vh;
-
+    height: 100%;
 }
 
 .padding-top-min-height_SN {
@@ -365,17 +362,21 @@
 
 .box-sizing-width-padding_SN {
     box-sizing: border-box;
-    height: auto;
+    height: 100%;
     width: 50%;
-    padding-right: 2rem;
-    padding-top: 0%;
+    padding: 2rem;
     justify-content: center;
     align-items: center;
+    background-image: url('./images/Imagen-interior.webp');
+    background-size: cover;
+    border-radius: 20px;
+    border-color: var(--color-our-orange) 2px solid;
 }
 
 .img-width-height-margin-border_SN {
     width: 100%;
-    height: auto;
+    height: 100%;
+    background-size: cover;
     border-radius: 20px;
     border-color: var(--color-our-orange) 2px solid;
 }
@@ -606,22 +607,26 @@
     background-color: var(--color-our-blue);
     border-radius: 30px;
 }
-.newMenu_card h3{
+
+.newMenu_card h3 {
     color: var(--color-our-orange);
     font-size: x-large;
     margin: auto;
 }
-.newMenu_card p{
+
+.newMenu_card p {
     font-size: medium;
     margin: auto;
     color: var(--color-white);
 }
+
 .newMenu_price_order {
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
     margin: auto;
 }
+
 .newMenu_price {
     background-color: var(--color-our-orange);
     padding: 1vh 1vh;
@@ -752,12 +757,11 @@
 
 .width_minWidth_color_SN {
     width: 50%;
-    min-width: 250px;
     color: #ffffff;
 }
 
 .fontSize_padding_paddingTop_SN {
-    font-size: 1rem;
+    font-size: 1.4vw;
     padding: 3rem;
     padding-top: 0px;
 }
@@ -769,25 +773,16 @@
     flex-wrap: wrap;
 }
 
-.img-width-height-margin-border_SN {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    border: none;
-}
-
 .display_flexDirection_SN {
     display: flex;
     flex-direction: column;
 }
 
 .sobre-nosotros-container-item {
-    min-width: none;
-    height: auto;
+    max-height: fit-content;
+    height: 70%;
     margin: 0%;
     padding-top: 3%;
-    align-items: center;
-    justify-content: center;
 }
 
 
@@ -1133,13 +1128,16 @@
         height: 35vw;
         width: 35vw;
     }
-    .newMenu_card h3{
+
+    .newMenu_card h3 {
         font-size: 5vw;
     }
-    .newMenu_card p{
+
+    .newMenu_card p {
         display: none;
     }
-    .newMenu_price_order p{
+
+    .newMenu_price_order p {
         display: block;
         font-size: small;
     }
@@ -1275,13 +1273,16 @@
     .minHeight_paddingTop_SN {
         height: auto;
     }
+
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
+
     .bento_menu {
-        padding-top: 2vh;  
+        padding-top: 2vh;
     }
+
     .bento_menu h2 {
         font-size: 3.5vh;
     }
@@ -1323,7 +1324,7 @@
 
 /* Estilos de seccion 1 apartado de sobre nosotros */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     .sobre-nosotros-container-item {
         width: 100%;
         padding: 0;
