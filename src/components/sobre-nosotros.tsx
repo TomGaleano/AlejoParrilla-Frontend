@@ -69,6 +69,6 @@ function Sobrenosotros({ selectedItemId }: SobrenosotrosProps) {
       </div>
     </div>
   );
-};
+}
 
 export default Sobrenosotros;
