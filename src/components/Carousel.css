@@ -36,10 +36,16 @@
 
 @media screen and (max-width: 768px) {
 
+  .swiper_controls_CR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 2.5%;
+  }
+
   .swiper-button-next_CR,
   .swiper-button-prev_CR {
     display: inline-flex;
-    transform: translateX(250%);
-    margin-top: 5%;
   }
 }

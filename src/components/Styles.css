@@ -822,7 +822,7 @@
         font-size: 1rem;
         padding: 3rem;
         margin: 10%;
-        text-align: center;
+        text-align: left;
     }
 
     .width-min-width-color_SN,
@@ -1238,6 +1238,7 @@
         padding-left: 5vw;
         padding-bottom: 3vw;
     }
+
     .minHeight_paddingTop_SN {
         height: auto;
     }
