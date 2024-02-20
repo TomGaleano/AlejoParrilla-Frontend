@@ -28,6 +28,7 @@
 }
 
 .third {
+    background-size: contain;
     background-color: var(--color-our-blue-light);
     background-image: url("../assets/third-background.png");
 }
@@ -727,7 +728,7 @@
 }
 
 .minHeight_paddingTop_SN {
-    min-height: 80vh;
+    height: 88vh;
     padding-top: 12vh;
 }
 
@@ -1236,6 +1237,9 @@
         width: 45vw;
         padding-left: 5vw;
         padding-bottom: 3vw;
+    }
+    .minHeight_paddingTop_SN {
+        height: auto;
     }
 }
 

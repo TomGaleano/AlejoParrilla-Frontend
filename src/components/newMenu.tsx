@@ -20,7 +20,7 @@ function NewMenu() {
     const [activeButton, setActiveButton] = useState('Primera página');
 
     return (
-        <div className="newMenu">
+        <div className="newMenu third">
             <h1>Menú</h1>
             {isMenuActive ? (
                 <div className="bento_menu">
