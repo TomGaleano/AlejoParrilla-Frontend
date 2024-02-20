@@ -10,7 +10,6 @@ interface SobrenosotrosProps {
 
 
 function Sobrenosotros({ selectedItemId }: SobrenosotrosProps) {
-  console.log(selectedItemId);
   return (
     <div className="overflow_hidden_SN">
       <div className="landing minHeight_paddingTop_SN landing_nosotros second">
